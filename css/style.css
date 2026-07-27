@@ -209,7 +209,7 @@ header{
 
     color:white;
 
-    background:linear-gradient(90deg,#2d86ff,#5aa9ff);
+    background:linear-gradient(135deg,#3B82F6,#7C3AED);
 
     padding:18px 42px;
 
@@ -237,7 +237,9 @@ header{
 
 .btn-primary:hover{
 
-    transform:translateY(-3px);
+    transform: translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(91,78,255,.35);
 
 }
 
