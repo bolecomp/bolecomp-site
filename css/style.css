@@ -154,7 +154,11 @@ header{
 
     max-width:1000px;
 
-    transform:translateY(110px);
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
 
 }
 
@@ -164,9 +168,13 @@ header{
 
     max-width:80vw;
 
-    margin-bottom:-30px;
+    transform:translateY(90px);
 
-    transform: translateY(25px);
+}
+
+.hero-text{
+
+    transform:translateY(35px);
 
 }
 
