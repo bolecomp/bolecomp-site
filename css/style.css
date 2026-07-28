@@ -300,3 +300,36 @@ align-items:center;
 }
 
 }
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.section-label {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8b8b8b;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.enterprise {
+    color: var(--blue);
+}
+
+.digital {
+    color: var(--purple);
+}
