@@ -59,7 +59,7 @@ header{
 
     align-items:center;
 
-    padding:30px 40px;
+    padding:30px 60px;
 
 }
 
@@ -165,13 +165,13 @@ header{
 
     margin-bottom:-30px;
 
-    transform: translateY(45px);
+    transform: translateY(25px);
 
 }
 
 .hero h1{
 
-    font-size:clamp(3rem,6vw,5.4rem);
+    font-size:clamp(3rem,6vw,4.6rem);
 
     font-weight:800;
 
@@ -221,7 +221,7 @@ header{
 
     background:linear-gradient(135deg,#3B82F6,#7C3AED);
 
-    padding:18px 42px;
+    padding:16px 38px;
 
     border-radius:999px;
 
