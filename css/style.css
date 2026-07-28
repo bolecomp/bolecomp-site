@@ -330,7 +330,7 @@ align-items:center;
 .about-title {
     max-width: 900px;
     margin: 0 auto;
-    font-size: font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-size: font-size: clamp(2.3rem, 4.8vw, 3.6rem);
     font-weight: 800;
     line-height: 1.2;
     color: var(--text-dark);
