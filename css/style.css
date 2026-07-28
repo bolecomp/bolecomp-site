@@ -10,16 +10,23 @@
 
 :root {
 
-    --bg: #070b18;
-    --bg2: #111936;
-
-    --blue: #3f8cff;
-    --purple: #9b5cff;
-
-    --text: #ffffff;
-    --text2: #b9c3d8;
-
-    --max-width: 1400px;
+     /* Backgrounds */
+     --bg: #070b18;
+     --bg2: #111936;
+     --bg-light: #ffffff;
+ 
+     /* Brand Colors */
+     --blue: #3f8cff;
+     --purple: #9b5cff;
+ 
+     /* Text */
+     --text: #ffffff;
+     --text2: #b9c3d8;
+     --text-dark: #222222;
+     --text-muted: #6b7280;
+ 
+     /* Layout */
+     --max-width: 1400px;
 
 }
 
@@ -308,13 +315,15 @@ align-items:center;
 .about {
     padding: 120px 20px;
     text-align: center;
+    background: var(--bg-light);
+    color: var(--text-dark);
 }
 
 .section-label {
     font-size: 0.9rem;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #8b8b8b;
+    color: var(--text-muted);
     margin-bottom: 20px;
 }
 
@@ -324,6 +333,7 @@ align-items:center;
     font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 800;
     line-height: 1.2;
+    color: var(--text-dark);
 }
 
 .enterprise {
