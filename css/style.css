@@ -193,13 +193,11 @@ header{
 }
 
 .hero h1 .tech{
-    color: var(--blue);
-    text-shadow: 0 0 18px rgba(59,130,246,.18);
+    color: #3B82F6;
 }
 
 .hero h1 .business{
-    color: var(--purple);
-    text-shadow: 0 0 18px rgba(124,58,237,.18);
+    color: #3B82F6;
 
 }
 
