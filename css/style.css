@@ -435,20 +435,14 @@ align-items:center;
 
 .section-divider{
 
-    width:90px;
-    height:2px;
+    height:80px;
 
     background:linear-gradient(
-        90deg,
-        var(--blue),
-        var(--purple)
+        to bottom,
+        #ffffff 0%,
+        #f7f9fc 20%,
+        #0d1326 100%
     );
-
-    opacity:.35;
-
-    margin:100px auto;
-
-    border-radius:2px;
 
 }
 
