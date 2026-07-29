@@ -369,17 +369,7 @@ align-items:center;
 
 }
 
-.enterprise{
 
-    color:var(--blue);
-
-}
-
-.digital{
-
-    color:var(--purple);
-
-}
 
 .about-text{
 
@@ -518,6 +508,14 @@ align-items:center;
 
     line-height:1.9;
 
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.text-purple{
+    color: var(--purple);
 }
 
 .text-blue{
