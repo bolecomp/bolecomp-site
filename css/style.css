@@ -391,7 +391,7 @@ align-items:center;
 .about-text p{
 
     font-size:1.15rem;
-    line-height:1.9;
+    line-height:2;
     color:var(--text-muted);
 
     margin-bottom:28px;
@@ -413,7 +413,7 @@ align-items:center;
 
 .about-tags span{
 
-    padding:12px 20px;
+    padding:12px 22px;
 
     border-radius:999px;
 
