@@ -339,7 +339,7 @@ align-items:center;
 
 .about-photo{
 
-    margin-bottom:45px;
+    margin-bottom:35px;
 
 }
 
@@ -355,14 +355,17 @@ align-items:center;
 
 .about-title{
 
-    font-size:clamp(2.4rem,4vw,3.8rem);
-    line-height:1.15;
+    font-size:clamp(2.1rem,3.6vw,3.3rem);
+
+    line-height:1.18;
+
     font-weight:800;
 
     color:var(--text-dark);
 
     max-width:900px;
-    margin:0 auto 45px;
+
+    margin:0 auto 40px;
 
 }
 
