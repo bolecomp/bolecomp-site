@@ -314,8 +314,11 @@ align-items:center;
 
 .about {
 
-    background: var(--bg-light);
-    padding: 120px 20px 140px;
+    background:
+linear-gradient(
+180deg,
+#0b1020 0%,
+#111936 100%);
 
 }
 
