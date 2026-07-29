@@ -438,3 +438,26 @@ align-items:center;
     border-color:rgba(63,140,255,.30);
 
 }
+
+/* ==========================
+   SECTION DIVIDER
+========================== */
+
+.section-divider{
+
+    width:90px;
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        var(--blue),
+        var(--purple)
+    );
+
+    opacity:.35;
+
+    margin:100px auto;
+
+    border-radius:2px;
+
+}
