@@ -519,3 +519,11 @@ align-items:center;
     line-height:1.9;
 
 }
+
+.text-blue{
+    color: var(--blue);
+}
+
+.text-purple{
+    color: var(--purple);
+}
