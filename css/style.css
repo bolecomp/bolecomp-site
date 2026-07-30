@@ -689,6 +689,17 @@ align-items:center;
    DIGITAL
 =================================================== */
 
+.section-divider-light{
+
+    width:120px;
+    height:1px;
+
+    margin:120px auto 0;
+
+    background:rgba(255,255,255,.18);
+
+}
+
 .digital{
 
     padding:260px 20px 180px;
@@ -706,17 +717,19 @@ align-items:center;
 
 .digital-title{
 
+    max-width:900px;
+
+    margin:20px auto 0;
+
     text-align:center;
 
-    font-size:clamp(3rem,5vw,5rem);
+    font-size:clamp(3rem,5vw,5.2rem);
 
     font-weight:800;
 
     line-height:1.05;
 
-    color:#111;
-
-    margin-top:20px;
+    color:#1b1b1b;
 
 }
 
@@ -728,17 +741,17 @@ align-items:center;
 
 .digital-intro{
 
-    max-width:850px;
+    max-width:820px;
 
-    margin:40px auto 80px;
+    margin:40px auto 90px;
 
     text-align:center;
 
-    color:#555;
-
-    line-height:1.9;
+    color:#666;
 
     font-size:1.15rem;
+
+    line-height:1.9;
 
 }
 
