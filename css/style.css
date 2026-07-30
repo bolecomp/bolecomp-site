@@ -646,13 +646,13 @@ align-items:center;
 
     display:block;
 
-    font-size:4.5rem;
+    font-size:4.6rem;
 
     font-weight:800;
 
-    line-height:1;
+    color:#fff;
 
-    color:var(--blue);
+    line-height:1;
 
     margin-bottom:18px;
 
@@ -660,11 +660,13 @@ align-items:center;
 
 .experience-item h3{
 
-    color:#fff;
+    color:var(--blue);
 
-    font-size:1.35rem;
+    font-size:1.15rem;
 
-    margin-bottom:18px;
+    text-transform:uppercase;
+
+    letter-spacing:1px;
 
 }
 
