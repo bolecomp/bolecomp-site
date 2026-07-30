@@ -617,65 +617,47 @@ align-items:center;
 }
 
 /* ==========================
-   EXPERIENCE
+   ENTERPRISE CLOSING
 ========================== */
 
-.experience{
+.enterprise-closing{
 
-    margin-top:120px;
+    max-width:900px;
 
-}
-
-.experience-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(4,1fr);
-
-    gap:40px;
-
-}
-
-.experience-item{
+    margin:140px auto 60px;
 
     text-align:center;
 
 }
 
-.experience-number{
+.enterprise-closing h2{
 
-    display:block;
+    font-size:clamp(2.5rem,5vw,4.2rem);
 
-    font-size:4.6rem;
+    line-height:1.15;
 
     font-weight:800;
 
     color:#fff;
 
-    line-height:1;
-
-    margin-bottom:18px;
+    margin-bottom:28px;
 
 }
 
-.experience-item h3{
+.enterprise-closing h2 span{
 
     color:var(--blue);
 
-    font-size:1.15rem;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
 }
 
-.experience-item p{
+.enterprise-closing p{
 
     color:var(--text2);
 
-    line-height:1.8;
+    font-size:1.05rem;
 
-    font-size:1rem;
+    letter-spacing:.08em;
+
+    line-height:2;
 
 }
