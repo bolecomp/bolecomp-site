@@ -704,24 +704,16 @@ align-items:center;
 
     padding:180px 0 220px;
 
-    background:#0d1326;
+    background:#fafafa;
 
 }
 
 .digital .container{
 
     max-width:1400px;
-
     margin:auto;
+    padding:0 40px;
 
-    background:#fafafa;
-
-    border-radius:34px;
-
-    padding:140px 90px;
-
-    box-shadow:
-        0 60px 120px rgba(0,0,0,.25);
 }
 
 .digital-title{
