@@ -622,11 +622,34 @@ align-items:center;
 
 .enterprise-closing{
 
+    position:relative;
+
     max-width:900px;
 
     margin:170px auto 80px;
 
     text-align:center;
+
+}
+
+.enterprise-closing::before{
+
+    content:"";
+
+    display:block;
+
+    width:120px;
+
+    height:1px;
+
+    margin:0 auto 70px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
 
 }
 
