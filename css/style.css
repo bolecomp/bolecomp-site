@@ -683,4 +683,84 @@ align-items:center;
 
     line-height:2;
 
+}.
+
+/* ===================================================
+   DIGITAL
+=================================================== */
+
+.digital{
+
+    padding:160px 20px;
+
+    background:#ffffff;
+
+}
+
+.digital .container{
+
+    max-width:1400px;
+    margin:auto;
+
+}
+
+.digital-title{
+
+    text-align:center;
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    color:#111;
+
+    margin-top:20px;
+
+}
+
+.digital-title span{
+
+    color:var(--purple);
+
+}
+
+.digital-intro{
+
+    max-width:850px;
+
+    margin:40px auto 80px;
+
+    text-align:center;
+
+    color:#555;
+
+    line-height:1.9;
+
+    font-size:1.15rem;
+
+}
+
+.creative-wall{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 40px 90px rgba(0,0,0,.12);
+
+}
+
+.creative-wall img{
+
+    display:block;
+
+    width:100%;
+
 }
