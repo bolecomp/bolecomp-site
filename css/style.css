@@ -617,77 +617,97 @@ align-items:center;
 }
 
 /* ==========================
-   AREAS OF EXPERTISE
+   CORE EXPERTISE
 ========================== */
 
-.expertise{
+.core-expertise{
 
-    margin-top:90px;
-
-    text-align:center;
+    margin-top:120px;
 
 }
 
-.expertise-label{
+.expertise-columns{
 
-    color:var(--text2);
+    display:grid;
 
-    font-size:.85rem;
+    grid-template-columns:repeat(3,1fr);
 
-    letter-spacing:5px;
+    gap:28px;
 
-    text-transform:uppercase;
-
-    margin-bottom:35px;
+    margin-top:45px;
 
 }
 
-.expertise-grid{
+.expertise-column{
 
-    display:flex;
+    background:#141d38;
 
-    flex-wrap:wrap;
+    border:1px solid rgba(255,255,255,.06);
 
-    justify-content:center;
+    border-radius:20px;
 
-    gap:16px;
+    padding:38px;
 
-    max-width:1000px;
-
-    margin:0 auto;
+    transition:.35s;
 
 }
 
-.expertise-grid span{
+.expertise-column:hover{
 
-    padding:14px 24px;
+    transform:translateY(-6px);
 
-    border-radius:14px;
+    border-color:rgba(63,140,255,.35);
 
-    background:rgba(255,255,255,.03);
+    box-shadow:0 18px 40px rgba(0,0,0,.30);
 
-    border:1px solid rgba(255,255,255,.08);
+}
+
+.expertise-column h3{
 
     color:#fff;
 
-    font-size:.95rem;
+    font-size:1.35rem;
 
-    font-weight:500;
-
-    transition:.3s ease;
+    margin-bottom:25px;
 
 }
 
-.expertise-grid span:hover{
+.expertise-column ul{
 
-    transform:translateY(-3px);
+    list-style:none;
 
-    border-color:rgba(63,140,255,.45);
+    padding:0;
 
-    background:rgba(63,140,255,.08);
+}
 
-    box-shadow:0 10px 30px rgba(63,140,255,.12);
+.expertise-column li{
 
-    color:var(--blue);
+    color:var(--text2);
+
+    margin-bottom:16px;
+
+    padding-left:22px;
+
+    position:relative;
+
+}
+
+.expertise-column li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:10px;
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:var(--blue);
 
 }
