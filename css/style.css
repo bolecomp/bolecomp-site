@@ -704,10 +704,8 @@ align-items:center;
 }
 
 .digital-title{
-
-    margin-bottom:40px;
-    line-height:1.05;
-
+    max-width:1000px;
+    margin:0 auto 40px;
 }
 
 .digital-title .light{
