@@ -719,17 +719,41 @@ align-items:center;
 
 .digital-title{
 
-    max-width:900px;
+    margin-bottom:45px;
 
-    font-size:clamp(3rem,4vw,4.8rem);
+    line-height:1;
 
-    line-height:1.02;
+}
+
+.digital-title .light{
+
+    display:block;
+
+    font-size:4rem;
+
+    font-weight:300;
+
+    color:#F4F6FB;
+
+    letter-spacing:-1px;
+
+}
+
+.digital-title .accent{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:5.2rem;
 
     font-weight:800;
 
-    color:#151924;
+    color:var(--purple);
 
-    margin-bottom:35px;
+    letter-spacing:-2px;
+
+    text-shadow:0 12px 40px rgba(155,92,255,.18);
 
 }
 
