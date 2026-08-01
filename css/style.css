@@ -689,12 +689,13 @@ align-items:center;
    DIGITAL
 =================================================== */
 
+
 .digital{
     position:relative;
+    overflow:hidden;
     background:#F4F6FB;
-    padding:90px 20px 180px;
+    padding:120px 20px 180px;
 }
-
 .digital .section-label{
 
     display:inline-block;
