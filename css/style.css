@@ -694,7 +694,9 @@ align-items:center;
     outline:8px solid red;
 }
 
-
+.digital{
+    display:none !important;
+}
 
 .digital .container{
 
