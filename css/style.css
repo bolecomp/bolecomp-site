@@ -690,11 +690,11 @@ align-items:center;
 =================================================== */
 
 .digital{
-
-    background:#F4F6FB;
-    padding:160px 20px 180px;
-
+    background:#F4F6FB !important;
+    outline:8px solid red;
 }
+
+
 
 .digital .container{
 
