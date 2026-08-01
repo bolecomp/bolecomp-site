@@ -692,41 +692,38 @@ align-items:center;
 .digital{
 
     background:#F4F6FB;
-
-    padding:140px 20px 180px;
+    padding:160px 20px 180px;
 
 }
 
 .digital .container{
 
-    max-width:1600px;
-
+    max-width:1100px;
     margin:0 auto;
+    text-align:center;
 
 }
 
 .digital .section-label{
 
-    color:#7b8ab2;
-
-    letter-spacing:.45em;
-
-    font-size:.85rem;
-
+    display:inline-block;
     margin-bottom:20px;
+
+}
+
+.digital-title{
+
+    margin-bottom:40px;
+    line-height:1.05;
 
 }
 
 .digital-title .light{
 
     display:block;
-
     font-size:4rem;
-
     font-weight:300;
-
     color:#2A3144;
-
     letter-spacing:-1px;
 
 }
@@ -734,18 +731,10 @@ align-items:center;
 .digital-title .accent{
 
     display:block;
-
     margin-top:10px;
-
-    font-size:5.2rem;
-
+    font-size:5rem;
     font-weight:800;
-
     color:var(--purple);
-
-    letter-spacing:-2px;
-
-    text-shadow:0 12px 40px rgba(155,92,255,.18);
 
 }
 
@@ -766,13 +755,13 @@ align-items:center;
 
     max-width:820px;
 
-    color:#C7D0E6;
+    margin:0 auto 80px;
+
+    color:#596273;
 
     font-size:1.15rem;
 
     line-height:1.9;
-
-    margin-bottom:120px;
 
 }
 
@@ -780,6 +769,23 @@ align-items:center;
 /* ==========================
         GRID
 ========================== */
+
+.portfolio-wrapper{
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:36px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.08);
+
+}
 
 .portfolio-grid{
 
@@ -790,12 +796,6 @@ align-items:center;
     grid-template-rows:repeat(16,90px);
 
     gap:18px;
-
-    background:#fafafa;
-
-    padding:40px;
-
-    border-radius:34px;
 
 }
 
