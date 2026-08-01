@@ -690,20 +690,12 @@ align-items:center;
 =================================================== */
 
 .digital{
-    background:#F4F6FB !important;
-    outline:8px solid red;
-}
-
-.digital{
-    display:none !important;
+    background:#F4F6FB;
+    padding:160px 20px 180px;
 }
 
 .digital .container{
-
-    max-width:1100px;
-    margin:0 auto;
-    text-align:center;
-
+    background:red;
 }
 
 .digital .section-label{
