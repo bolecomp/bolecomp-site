@@ -721,7 +721,7 @@ align-items:center;
 .digital-title .accent{
 
     display:block;
-    margin-top:10px;
+    margin-top:0px;
     font-size:5rem;
     font-weight:800;
     color:var(--purple);
