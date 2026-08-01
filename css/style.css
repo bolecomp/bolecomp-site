@@ -690,11 +690,8 @@ align-items:center;
 =================================================== */
 
 .digital{
-
     background:#F4F6FB;
-
     padding:140px 20px 180px;
-
 }
 
 .digital .container{
@@ -717,12 +714,8 @@ align-items:center;
 
 }
 
-.digital-title{
-
-    margin-bottom:45px;
-
-    line-height:1;
-
+.digital-title .light{
+    color:#2A3144;
 }
 
 .digital-title .light{
