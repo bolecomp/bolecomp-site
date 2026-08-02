@@ -716,8 +716,8 @@ align-items:center;
 
     display:block;
     font-size:4rem;
-    font-weight:300;
-    color:#2A3144;
+    font-weight:800;
+    color:#911171;
     letter-spacing:-1px;
 
 }
@@ -726,9 +726,9 @@ align-items:center;
 
     display:block;
     margin-top:0px;
-    font-size:5rem;
-    font-weight:800;
-    color:var(--purple);
+    font-size:4rem;
+    font-weight:300;
+    color:var(--gray);
 
 }
 
