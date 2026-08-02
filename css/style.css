@@ -717,7 +717,7 @@ align-items:center;
     display:block;
     font-size:4rem;
     font-weight:800;
-    color:#911171;
+    color:#9b5cff;
     letter-spacing:-1px;
 
 }
@@ -728,7 +728,7 @@ align-items:center;
     margin-top:0px;
     font-size:4rem;
     font-weight:300;
-    color:var(--gray);
+    color:var(--black);
 
 }
 
