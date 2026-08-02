@@ -701,8 +701,9 @@ align-items:center;
 .digital .section-label{
     display:block;
     text-align:center;
-    margin-top:-20px;
     margin-bottom:30px;
+
+    transform:translateY(-20px);
 }
 
 .digital-title{
