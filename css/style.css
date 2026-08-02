@@ -772,27 +772,7 @@ align-items:center;
     margin:80px auto 0;
 }
 
-.portfolio-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(12,1fr);
-
-    grid-template-rows:repeat(16,90px);
-
-    gap:18px;
-
-    background:#fff;
-
-    padding:40px;
-
-    border-radius:40px;
-
-    overflow:hidden;
-
-    box-shadow:0 35px 90px rgba(0,0,0,.12);
-
-}
+grid-template-columns
 
 
 /* ==========================
@@ -950,7 +930,7 @@ align-items:center;
 
 }
 
-.web{
+.banner{
 
     grid-column:3 / 8;
 
@@ -974,7 +954,7 @@ align-items:center;
 
 }
 
-.banner{
+.web{
 
     grid-column:7 / 13;
 
