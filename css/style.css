@@ -936,7 +936,7 @@ align-items:center;
 
 .logo{
 
-    grid-column:3 / 7;
+    grid-column:3 / 8;
 
     grid-row:4 / 9;
 
@@ -944,7 +944,7 @@ align-items:center;
 
 .future{
 
-    grid-column:7 / 13;
+    grid-column:8 / 13;
 
     grid-row:4 / 9;
 
