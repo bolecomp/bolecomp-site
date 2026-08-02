@@ -1164,6 +1164,16 @@ align-items:center;
 
     gap:35px;
 
+    margin-bottom:70px;
+
+}
+
+.projects-button{
+
+    text-align:center;
+
+    margin-top:0;
+
 }
 
 .project-card{
