@@ -145,6 +145,8 @@ header{
 
     cursor:pointer;
 
+    transition:.3s;
+
 }
 
 /* ===========================
@@ -1067,6 +1069,8 @@ align-items:center;
 
         width:260px;
         height:100vh;
+        background:rgba(11,16,32,.96);
+        backdrop-filter:blur(18px);
 
         background:#0b1020;
 
