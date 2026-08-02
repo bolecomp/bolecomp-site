@@ -127,6 +127,26 @@ header{
 
 }
 
+/* ==========================
+   MOBILE MENU
+========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
 /* ===========================
    HERO
 =========================== */
@@ -1009,5 +1029,64 @@ align-items:center;
     aspect-ratio:.45;
 
 }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        padding:25px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        z-index:1001;
+
+    }
+
+    .btn-outline{
+
+        display:none;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:0;
+        right:-100%;
+
+        width:260px;
+        height:100vh;
+
+        background:#0b1020;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:35px;
+
+        transition:.35s;
+
+        z-index:1000;
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
 
 }
