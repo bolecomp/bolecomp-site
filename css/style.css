@@ -697,9 +697,11 @@ align-items:center;
     padding:90px 20px 180px;
     box-shadow: inset 0 30px 40px rgba(255,255,255,.5);
 }
+
 .digital .section-label{
     display:block;
     text-align:center;
+    margin-top:-20px;
     margin-bottom:30px;
 }
 
