@@ -989,8 +989,8 @@ align-items:center;
 
 .portfolio-grid{
 
-    grid-template-columns: repeat(12, 1fr);
-grid-template-rows: repeat(16, 90px);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
 
 }
 
