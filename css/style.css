@@ -1215,7 +1215,7 @@ align-items:center;
     justify-content:flex-end;
     align-items:flex-start;
 
-    padding:42px 42px 68px;
+    padding:42px 72px 42px 42px;
 
     background:linear-gradient(
         to top,
@@ -1346,3 +1346,33 @@ align-items:center;
     padding:42px;
 
 }
+
+.project-arrow{
+
+    position:absolute;
+
+    right:26px;
+    bottom:28px;
+
+    font-size:1.5rem;
+
+    font-weight:300;
+
+    color:#fff;
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+    transition:all .35s ease;
+
+}
+
+.project-card:hover .project-arrow{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
