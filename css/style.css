@@ -1603,3 +1603,114 @@ header{
 
 }
 
+/* ==========================================
+   HERO INTRO ANIMATION
+========================================== */
+
+/* Početno stanje */
+
+header,
+.hero-photo,
+.hero h1,
+.hero p,
+.buttons{
+
+    opacity:0;
+
+}
+
+/* Header */
+
+header{
+
+    transform:translateY(-25px);
+
+    animation:headerIntro .8s ease forwards;
+
+}
+
+/* Bosko */
+
+.hero-photo{
+
+    transform:translateY(90px);
+
+    animation:photoIntro 1s ease forwards;
+
+    animation-delay:.2s;
+
+}
+
+/* H1 */
+
+.hero h1{
+
+    transform:translateY(35px);
+
+    animation:textIntro .8s ease forwards;
+
+    animation-delay:.45s;
+
+}
+
+/* Subtitle */
+
+.hero p{
+
+    transform:translateY(25px);
+
+    animation:textIntro .8s ease forwards;
+
+    animation-delay:.65s;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    transform:translateY(25px);
+
+    animation:textIntro .8s ease forwards;
+
+    animation-delay:.85s;
+
+}
+
+/* Keyframes */
+
+@keyframes headerIntro{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes photoIntro{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(70px);
+
+    }
+
+}
+
+@keyframes textIntro{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
