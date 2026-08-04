@@ -452,30 +452,105 @@ header{
 
 
 /* ===========================
-   MOBILE
+   HERO MOBILE
 =========================== */
 
-@media(max-width:900px){
+@media (max-width:900px){
 
-.nav-links{
+    .hero{
 
-display:none;
+        min-height:100vh;
 
-}
+        padding:120px 25px 70px;
 
-.hero-photo{
+        align-items:center;
 
-width:340px;
+    }
 
-}
+    .hero-content{
 
-.buttons{
+        max-width:100%;
 
-flex-direction:column;
+    }
 
-align-items:center;
+    /* Sakrij ikonice */
 
-}
+    .hero-icons{
+
+        display:none;
+
+    }
+
+    /* Fotografija */
+
+    .hero-photo{
+
+        width:280px;
+
+        max-width:80vw;
+
+        transform:translateY(20px);
+
+        opacity:.85;
+
+    }
+
+    /* Naslov */
+
+    .hero-text{
+
+        transform:none;
+
+        margin-top:30px;
+
+    }
+
+    .hero h1{
+
+        font-size:3.2rem;
+
+        line-height:1.05;
+
+        margin-bottom:25px;
+
+    }
+
+    /* Podnaslov */
+
+    .hero p{
+
+        font-size:1.4rem;
+
+        line-height:1.6;
+
+        max-width:100%;
+
+        margin-bottom:40px;
+
+    }
+
+    /* Dugmad */
+
+    .buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:18px;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:280px;
+
+        text-align:center;
+
+        padding:18px 0;
+
+    }
 
 }
 
