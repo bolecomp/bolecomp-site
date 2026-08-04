@@ -1714,3 +1714,120 @@ header{
     }
 
 }
+
+/* ==========================================
+   FLOATING ICONS
+========================================== */
+
+@keyframes floatSlow{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+@keyframes floatMedium{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+@keyframes floatFast{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+}
+
+/* Enterprise */
+
+.architecture{
+
+    animation:floatSlow 6s ease-in-out infinite;
+
+}
+
+.cloud{
+
+    animation:floatMedium 7s ease-in-out infinite;
+
+}
+
+.servers{
+
+    animation:floatFast 5.5s ease-in-out infinite;
+
+}
+
+.storage{
+
+    animation:floatSlow 7.5s ease-in-out infinite;
+
+}
+
+.business{
+
+    animation:floatMedium 6.5s ease-in-out infinite;
+
+}
+
+
+/* Digital */
+
+.design{
+
+    animation:floatSlow 7s ease-in-out infinite;
+
+}
+
+.code{
+
+    animation:floatFast 5.5s ease-in-out infinite;
+
+}
+
+.seo{
+
+    animation:floatMedium 6.8s ease-in-out infinite;
+
+}
+
+.ai{
+
+    animation:floatSlow 8s ease-in-out infinite;
+
+}
+
+.analytics{
+
+    animation:floatFast 5s ease-in-out infinite;
+
+}
