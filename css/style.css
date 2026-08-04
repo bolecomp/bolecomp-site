@@ -201,11 +201,11 @@ header{
 
 .hero-photo{
 
-    width:420px;
+    width:400px;
 
     max-width:70vw;
 
-    opacity:.78;
+    opacity:.60;
 
     filter:drop-shadow(0 0 25px rgba(59,130,246,.45));
 
@@ -227,7 +227,7 @@ header{
 
 .hero h1{
 
-    font-size:clamp(2.8rem,6vw,5.5rem);
+    font-size: clamp(2.5rem,5.2vw,4.8rem);
 
     font-weight:800;
 
@@ -345,111 +345,98 @@ header{
 
     position:absolute;
 
-    width:56px;
+    width:44px;
 
-    opacity:.38;
+    opacity:.45;
 
     transition:.45s ease;
 
 }
 
-/* ---------- Enterprise ---------- */
+/* Enterprise */
 
 .architecture{
 
-    top:110px;
+    top:25px;
 
-    left:120px;
+    left:500px;
 
 }
 
 .cloud{
 
-    top:210px;
+    top:110px;
 
-    left:70px;
+    left:420px;
 
 }
 
+
+
 .servers{
 
-    top:350px;
+    top:200px;
 
-    left:130px;
+    left:410px;
 
 }
 
 .storage{
 
-    top:500px;
+    top:270px;
 
-    left:90px;
-
-}
-
-.network{
-
-    top:640px;
-
-    left:150px;
+    left:360px;
 
 }
 
 .business{
 
-    top:760px;
+    top:340px;
 
-    left:100px;
+    left:310px;
 
 }
 
-/* ---------- Digital ---------- */
+
+/* Digital */
 
 .design{
 
-    top:120px;
+    top:20px;
 
-    right:120px;
+    right:490px;
 
 }
 
 .code{
 
-    top:240px;
+    top:90px;
 
-    right:70px;
+    right:400px;
 
 }
 
 .seo{
 
-    top:390px;
+    top:170px;
 
-    right:120px;
+    right:370px;
 
 }
 
 .ai{
 
-    top:530px;
+    top:250px;
 
-    right:90px;
-
-}
-
-.branding{
-
-    top:660px;
-
-    right:140px;
+    right:390px;
 
 }
 
 .analytics{
 
-    top:790px;
+    top:340px;
 
-    right:90px;
+    right:350px;
 
 }
 
@@ -463,23 +450,6 @@ header{
 
 }
 
-/* ENTERPRISE */
-
-.architecture{
-
-    top:90px;
-
-    left:120px;
-
-}
-
-.cloud{
-
-    top:210px;
-
-    left:80px;
-
-}
 
 /* ===========================
    MOBILE
