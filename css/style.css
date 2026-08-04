@@ -335,9 +335,9 @@ header{
 
     inset:0;
 
-    z-index:1;
-
     pointer-events:none;
+
+    z-index:1;
 
 }
 
@@ -347,9 +347,119 @@ header{
 
     width:56px;
 
-    opacity:.20;
+    opacity:.38;
 
-    transition:.5s;
+    transition:.45s ease;
+
+}
+
+/* ---------- Enterprise ---------- */
+
+.architecture{
+
+    top:110px;
+
+    left:120px;
+
+}
+
+.cloud{
+
+    top:210px;
+
+    left:70px;
+
+}
+
+.servers{
+
+    top:350px;
+
+    left:130px;
+
+}
+
+.storage{
+
+    top:500px;
+
+    left:90px;
+
+}
+
+.network{
+
+    top:640px;
+
+    left:150px;
+
+}
+
+.business{
+
+    top:760px;
+
+    left:100px;
+
+}
+
+/* ---------- Digital ---------- */
+
+.design{
+
+    top:120px;
+
+    right:120px;
+
+}
+
+.code{
+
+    top:240px;
+
+    right:70px;
+
+}
+
+.seo{
+
+    top:390px;
+
+    right:120px;
+
+}
+
+.ai{
+
+    top:530px;
+
+    right:90px;
+
+}
+
+.branding{
+
+    top:660px;
+
+    right:140px;
+
+}
+
+.analytics{
+
+    top:790px;
+
+    right:90px;
+
+}
+
+/* Hover */
+
+.hero:hover .hero-icon{
+
+    opacity:.65;
+
+    transform:scale(1.08);
 
 }
 
