@@ -155,12 +155,14 @@ header{
 
 .hero{
 
+    position:relative;
+
+    overflow:hidden;
+
     min-height:100vh;
 
     background:
-
         linear-gradient(rgba(6,8,20,.55),rgba(6,8,20,.75)),
-
         url("../images/hero-bg.jpg");
 
     background-size:cover;
@@ -181,7 +183,11 @@ header{
 
 .hero-content{
 
-    max-width:1000px;
+    position:relative;
+
+    width:100%;
+
+    max-width:1200px;
 
     display:flex;
 
@@ -189,17 +195,21 @@ header{
 
     align-items:center;
 
+    z-index:2;
+
 }
 
 .hero-photo{
 
-    width:440px;
+    width:420px;
 
-    max-width:75vw;
+    max-width:70vw;
 
-    opacity:.88;
+    opacity:.78;
 
-    transform:translateY(80px);
+    filter:drop-shadow(0 0 25px rgba(59,130,246,.45));
+
+    transform:translateY(70px);
 
     transition:.6s;
 
@@ -207,13 +217,17 @@ header{
 
 .hero-text{
 
+    position:relative;
+
+    z-index:5;
+
     transform:translateY(10px);
 
 }
 
 .hero h1{
 
-    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-size:clamp(2.8rem,6vw,5.5rem);
 
     font-weight:800;
 
@@ -226,11 +240,14 @@ header{
 }
 
 .hero h1 .tech{
-    color: #3B82F6;
+
+    color:#3B82F6;
+
 }
 
 .hero h1 .business{
-    color: #6D28D9;
+
+    color:#6D28D9;
 
 }
 
@@ -266,7 +283,7 @@ header{
 
     text-decoration:none;
 
-    color:white;
+    color:#fff;
 
     background:linear-gradient(135deg,#3B82F6,#7C3AED);
 
@@ -282,7 +299,7 @@ header{
 
     text-decoration:none;
 
-    color:white;
+    color:#fff;
 
     border:1px solid rgba(255,255,255,.35);
 
@@ -296,17 +313,61 @@ header{
 
 .btn-primary:hover{
 
-    transform: translateY(-3px);
+    transform:translateY(-3px);
 
     box-shadow:0 15px 35px rgba(91,78,255,.35);
 
-
+}
 
 .btn-secondary:hover{
 
-    background:white;
+    background:#fff;
 
-    color:black;
+    color:#000;
+
+}
+
+/* HERO ICONS */
+
+.hero-icons{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    pointer-events:none;
+
+}
+
+.hero-icon{
+
+    position:absolute;
+
+    width:56px;
+
+    opacity:.20;
+
+    transition:.5s;
+
+}
+
+/* ENTERPRISE */
+
+.architecture{
+
+    top:90px;
+
+    left:120px;
+
+}
+
+.cloud{
+
+    top:210px;
+
+    left:80px;
 
 }
 
@@ -337,6 +398,9 @@ align-items:center;
 }
 
 }
+
+
+
 
 /* ==========================
    ABOUT
