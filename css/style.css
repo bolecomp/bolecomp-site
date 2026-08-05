@@ -1329,7 +1329,8 @@ header{
 .projects{
 
     background:#0b1020;
-    padding:140px 20px;
+
+    padding:120px 20px 60px;
 
 }
 
@@ -1838,15 +1839,19 @@ header{
 
 .cta{
 
-    padding:120px 0;
+    background:#0b1020;
+
+    padding:90px 0;
 
 }
 
 .cta-card{
 
-    background:#101828;
+    background:#162033;
 
     border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
 
     border-radius:30px;
 
