@@ -1863,7 +1863,7 @@ header{
 
     align-items:center;
 
-    gap:80px;
+    gap:140px;
 
     position:relative;
 
@@ -1965,9 +1965,131 @@ header{
 
 .cta-right{
 
+    min-width:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    margin-left:auto;
+
     position:relative;
 
     z-index:2;
+
+}
+
+.cta-available{
+
+    margin-bottom:35px;
+
+}
+
+.cta-small-title{
+
+    display:block;
+
+    font-size:.85rem;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.55);
+
+    margin-bottom:18px;
+
+}
+
+.cta-available ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.cta-available li{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-size:1rem;
+
+    position:relative;
+
+    padding-left:18px;
+
+}
+
+.cta-available li::before{
+
+    content:"•";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--blue);
+
+}
+
+.cta-right .btn-primary{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:18px 40px;
+
+    margin-bottom:35px;
+
+}
+
+.cta-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin-bottom:30px;
+
+}
+
+.cta-contact{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.cta-contact a,
+
+.cta-contact span{
+
+    color:var(--text2);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.cta-contact a:hover{
+
+    color:white;
 
 }
 
