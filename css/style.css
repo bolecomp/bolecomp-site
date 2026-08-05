@@ -1831,3 +1831,145 @@ header{
     animation:floatFast 5s ease-in-out infinite;
 
 }
+
+/* ==========================
+   CTA
+========================== */
+
+.cta{
+
+    padding:120px 0;
+
+}
+
+.cta-card{
+
+    background:#101828;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.cta-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:radial-gradient(rgba(59,130,246,.18),transparent 70%);
+
+    top:-120px;
+
+    right:-120px;
+
+}
+
+.cta-left{
+
+    max-width:700px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.cta h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    margin:18px 0;
+
+    line-height:1.2;
+
+}
+
+.cta-subtitle{
+
+    color:var(--blue);
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    margin-bottom:24px;
+
+}
+
+.cta-text{
+
+    color:var(--text2);
+
+    line-height:1.9;
+
+    max-width:620px;
+
+    margin-bottom:40px;
+
+}
+
+.cta-info{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:28px;
+
+}
+
+.cta-info a,
+
+.cta-info span{
+
+    color:var(--text2);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.cta-info a:hover{
+
+    color:white;
+
+}
+
+.cta-right{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.cta-right .btn-primary{
+
+    font-size:1.05rem;
+
+    padding:18px 42px;
+
+}
