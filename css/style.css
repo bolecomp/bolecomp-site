@@ -451,111 +451,6 @@ header{
 }
 
 
-/* ===========================
-   HERO MOBILE
-=========================== */
-
-@media (max-width:900px){
-
-    .hero{
-
-        min-height:100vh;
-
-        padding:120px 25px 70px;
-
-        align-items:center;
-
-    }
-
-    .hero-content{
-
-        max-width:100%;
-
-    }
-
-    /* Sakrij ikonice */
-
-    .hero-icons{
-
-        display:none;
-
-    }
-
-    /* Fotografija */
-
-    .hero-photo{
-
-        width:280px;
-
-        max-width:80vw;
-
-        transform:translateY(20px);
-
-        opacity:.85;
-
-    }
-
-    /* Naslov */
-
-    .hero-text{
-
-        transform:none;
-
-        margin-top:30px;
-
-    }
-
-    .hero h1{
-
-        font-size:3.2rem;
-
-        line-height:1.05;
-
-        margin-bottom:25px;
-
-    }
-
-    /* Podnaslov */
-
-    .hero p{
-
-        font-size:1.4rem;
-
-        line-height:1.6;
-
-        max-width:100%;
-
-        margin-bottom:40px;
-
-    }
-
-    /* Dugmad */
-
-    .buttons{
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:18px;
-
-    }
-
-    .btn-primary,
-    .btn-secondary{
-
-        width:280px;
-
-        text-align:center;
-
-        padding:18px 0;
-
-    }
-
-}
-
-
-
 
 /* ==========================
    ABOUT
@@ -1258,66 +1153,6 @@ header{
 
 }
 
-/* ==========================
-   MOBILE
-========================== */
-
-@media(max-width:900px){
-
-    .navbar{
-
-        padding:25px;
-
-    }
-
-    .menu-toggle{
-
-        display:block;
-
-        z-index:1001;
-
-    }
-
-    .btn-outline{
-
-        display:none;
-
-    }
-
-    .nav-links{
-
-        position:fixed;
-
-        top:0;
-        right:-100%;
-
-        width:260px;
-        height:100vh;
-        background:rgba(11,16,32,.96);
-        backdrop-filter:blur(18px);
-
-        background:#0b1020;
-
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-
-        gap:35px;
-
-        transition:.35s;
-
-        z-index:1000;
-
-    }
-
-    .nav-links.active{
-
-        right:0;
-
-    }
-
-}
 
 /* ==========================
         PROJECTS
@@ -2305,3 +2140,361 @@ header{
     gap: 22px;
     flex-wrap: wrap;
   }
+
+  /* ===========================
+        MOBILE HOME
+=========================== */
+
+@media (max-width:900px){
+
+    /* Header */
+
+    .navbar{
+
+        padding:26px 34px;
+
+    }
+
+    .logo img{
+
+        width:58px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        z-index:1001;
+
+        font-size:2.2rem;
+
+        color:white;
+
+        background:none;
+
+        border:none;
+
+        cursor:pointer;
+
+    }
+
+    .btn-outline{
+
+        display:none;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:0;
+
+        right:-100%;
+
+        width:260px;
+
+        height:100vh;
+
+        background:#0b1020;
+
+        backdrop-filter:blur(18px);
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:35px;
+
+        transition:.35s ease;
+
+        z-index:1000;
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
+
+    .nav-links a{
+
+        font-size:1.1rem;
+
+    }
+
+
+    /* Hero */
+
+    .hero{
+
+        min-height:100vh;
+
+        padding:115px 22px 58px;
+
+        align-items:center;
+
+        background-position:center;
+
+    }
+
+    .hero-content{
+
+        max-width:100%;
+
+    }
+
+    .hero-icons{
+
+        display:none;
+
+    }
+
+    .hero-photo{
+
+        width:250px;
+
+        max-width:72vw;
+
+        opacity:.86;
+
+        transform:translateY(12px);
+
+        filter:drop-shadow(0 0 22px rgba(59,130,246,.45));
+
+    }
+
+    .hero-text{
+
+        transform:none;
+
+        margin-top:22px;
+
+    }
+
+    .hero h1{
+
+        font-size:clamp(2.55rem, 11vw, 3.05rem);
+
+        line-height:1.05;
+
+        letter-spacing:-0.04em;
+
+        margin-bottom:22px;
+
+    }
+
+    .hero p{
+
+        font-size:1.1rem;
+
+        line-height:1.55;
+
+        max-width:340px;
+
+        margin:0 auto 34px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:16px;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:180px;
+
+        max-width:82vw;
+
+        text-align:center;
+
+        padding:15px 0;
+
+        font-size:1rem;
+
+    }
+
+}
+
+/* About mobile */
+
+.about{
+
+    padding:90px 24px 55px;
+
+}
+
+.about .container{
+
+    max-width:100%;
+
+}
+
+.about-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:35px;
+
+}
+
+.about-image{
+
+    order:1;
+
+}
+
+.about-text{
+
+    order:2;
+
+}
+
+.about-image img{
+
+    width:260px;
+
+    max-width:80vw;
+
+}
+
+.about h2{
+
+    font-size:clamp(2.1rem, 9vw, 2.8rem);
+
+    line-height:1.12;
+
+    margin-bottom:28px;
+
+}
+
+.about-text p{
+
+    font-size:1.08rem;
+
+    line-height:1.75;
+
+    text-align:left;
+
+    margin-bottom:26px;
+
+}
+
+.about-tags{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.about-tags span{
+
+    width:auto;
+
+    min-width:230px;
+
+    padding:14px 24px;
+
+    text-align:center;
+
+}
+
+/* Enterprise mobile */
+
+.enterprise{
+    padding:85px 24px 50px;
+}
+
+.enterprise-title{
+    font-size:clamp(2.3rem, 10vw, 3rem);
+    line-height:1.12;
+    margin-bottom:24px;
+}
+
+.enterprise-intro{
+    font-size:1.08rem;
+    line-height:1.75;
+    margin:0 auto 55px;
+    max-width:360px;
+}
+
+.enterprise-grid{
+    gap:28px;
+    max-width:100%;
+}
+
+.enterprise-card{
+    padding:36px 30px;
+    border-radius:24px;
+}
+
+.card-icon{
+    width:46px;
+    height:46px;
+    margin-bottom:24px;
+}
+
+.card-icon img{
+    width:38px;
+    height:38px;
+}
+
+.enterprise-card h3{
+    font-size:clamp(1.9rem, 8vw, 2.35rem);
+    line-height:1.18;
+    margin-bottom:18px;
+}
+
+.enterprise-card p{
+    font-size:1.02rem;
+    line-height:1.75;
+    margin-bottom:26px;
+}
+
+.enterprise-closing{
+    margin:95px auto 30px;
+    max-width:360px;
+}
+
+.enterprise-closing::before{
+    width:100px;
+    margin:0 auto 50px;
+}
+
+.enterprise-closing h2{
+    font-size:clamp(2.15rem, 9vw, 2.8rem);
+    line-height:1.15;
+    margin-bottom:24px;
+}
+
+.enterprise-closing p{
+    font-size:.98rem;
+    line-height:1.8;
+    letter-spacing:.06em;
+}
