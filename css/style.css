@@ -2176,6 +2176,10 @@ header{
 
 }
 
+.footer-logo-link{
+    display:inline-block;
+}
+
 .footer-brand h3{
 
     margin-top:0;
