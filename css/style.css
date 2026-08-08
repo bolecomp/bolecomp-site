@@ -199,19 +199,24 @@ header{
 
 }
 
+
 .hero-photo{
 
-    width:400px;
+    width:320px;
 
-    max-width:70vw;
+    max-width:52vw;
 
-    opacity:.60;
+    opacity:.50 !important;
 
-    filter:drop-shadow(0 0 25px rgba(59,130,246,.45));
+    filter:drop-shadow(0 0 14px rgba(59,130,246,.26)) !important;
 
-    transform:translateY(70px);
+    transform:translateY(150px);
 
     transition:.6s;
+
+    position:relative;
+
+    z-index:1;
 
 }
 
@@ -221,21 +226,23 @@ header{
 
     z-index:5;
 
-    transform:translateY(10px);
+    transform:translateY(75px);
 
 }
 
 .hero h1{
 
-    font-size: clamp(2.5rem,5.2vw,4.8rem);
+    font-size:clamp(3rem,4.7vw,4.7rem);
 
     font-weight:800;
 
-    margin-bottom:20px;
+    margin:0 auto 20px;
 
-    line-height:1.1;
+    line-height:1.05;
 
-    letter-spacing:-0.03em;
+    letter-spacing:-0.035em;
+
+    max-width:980px;
 
 }
 
@@ -245,7 +252,7 @@ header{
 
 }
 
-.hero h1 .business{
+.hero h1 .business-word{
 
     color:#6D28D9;
 
@@ -357,43 +364,41 @@ header{
 
 .architecture{
 
-    top:25px;
+    top:90px;
 
-    left:500px;
+    left:calc(50% - 80px);
 
 }
 
 .cloud{
 
-    top:110px;
+    top:130px;
 
-    left:420px;
+    left:calc(50% - 150px);
 
 }
-
-
 
 .servers{
 
     top:200px;
 
-    left:410px;
+    left:calc(50% - 170px);
 
 }
 
 .storage{
 
-    top:270px;
+    top:260px;
 
-    left:360px;
+    left:calc(50% - 230px);
 
 }
 
-.business{
+.business-icon{
 
-    top:340px;
+    top:330px;
 
-    left:310px;
+    left:calc(50% - 230px);
 
 }
 
@@ -402,41 +407,41 @@ header{
 
 .design{
 
-    top:20px;
+    top:85px;
 
-    right:490px;
+    right:calc(50% - 90px);
 
 }
 
 .code{
 
-    top:90px;
+    top:160px;
 
-    right:400px;
+    right:calc(50% - 130px);
 
 }
 
 .seo{
 
-    top:170px;
+    top:230px;
 
-    right:370px;
+    right:calc(50% - 160px);
 
 }
 
 .ai{
 
-    top:250px;
+    top:280px;
 
-    right:390px;
+    right:calc(50% - 200px);
 
 }
 
 .analytics{
 
-    top:340px;
+    top:330px;
 
-    right:350px;
+    right:calc(50% - 160px);
 
 }
 
@@ -1612,70 +1617,7 @@ header{
 
 }
 
-/* Enterprise */
 
-.architecture{
-
-    animation:floatSlow 6s ease-in-out infinite;
-
-}
-
-.cloud{
-
-    animation:floatMedium 7s ease-in-out infinite;
-
-}
-
-.servers{
-
-    animation:floatFast 5.5s ease-in-out infinite;
-
-}
-
-.storage{
-
-    animation:floatSlow 7.5s ease-in-out infinite;
-
-}
-
-.business{
-
-    animation:floatMedium 6.5s ease-in-out infinite;
-
-}
-
-
-/* Digital */
-
-.design{
-
-    animation:floatSlow 7s ease-in-out infinite;
-
-}
-
-.code{
-
-    animation:floatFast 5.5s ease-in-out infinite;
-
-}
-
-.seo{
-
-    animation:floatMedium 6.8s ease-in-out infinite;
-
-}
-
-.ai{
-
-    animation:floatSlow 8s ease-in-out infinite;
-
-}
-
-.analytics{
-
-    animation:floatFast 5s ease-in-out infinite;
-
-}
 
 /* ==========================
    CTA
@@ -2141,6 +2083,7 @@ header{
     flex-wrap: wrap;
   }
 
+
   /* ===========================
         MOBILE HOME
 =========================== */
@@ -2258,16 +2201,22 @@ header{
 
     .hero-photo{
 
-        width:250px;
-
-        max-width:72vw;
-
-        opacity:.86;
-
-        transform:translateY(12px);
-
-        filter:drop-shadow(0 0 22px rgba(59,130,246,.45));
-
+        width:320px;
+    
+        max-width:52vw;
+    
+        opacity:.50 !important;
+    
+        filter:drop-shadow(0 0 14px rgba(59,130,246,.26)) !important;
+    
+        transform:translateY(115px);
+    
+        transition:.6s;
+    
+        position:relative;
+    
+        z-index:1;
+    
     }
 
     .hero-text{
@@ -2918,4 +2867,38 @@ header{
     padding-top:28px;
     font-size:.85rem;
     line-height:1.6;
+}
+
+/* FINAL HERO PHOTO POSITION */
+
+.hero .hero-photo{
+
+    width:320px !important;
+
+    max-width:52vw !important;
+
+    opacity:.50 !important;
+
+    filter:drop-shadow(0 0 14px rgba(59,130,246,.26)) !important;
+
+    transform:translateY(115px) !important;
+
+}
+
+@media (max-width:900px){
+
+    .hero .hero-photo{
+
+        width:230px !important;
+
+        max-width:68vw !important;
+
+        opacity:.78 !important;
+
+        filter:drop-shadow(0 0 18px rgba(59,130,246,.35)) !important;
+
+        transform:translateY(60px) !important;
+
+    }
+
 }
