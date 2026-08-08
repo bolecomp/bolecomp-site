@@ -2498,3 +2498,424 @@ header{
     line-height:1.8;
     letter-spacing:.06em;
 }
+
+/* ===========================
+        DIGITAL MOBILE
+=========================== */
+
+.digital{
+    padding:85px 20px 70px;
+}
+
+.digital .section-label{
+    margin-bottom:24px;
+    transform:none;
+}
+
+.digital-title{
+    max-width:100%;
+    margin:0 auto 30px;
+    line-height:.95;
+}
+
+.digital-title .light{
+    font-size:clamp(3.2rem, 15vw, 4.2rem);
+    line-height:.95;
+}
+
+.digital-title .accent{
+    font-size:clamp(3.2rem, 15vw, 4.2rem);
+    line-height:.95;
+}
+
+.digital-intro{
+    font-size:1.08rem;
+    line-height:1.75;
+    margin:0 auto 55px;
+    max-width:360px;
+}
+
+.portfolio-wrapper{
+    margin:55px auto 0;
+    max-width:100%;
+}
+
+.portfolio-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:none;
+    grid-auto-rows:120px;
+    grid-auto-flow:dense;
+
+    gap:14px;
+
+    padding:22px;
+
+    border-radius:34px;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.10);
+}
+
+.card{
+    grid-column:auto!important;
+    grid-row:auto!important;
+
+    aspect-ratio:auto!important;
+
+    border-radius:22px;
+}
+
+/* Gornji mobile raspored */
+
+.branding{
+    grid-column:1 / 2!important;
+    grid-row:span 4!important;
+}
+
+.social{
+    grid-column:2 / 3!important;
+    grid-row:span 1!important;
+}
+
+.info{
+    grid-column:2 / 3!important;
+    grid-row:span 1!important;
+}
+
+.logo{
+    grid-column:2 / 3!important;
+    grid-row:span 1!important;
+}
+
+.future{
+    grid-column:2 / 3!important;
+    grid-row:span 1!important;
+}
+
+/* Ostale kartice */
+
+.banner,
+.tshirt,
+.merch,
+.web{
+    grid-column:auto!important;
+    grid-row:span 1!important;
+}
+
+/* Slike */
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.branding img{
+    object-position:center top;
+}
+
+/* ===========================
+        PROJECTS MOBILE
+=========================== */
+
+.projects{
+    padding:85px 20px 20px;
+}
+
+.projects .section-label{
+    margin-bottom:24px;
+}
+
+.projects-title{
+    font-size:clamp(3rem, 13vw, 4rem);
+    line-height:1.05;
+    margin:0 auto 28px;
+    max-width:360px;
+}
+
+.projects-title span{
+    margin-top:12px;
+}
+
+.projects-intro{
+    font-size:1.05rem;
+    line-height:1.75;
+    max-width:360px;
+    margin:0 auto 55px;
+}
+
+.projects-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+    margin-bottom:40px;
+}
+
+.project-card{
+    aspect-ratio:4 / 4.6;
+    border-radius:28px;
+}
+
+.project-overlay{
+    padding:34px 30px;
+}
+
+.project-category{
+    font-size:.72rem;
+    padding:7px 14px;
+    margin-bottom:18px;
+}
+
+.project-overlay h3{
+    font-size:2rem;
+    line-height:1.15;
+    margin-bottom:12px;
+}
+
+.project-overlay p{
+    font-size:.98rem;
+    line-height:1.65;
+}
+
+.project-tags{
+    gap:10px;
+    margin-top:24px;
+}
+
+.project-tags span{
+    font-size:.75rem;
+    padding:7px 13px;
+}
+
+.project-arrow{
+    opacity:1;
+    transform:none;
+    right:24px;
+    bottom:24px;
+    font-size:1.4rem;
+}
+
+.projects-button{
+    margin-top:0;
+}
+
+.projects-button .btn-primary{
+    width:260px;
+    padding:16px 0;
+    font-size:1rem;
+    text-align:center;
+}
+
+/* ===========================
+   FINAL MOBILE PROJECTS / CTA FIX
+=========================== */
+
+@media (max-width:900px){
+
+    .projects{
+        padding-bottom:10px !important;
+    }
+
+    .projects-grid{
+        margin-bottom:35px !important;
+    }
+
+    .projects-button{
+        margin-bottom:35px !important;
+    }
+
+    .projects-button .btn-primary{
+        width:270px !important;
+        max-width:85vw !important;
+        padding:17px 0 !important;
+        font-size:1.05rem !important;
+        display:inline-flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+    }
+
+    .cta{
+        padding-top:35px !important;
+    }
+
+}
+
+/* ===========================
+        CTA MOBILE
+=========================== */
+
+.cta{
+    padding:35px 20px 55px;
+}
+
+.cta .container{
+    max-width:100%;
+}
+
+.cta-card{
+    padding:55px 34px;
+    border-radius:28px;
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:42px;
+}
+
+.cta-card::before{
+    width:260px;
+    height:260px;
+    top:-90px;
+    right:-90px;
+}
+
+.cta-left{
+    width:100%;
+}
+
+.cta h2{
+    font-size:clamp(2.2rem, 10vw, 3rem);
+    line-height:1.12;
+    margin:18px 0;
+}
+
+.cta-subtitle{
+    font-size:1.1rem;
+    line-height:1.55;
+    margin-bottom:24px;
+}
+
+.cta-text{
+    font-size:1.02rem;
+    line-height:1.75;
+    max-width:100%;
+    margin-bottom:0;
+}
+
+.cta-right{
+    width:100%;
+    align-items:flex-start;
+}
+
+.cta-available{
+    margin-bottom:30px;
+}
+
+.cta-small-title{
+    font-size:.78rem;
+    letter-spacing:.18em;
+    margin-bottom:18px;
+}
+
+.cta-available li{
+    font-size:1rem;
+    margin-bottom:12px;
+}
+
+.cta-right .btn-primary{
+    width:220px;
+    max-width:100%;
+    padding:15px 0;
+    margin-bottom:34px;
+    font-size:1rem;
+}
+
+.cta-contact{
+    gap:16px;
+}
+
+.cta-contact a,
+.cta-contact div,
+.cta-contact span{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:1rem;
+}
+
+.cta-contact i{
+    width:20px;
+    flex-shrink:0;
+}
+
+/* ===========================
+        FOOTER MOBILE
+=========================== */
+
+.footer{
+    padding:65px 24px 32px;
+}
+
+.footer-quote{
+    font-size:1.45rem;
+    line-height:1.35;
+    max-width:330px;
+    margin:0 auto 30px;
+}
+
+.footer-divider{
+    margin:0 auto 55px;
+}
+
+.footer-main{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:45px;
+    margin-bottom:55px;
+    text-align:center;
+}
+
+.footer-brand{
+    width:100%;
+    text-align:center;
+}
+
+.footer-logo-link{
+    display:inline-block;
+}
+
+.footer-logo{
+    width:82px;
+    margin-bottom:16px;
+}
+
+.footer-brand h3{
+    font-size:1.4rem;
+    margin:0;
+}
+
+.footer-links{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:42px;
+}
+
+.footer-links h4{
+    margin-bottom:18px;
+    font-size:.82rem;
+    letter-spacing:.22em;
+}
+
+.footer-links a,
+.footer-links span{
+    margin-bottom:13px;
+    font-size:1rem;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:12px;
+    padding-top:28px;
+    font-size:.85rem;
+    line-height:1.6;
+}
