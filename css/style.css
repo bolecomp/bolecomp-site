@@ -2937,7 +2937,12 @@ header{
 
 }
 
+
 @media (max-width:900px){
+
+    .hero{
+        padding:100px 22px 65px !important;
+    }
 
     .hero .hero-photo{
         width:230px !important;
