@@ -2325,8 +2325,6 @@ header{
 
     }
 
-}
-
 /* About mobile */
 
 .about{
@@ -2713,34 +2711,30 @@ header{
    FINAL MOBILE PROJECTS / CTA FIX
 =========================== */
 
-@media (max-width:900px){
+.projects{
+    padding-bottom:10px !important;
+}
 
-    .projects{
-        padding-bottom:10px !important;
-    }
+.projects-grid{
+    margin-bottom:35px !important;
+}
 
-    .projects-grid{
-        margin-bottom:35px !important;
-    }
+.projects-button{
+    margin-bottom:35px !important;
+}
 
-    .projects-button{
-        margin-bottom:35px !important;
-    }
+.projects-button .btn-primary{
+    width:270px !important;
+    max-width:85vw !important;
+    padding:17px 0 !important;
+    font-size:1.05rem !important;
+    display:inline-flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+}
 
-    .projects-button .btn-primary{
-        width:270px !important;
-        max-width:85vw !important;
-        padding:17px 0 !important;
-        font-size:1.05rem !important;
-        display:inline-flex !important;
-        justify-content:center !important;
-        align-items:center !important;
-    }
-
-    .cta{
-        padding-top:35px !important;
-    }
-
+.cta{
+    padding-top:35px !important;
 }
 
 /* ===========================
@@ -2916,6 +2910,8 @@ header{
     padding-top:28px;
     font-size:.85rem;
     line-height:1.6;
+}
+
 }
 
 /* FINAL HERO PHOTO POSITION DESKTOP*/
