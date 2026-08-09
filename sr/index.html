@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
   <head>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>BoleComp | Connecting Technology & Business</title>
+    <title>BoleComp | Povezivanje tehnologije i biznisa</title>
     <meta
       name="description"
-      content="BoleComp is a personal portfolio focused on enterprise architecture, cloud infrastructure, business development, web design, SEO and digital experiences."
+      content="BoleComp je lični portfolio posvećen enterprise arhitekturi, cloud infrastrukturi, poslovnom razvoju, web dizajnu, SEO optimizaciji i digitalnim iskustvima."
     />
-    <link rel="canonical" href="https://bolecomp.com/" />
+    <link rel="canonical" href="https://bolecomp.com/sr/" />
+
+    <link rel="alternate" hreflang="en" href="https://bolecomp.com/" />
+    <link rel="alternate" hreflang="sr" href="https://bolecomp.com/sr/" />
+    <link rel="alternate" hreflang="x-default" href="https://bolecomp.com/" />
 
     <meta name="robots" content="index, follow" />
 
@@ -20,16 +24,16 @@
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://bolecomp.com/#website",
-              "url": "https://bolecomp.com/",
+              "@id": "https://bolecomp.com/sr/#website",
+              "url": "https://bolecomp.com/sr/",
               "name": "BoleComp",
-              "description": "Personal portfolio focused on enterprise architecture, cloud infrastructure, business development, web design, SEO and digital experiences."
+              "description": "Lični portfolio posvećen enterprise arhitekturi, cloud infrastrukturi, poslovnom razvoju, web dizajnu, SEO optimizaciji i digitalnim iskustvima."
             },
             {
               "@type": "Person",
-              "@id": "https://bolecomp.com/#person",
+              "@id": "https://bolecomp.com/sr/#person",
               "name": "Bosko Milicevic",
-              "url": "https://bolecomp.com/",
+              "url": "https://bolecomp.com/sr/",
               "sameAs": [
                 "https://linkedin.com/in/bosko-milicevic/"
               ],
@@ -51,13 +55,13 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="BoleComp | Connecting Technology & Business"
+      content="BoleComp | Povezivanje tehnologije i biznisa"
     />
     <meta
       property="og:description"
-      content="Enterprise architecture, cloud infrastructure, business development, web design, SEO and digital experiences."
+      content="Enterprise arhitektura, cloud infrastruktura, poslovni razvoj, web dizajn, SEO optimizacija i digitalna iskustva."
     />
-    <meta property="og:url" content="https://bolecomp.com/" />
+    <meta property="og:url" content="https://bolecomp.com/sr/" />
     <meta property="og:site_name" content="BoleComp" />
     <meta
       property="og:image"
@@ -68,19 +72,19 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="BoleComp | Connecting Technology & Business"
+      content="BoleComp | Povezivanje tehnologije i biznisa"
     />
     <meta
       name="twitter:description"
-      content="Enterprise architecture, cloud infrastructure, business development, web design, SEO and digital experiences."
+      content="Enterprise arhitektura, cloud infrastruktura, poslovni razvoj, web dizajn, SEO optimizacija i digitalna iskustva."
     />
     <meta
       name="twitter:image"
       content="https://bolecomp.com/images/og-image.jpg"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
@@ -97,27 +101,28 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <a href="index.html" class="logo">
-            <img src="images/logo-bc.svg" alt="BoleComp Logo" />
+          <a href="/sr/" class="logo">
+            <img src="../images/logo-bc.svg" alt="BoleComp Logo" />
           </a>
         </div>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Otvori meni">
           ☰
         </button>
 
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="enterprise.html">Enterprise</a></li>
-          <li><a href="digital.html">Digital</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/sr/" class="active">Početna</a></li>
+          <li><a href="#about">O meni</a></li>
+          <li><a href="#enterprise">Enterprise</a></li>
+          <li><a href="#digital">Digital</a></li>
+          <li><a href="#projects">Projekti</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
-
-        <a href="/sr/" class="lang-switch">SR</a>
         
-        <a href="contact.html" class="btn-outline">Let's Talk</a>
+        <a href="/" class="lang-switch">EN</a>
+        
+        <a href="#contact" class="btn-outline">Kontakt</a>
+
       </nav>
     </header>
 
@@ -125,34 +130,34 @@
 
     <section class="hero">
       <div class="hero-content">
-        <img src="images/bosko.png" alt="Bosko Milicevic" class="hero-photo" />
+        <img src="../images/bosko.png" alt="Bosko Milicevic" class="hero-photo" />
 
         <div class="hero-icons">
           <!-- Enterprise -->
 
           <img
-            src="images/icons/enterprise/architecture.svg"
+            src="../images/icons/enterprise/architecture.svg"
             class="hero-icon architecture"
             alt=""
           />
           <img
-            src="images/icons/enterprise/cloud.svg"
+            src="../images/icons/enterprise/cloud.svg"
             class="hero-icon cloud"
             alt=""
           />
           <img
-            src="images/icons/enterprise/servers.svg"
+            src="../images/icons/enterprise/servers.svg"
             class="hero-icon servers"
             alt=""
           />
           <img
-            src="images/icons/enterprise/storage.svg"
+            src="../images/icons/enterprise/storage.svg"
             class="hero-icon storage"
             alt=""
           />
 
           <img
-            src="images/icons/enterprise/business-development.svg"
+            src="../images/icons/enterprise/business-development.svg"
             class="hero-icon business-icon"
             alt=""
           />
@@ -160,24 +165,24 @@
           <!-- Digital -->
 
           <img
-            src="images/icons/digital/design.svg"
+            src="../images/icons/digital/design.svg"
             class="hero-icon design"
             alt=""
           />
           <img
-            src="images/icons/digital/code.svg"
+            src="../images/icons/digital/code.svg"
             class="hero-icon code"
             alt=""
           />
           <img
-            src="images/icons/digital/seo.svg"
+            src="../images/icons/digital/seo.svg"
             class="hero-icon seo"
             alt=""
           />
-          <img src="images/icons/digital/ai.svg" class="hero-icon ai" alt="" />
+          <img src="../images/icons/digital/ai.svg" class="hero-icon ai" alt="" />
 
           <img
-            src="images/icons/digital/analytics.svg"
+            src="../images/icons/digital/analytics.svg"
             class="hero-icon analytics"
             alt=""
           />
@@ -185,18 +190,18 @@
 
         <div class="hero-text">
           <h1>
-            Connecting <span class="tech">Technology</span> &
-            <span class="business-word">Business</span>
+            Povezujem <span class="tech">tehnologiju</span> i
+            <span class="business-word">biznis</span>
           </h1>
 
           <p>
-            Enterprise Architecture • Cloud • Business Development • Web
-            Experience
+            Enterprise arhitektura • Cloud • Poslovni razvoj • Web
+            iskustvo
           </p>
 
           <div class="buttons">
-            <a href="projects.html" class="btn-primary">Explore My Work</a>
-            <a href="about.html" class="btn-secondary">Learn More</a>
+            <a href="#projects" class="btn-primary">Pogledaj projekte</a>
+            <a href="#about" class="btn-secondary">Saznaj više</a>
           </div>
         </div>
       </div>
@@ -206,39 +211,39 @@
 
     <section id="about" class="about">
       <div class="container">
-        <p class="section-label">ABOUT</p>
+        <p class="section-label">O MENI</p>
 
         <h2 class="about-title">
-          More than 20 years of transforming
-          <span class="text-blue">technology</span>
-          into
-          <span class="text-purple">business value.</span>
+          Više od 20 godina pretvaranja
+          <span class="text-blue">tehnologije</span>
+          u
+          <span class="text-purple">poslovnu vrednost.</span>
         </h2>
 
         <div class="about-photo">
-            <img src="images/about.png" alt="Bosko Milicevic" />
+            <img src="../images/about.png" alt="Bosko Milicevic" />
           </div>
 
         <div class="about-text">
           <p>
-            I help organizations bridge the gap between technology, strategy and
-            business. My work combines enterprise architecture, cloud
-            infrastructure and business development with a practical,
-            results-driven approach.
+            Pomažem organizacijama da povežu tehnologiju, strategiju i
+            biznis. Moj rad objedinjuje enterprise arhitekturu, cloud
+            infrastrukturu i poslovni razvoj kroz praktičan pristup
+            usmeren na konkretne rezultate.
           </p>
 
           <p>
-            Today, I apply the same strategic thinking to digital
-            experiences—combining modern web design, SEO, branding and
-            AI-assisted solutions to help businesses build a stronger digital
-            presence.
+            Danas isti strateški način razmišljanja primenjujem i na digitalna
+            iskustva — kroz moderan web dizajn, SEO, branding i
+            AI-assisted rešenja koja pomažu biznisima da izgrade snažnije
+            digitalno prisustvo.
           </p>
 
           <div class="about-tags">
-            <span>Enterprise Architecture</span>
-            <span>Business Strategy</span>
-            <span>Cloud & Infrastructure</span>
-            <span>Digital Innovation</span>
+            <span>Enterprise arhitektura</span>
+            <span>Poslovna strategija</span>
+            <span>Cloud i infrastruktura</span>
+            <span>Digitalne inovacije</span>
           </div>
         </div>
       </div>
@@ -255,60 +260,60 @@
         <p class="section-label">ENTERPRISE</p>
 
         <h2 class="enterprise-title">
-          Enterprise Solutions
-          <span>for Modern Business</span>
+          Enterprise rešenja
+          <span>za moderno poslovanje</span>
         </h2>
 
         <p class="enterprise-intro">
-          From enterprise architecture and private cloud to business development
-          and technology strategy, I design scalable solutions that help
-          organizations grow with confidence.
+          Od enterprise arhitekture i privatnog cloud-a do poslovnog razvoja
+          i tehnološke strategije, dizajniram skalabilna rešenja koja
+          organizacijama pomažu da rastu sigurnije.
         </p>
 
         <div class="enterprise-grid">
           <article class="enterprise-card">
             <div class="card-icon">
-              <img src="images/icons/enterprise.svg" alt="enterprise icon" />
+              <img src="../images/icons/enterprise.svg" alt="enterprise icon" />
             </div>
 
-            <h3>Enterprise Architecture</h3>
+            <h3>Enterprise arhitektura</h3>
 
             <p>
-              Aligning technology, business strategy and enterprise architecture
-              to create scalable and future-ready ICT platforms.
+              Usklađivanje tehnologije, poslovne strategije i enterprise arhitekture
+              radi izgradnje skalabilnih ICT platformi spremnih za budućnost.
             </p>
 
-            <a href="enterprise.html">View Details →</a>
+            <a href="#enterprise">Detalji →</a>
           </article>
 
           <article class="enterprise-card">
             <div class="card-icon">
-              <img src="images/icons/cloud.svg" alt="cloud icon" />
+              <img src="../images/icons/cloud.svg" alt="cloud icon" />
             </div>
 
-            <h3>Cloud & Infrastructure</h3>
+            <h3>Cloud i infrastruktura</h3>
 
             <p>
-              Designing private cloud, virtualization, networking, storage and
-              modern data center solutions for enterprise environments.
+              Dizajn privatnog cloud-a, virtualizacije, mreže, storage-a i
+              modernih data center rešenja za enterprise okruženja.
             </p>
 
-            <a href="enterprise.html">View Details →</a>
+            <a href="#enterprise">Detalji →</a>
           </article>
 
           <article class="enterprise-card">
             <div class="card-icon">
-              <img src="images/icons/business.svg" alt="business icon" />
+              <img src="../images/icons/business.svg" alt="business icon" />
             </div>
 
-            <h3>Business Development</h3>
+            <h3>Poslovni razvoj</h3>
 
             <p>
-              Transforming technical capabilities into successful ICT services,
-              go-to-market strategies and customer solutions.
+              Pretvaranje tehničkih kapaciteta u uspešne ICT servise,
+              go-to-market strategije i korisnička rešenja.
             </p>
 
-            <a href="enterprise.html">View Details →</a>
+            <a href="#enterprise">Detalji →</a>
           </article>
         </div>
 
@@ -318,13 +323,13 @@
 
         <div class="enterprise-closing">
           <h2>
-            Designing technology that creates
-            <span>business value.</span>
+            Dizajniram tehnologiju koja stvara
+            <span>poslovnu vrednost.</span>
           </h2>
 
           <p>
-            Enterprise Architecture · Cloud Infrastructure · Business
-            Development
+            Enterprise arhitektura · Cloud infrastruktura · Poslovni
+            razvoj
           </p>
         </div>
       </div>
@@ -336,18 +341,18 @@
 
     <section id="digital" class="digital">
       <div class="container">
-        <p class="section-label">CREATIVE PORTFOLIO</p>
+        <p class="section-label">KREATIVNI PORTFOLIO</p>
 
         <h2 class="digital-title">
-          <span class="light"> Creative thinking. </span>
+          <span class="light"> Kreativno razmišljanje. </span>
 
-          <span class="accent"> Digital execution. </span>
+          <span class="accent"> Digitalna realizacija. </span>
         </h2>
 
         <p class="digital-intro">
-          From branding and logo design to websites, social media, infographics,
-          merchandise and digital campaigns. Creativity has always been an
-          essential part of my professional journey.
+          Od brandinga i dizajna logotipa do web sajtova, društvenih mreža,
+          infografika, merchandise dizajna i digitalnih kampanja. Kreativnost
+          je oduvek bila važan deo mog profesionalnog puta.
         </p>
 
         <div class="portfolio-wrapper">
@@ -355,48 +360,48 @@
             <div class="portfolio-grid">
 
                 <div class="card branding">
-                  <img src="images/branding.jpg" alt="Branding design" />
+                  <img src="../images/branding.jpg" alt="Branding design" />
                   <span>Branding</span>
                 </div>
               
                 <div class="card social">
-                  <img src="images/social-media.jpg" alt="Social media design" />
-                  <span>Social Media</span>
+                  <img src="../images/social-media.jpg" alt="Social media design" />
+                  <span>Društvene mreže</span>
                 </div>
               
                 <div class="card info">
-                  <img src="images/infographics.jpg" alt="Infographics design" />
-                  <span>Infographics</span>
+                  <img src="../images/infographics.jpg" alt="Infographics design" />
+                  <span>Infografike</span>
                 </div>
               
                 <div class="card logo">
-                  <img src="images/logo-design.jpg" alt="Logo design" />
-                  <span>Logo Design</span>
+                  <img src="../images/logo-design.jpg" alt="Logo design" />
+                  <span>Dizajn logotipa</span>
                 </div>
               
                 <div class="card freelancer">
-                    <img src="images/freelancer.jpg" alt="Freelancer.com winning designs" />
+                    <img src="../images/freelancer.jpg" alt="Freelancer.com winning designs" />
                   <span>Freelancer</span>
                 </div>
               
                 <div class="card banner">
-                  <img src="images/banner.jpg" alt="Banner design" />
-                  <span>Banner Design</span>
+                  <img src="../images/banner.jpg" alt="Banner design" />
+                  <span>Banner dizajn</span>
                 </div>
               
                 <div class="card tshirt">
-                  <img src="images/tshirt.jpg" alt="T-shirt design" />
-                  <span>T-shirt Design</span>
+                  <img src="../images/tshirt.jpg" alt="T-shirt design" />
+                  <span>T-shirt dizajn</span>
                 </div>
               
                 <div class="card web">
-                  <img src="images/web.jpg" alt="Web design" />
-                  <span>Web Design</span>
+                  <img src="../images/web.jpg" alt="Web design" />
+                  <span>Web dizajn</span>
                 </div>
               
                 <div class="card merch">
-                  <img src="images/merch.jpg" alt="Merch design" />
-                  <span>Merch Design</span>
+                  <img src="../images/merch.jpg" alt="Merch design" />
+                  <span>Merch dizajn</span>
                 </div>
               
               </div>
@@ -407,41 +412,41 @@
     </section>
 
     <!-- ==========================
-     SELECTED PROJECTS
+     ODABRANI PROJEKTI
 ========================== -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
-        <span class="section-label"> SELECTED PROJECTS </span>
+        <span class="section-label"> ODABRANI PROJEKTI </span>
 
         <h2 class="projects-title">
-          Projects that connect
-          <span>technology & business.</span>
+          Projekti koji povezuju
+          <span>tehnologiju i biznis.</span>
         </h2>
 
         <p class="projects-intro">
-          A selection of enterprise and digital projects where technology,
-          architecture and business strategy came together to deliver measurable
-          value.
+          Izbor enterprise i digitalnih projekata u kojima su se tehnologija,
+          arhitektura i poslovna strategija spojile kako bi donele merljivu
+          vrednost.
         </p>
 
         <div class="projects-grid">
           <!-- Project 1 -->
 
-          <a href="projects.html" class="project-card">
-            <img src="images/projects/a1.png" alt="A1 Serbia" />
+          <a href="#projects" class="project-card">
+            <img src="../images/projects/a1.png" alt="A1 Serbia" />
 
             <div class="project-overlay">
               <h3>A1 Serbia</h3>
 
-              <p>Launching VMware Cloud Director IaaS</p>
+              <p>Pokretanje VMware Cloud Director IaaS platforme</p>
 
               <div class="project-tags">
                 <span>VMware</span>
 
                 <span>Cloud</span>
 
-                <span>Architecture</span>
+                <span>Arhitektura</span>
               </div>
 
               <div class="project-arrow">↗</div>
@@ -450,20 +455,20 @@
 
           <!-- Project 2 -->
 
-          <a href="projects.html" class="project-card">
-            <img src="images/projects/fazi.png" alt="Fazi" />
+          <a href="#projects" class="project-card">
+            <img src="../images/projects/fazi.png" alt="Fazi" />
 
             <div class="project-overlay">
               <h3>Fazi</h3>
 
-              <p>Enterprise Infrastructure Modernization</p>
+              <p>Modernizacija enterprise infrastrukture</p>
 
               <div class="project-tags">
                 <span>HPE Servers</span>
 
                 <span>Storage</span>
 
-                <span>Security</span>
+                <span>Bezbednost</span>
               </div>
 
               <div class="project-arrow">↗</div>
@@ -472,16 +477,16 @@
 
           <!-- Project 3 -->
 
-          <a href="projects.html" class="project-card">
-            <img src="images/projects/ict.png" alt="ICT Networks" />
+          <a href="#projects" class="project-card">
+            <img src="../images/projects/ict.png" alt="ICT Networks" />
 
             <div class="project-overlay">
               <h3>ICT Networks</h3>
 
-              <p>Website Redesign & SEO</p>
+              <p>Redizajn web sajta i SEO</p>
 
               <div class="project-tags">
-                <span>Web Design</span>
+                <span>Web dizajn</span>
 
                 <span>SEO</span>
 
@@ -494,7 +499,7 @@
         </div>
 
         <div class="projects-button">
-          <a href="projects.html" class="btn-primary"> Explore All Projects </a>
+          <a href="#projects" class="btn-primary"> Pogledaj sve projekte </a>
         </div>
       </div>
     </section>
@@ -507,34 +512,34 @@
       <div class="container">
         <div class="cta-card">
           <div class="cta-left">
-            <span class="section-label"> LET'S TALK </span>
+            <span class="section-label"> KONTAKT </span>
 
-            <h2>Let's Build Something Together</h2>
+            <h2>Hajde da napravimo nešto zajedno</h2>
 
             <p class="cta-subtitle">
-              From enterprise architecture to digital experiences.
+              Od enterprise arhitekture do digitalnih iskustava.
             </p>
 
             <p class="cta-text">
-              Whether you're shaping enterprise architecture, defining a cloud
-              strategy, driving business development, or creating a modern
-              digital presence, let's discuss your goals and see what's
-              possible.
+              Bilo da razvijate enterprise arhitekturu, definišete cloud
+              strategiju, gradite poslovni razvoj ili moderno
+              digitalno prisustvo, možemo razgovarati o vašim ciljevima
+              i mogućnostima.
             </p>
           </div>
 
           <div class="cta-right">
             <div class="cta-available">
-              <span class="cta-small-title">Available for</span>
+              <span class="cta-small-title">Dostupan za</span>
 
               <ul>
-                <li>Enterprise Consulting</li>
-                <li>Architecture Reviews</li>
-                <li>Digital Projects</li>
+                <li>Enterprise konsalting</li>
+                <li>Pregled arhitekture</li>
+                <li>Digitalne projekte</li>
               </ul>
             </div>
 
-            <a href="contact.html" class="btn-primary"> Let's Talk </a>
+            <a href="#contact" class="btn-primary"> Let's Talk </a>
 
             <div class="cta-divider"></div>
 
@@ -554,7 +559,7 @@
 
               <div>
                 <i class="fa-solid fa-globe"></i>
-                <span>Serbia</span>
+                <span>Srbija</span>
               </div>
             </div>
           </div>
@@ -568,15 +573,15 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="footer-quote">Every project starts with a conversation.</p>
+        <p class="footer-quote">Svaki projekat počinje razgovorom.</p>
 
         <div class="footer-divider"></div>
 
         <div class="footer-main">
           <div class="footer-brand">
-            <a href="index.html" class="footer-logo-link">
+            <a href="/sr/" class="footer-logo-link">
               <img
-                src="images/logo-bc.svg"
+                src="../images/logo-bc.svg"
                 alt="BoleComp Logo"
                 class="footer-logo"
               />
@@ -587,18 +592,18 @@
 
           <div class="footer-links">
             <div>
-              <h4>Explore</h4>
+              <h4>Istraži</h4>
 
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="enterprise.html">Enterprise</a>
-              <a href="digital.html">Digital</a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
+              <a href="/sr/">Početna</a>
+              <a href="#about">O meni</a>
+              <a href="#enterprise">Enterprise</a>
+              <a href="#digital">Digital</a>
+              <a href="#projects">Projekti</a>
+              <a href="#contact">Kontakt</a>
             </div>
 
             <div>
-              <h4>Connect</h4>
+              <h4>Povezivanje</h4>
 
               <a href="mailto:info@bolecomp.com">info@bolecomp.com</a>
 
@@ -609,19 +614,19 @@
                 LinkedIn
               </a>
 
-              <span>Belgrade, Serbia</span>
+              <span>Beograd, Srbija</span>
             </div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <span>© 2026 BoleComp. All rights reserved.</span>
+          <span>© 2026 BoleComp. Sva prava zadržana.</span>
 
-          <span> Crafted with passion for Enterprise & Digital. </span>
+          <span> Kreirano sa strašću za Enterprise i Digital. </span>
         </div>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

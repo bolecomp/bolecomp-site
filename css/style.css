@@ -1181,6 +1181,24 @@ header{
     padding-bottom:160px !important;
 }
 
+.lang-switch{
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+    font-size:.9rem;
+    letter-spacing:.08em;
+    padding:10px 14px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.22);
+    transition:.3s;
+}
+
+.lang-switch:hover{
+    color:#fff;
+    border-color:rgba(63,140,255,.65);
+    background:rgba(63,140,255,.12);
+}
+
 /* ==========================
       RESPONSIVE
 ========================== */
@@ -2145,6 +2163,10 @@ header{
 @media (max-width:900px){
 
     /* Header */
+
+    .lang-switch{
+        display:none;
+    }
 
     .navbar{
 
