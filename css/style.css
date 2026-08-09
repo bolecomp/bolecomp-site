@@ -534,19 +534,21 @@ header{
 }
 
 .about-photo{
-
-    margin-bottom:25px;
-
+    margin:42px 0 45px;
 }
 
 .about-photo img{
-
-    width:260px;
+    width:220px;
     max-width:100%;
     height:auto;
     display:block;
     margin:0 auto;
 
+    filter:contrast(1.03) saturate(1.02);
+    border-radius:16px;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.12),
+        0 0 28px rgba(63,140,255,.12);
 }
 
 .about-title{
@@ -1133,7 +1135,7 @@ header{
 
 }
 
-.future{
+.freelancer{
 
     grid-column:8 / 13;
 
@@ -1173,6 +1175,11 @@ header{
 
 }
 
+/* FINAL HERO DESKTOP SPACING */
+
+.hero{
+    padding-bottom:160px !important;
+}
 
 /* ==========================
       RESPONSIVE
@@ -2588,7 +2595,7 @@ header{
     grid-row:span 1!important;
 }
 
-.future{
+.freelancer{
     grid-column:2 / 3!important;
     grid-row:span 1!important;
 }
