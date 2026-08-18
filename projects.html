@@ -2,27 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Projects | BoleComp</title>
 
-    <meta
-      name="description"
-      content="BoleComp - Connecting Technology & Business."
-    />
-
     <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -32,13 +18,17 @@
   </head>
 
   <body>
-    <!-- HEADER -->
+    <!-- =========================
+     HEADER
+========================= -->
 
     <header>
       <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="images/logo-bc.svg" alt="BoleComp Logo" />
-        </a>
+        <div class="logo">
+          <a href="index.html" class="logo">
+            <img src="images/logo-bc.svg" alt="BoleComp Logo" />
+          </a>
+        </div>
 
         <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
           ☰
@@ -53,87 +43,433 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
 
+        <a href="/sr/" class="lang-switch">SR</a>
+
         <a href="contact.html" class="btn-outline">Let's Talk</a>
       </nav>
     </header>
 
-    <!-- PAGE HERO -->
+    <!-- =========================
+     PROJECTS HERO
+========================= -->
 
-    <section class="page-hero">
+    <section class="projects-page-hero">
       <div class="container">
-        <span class="section-label">PROJECTS</span>
+        <span class="section-label"> SELECTED PROJECTS </span>
 
-        <h1>Currently in Development</h1>
+        <h1>
+          Technology shaped around
+          <span>real business challenges.</span>
+        </h1>
 
         <p>
-          I'm currently preparing detailed content for this section. Here you'll
-          find a deeper overview of my experience, projects and approach to
-          connecting technology with business.
+          A selection of enterprise architecture, cloud, infrastructure and
+          digital projects delivered across different industries and technology
+          environments.
         </p>
+      </div>
+    </section>
 
-        <div class="page-buttons">
-          <a href="index.html" class="btn-secondary">← Back to Home</a>
+    <!-- =========================
+     ENTERPRISE PROJECTS
+========================= -->
 
-          <a href="contact.html" class="btn-primary">Let's Talk</a>
+    <section class="projects-showcase">
+      <div class="container">
+        <div class="projects-section-heading">
+          <span class="section-label"> ENTERPRISE & CLOUD </span>
+
+          <h2>
+            Architecture.
+            <span>Infrastructure. Transformation.</span>
+          </h2>
+        </div>
+
+        <!-- =========================
+             PROJECT 01 - DDOR
+        ========================= -->
+
+        <article class="project-feature" data-category="enterprise cloud">
+          <div class="project-feature-image">
+            <img
+              src="images/projects/ddor.png"
+              alt="DDOR Novi Sad Data Center modernization"
+            />
+
+            <span class="project-number"> 01 </span>
+          </div>
+
+          <div class="project-feature-content">
+            <span class="project-type"> DATA CENTER / ARCHITECTURE </span>
+
+            <h2>DDOR Novi Sad</h2>
+
+            <h3>Data Center Modernization & Kubernetes Platform</h3>
+
+            <p>
+              Architecture and technical leadership for a new enterprise data
+              center platform combining modern infrastructure, virtualization
+              and container technologies.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>ROLE</span>
+                <strong> Solution Architect / Technical Lead </strong>
+              </div>
+
+              <div>
+                <span>FOCUS</span>
+                <strong> Data Center Modernization </strong>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>Data Center</span>
+              <span>VMware Tanzu</span>
+              <span>Architecture</span>
+            </div>
+
+            <a href="project-ddor.html" class="project-view">
+              View Project
+              <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- =========================
+             PROJECT 02 - VCF PoC
+        ========================= -->
+
+        <article
+          class="project-feature reverse"
+          id="vmware-vcf-poc"
+          data-category="enterprise cloud"
+        >
+          <div class="project-feature-image">
+            <img
+              src="images/projects/vcf-poc2.png"
+              alt="VMware Cloud Foundation Proof of Concept"
+            />
+
+            <span class="project-number"> 02 </span>
+          </div>
+
+          <div class="project-feature-content">
+            <span class="project-type"> CONSULTING / HYBRID CLOUD </span>
+
+            <h2>VMware VCF PoC</h2>
+
+            <h3>Hybrid Cloud Architecture & Consulting</h3>
+
+            <p>
+              VMware Cloud Foundation consulting and proof-of-concept workshops
+              designed to validate modern private and hybrid cloud architectures
+              for enterprise customers.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>ROLE</span>
+                <strong> Presales Consultant / Architect </strong>
+              </div>
+
+              <div>
+                <span>ENGAGEMENT</span>
+                <strong> VMware Partner PoC Program </strong>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>VMware VCF</span>
+              <span>Hybrid Cloud</span>
+              <span>Consulting</span>
+            </div>
+
+            <a href="project-vcf.html" class="project-view">
+              View Project
+              <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- =========================
+             PROJECT 03 - A1
+        ========================= -->
+
+        <article class="project-feature" data-category="enterprise cloud">
+          <div class="project-feature-image">
+            <img
+              src="images/projects/a1.png"
+              alt="A1 Serbia VMware Cloud Director IaaS"
+            />
+
+            <span class="project-number"> 03 </span>
+          </div>
+
+          <div class="project-feature-content">
+            <span class="project-type"> CLOUD / BUSINESS DEVELOPMENT </span>
+
+            <h2>A1 Serbia</h2>
+
+            <h3>Launching VMware Cloud Director IaaS</h3>
+
+            <p>
+              Development of a new enterprise IaaS service, connecting cloud
+              architecture, service design, operational model and business
+              requirements from concept to production.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>ROLE</span>
+                <strong> Lead Solutions Architect </strong>
+              </div>
+
+              <div>
+                <span>FOCUS</span>
+                <strong> Cloud Service Development </strong>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>VMware</span>
+              <span>Cloud</span>
+              <span>Architecture</span>
+            </div>
+
+            <a href="project-a1.html" class="project-view">
+              View Project
+              <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Future flagship: Huawei Demo Data Center -->
+        <!-- Future flagship: Banking Data Center Project -->
+
+        <!-- =========================
+     PROJECT 04 - HUAWEI DEMO DC
+========================= -->
+
+        <article
+          class="project-feature reverse"
+          data-category="enterprise cloud"
+        >
+          <div class="project-feature-image">
+            <img
+              src="images/projects/huawei-demo-dc.png"
+              alt="Huawei Demo Data Center"
+            />
+            <span class="project-number">04</span>
+          </div>
+
+          <div class="project-feature-content">
+            <span class="project-type">
+              PRESALES / DATA CENTER / PRIVATE CLOUD
+            </span>
+
+            <h2>Huawei Demo Data Center</h2>
+
+            <h3>
+              Enterprise Infrastructure & Private Cloud Demonstration Platform
+            </h3>
+
+            <p>
+              Design and implementation of a multi-solution Demo Data Center
+              created to demonstrate enterprise infrastructure, private cloud,
+              storage, networking, security and disaster recovery technologies
+              through real-world customer scenarios and presales workshops.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>ROLE</span>
+                <strong>Project Lead / Solution Architect</strong>
+              </div>
+
+              <div>
+                <span>FOCUS</span>
+                <strong>Enterprise Demo & Validation Platform</strong>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>Huawei</span>
+              <span>Private Cloud</span>
+              <span>Demo DC</span>
+            </div>
+
+            <a href="project-huawei-demo.html" class="project-view">
+              View Project
+              <span>↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- =========================
+     DIGITAL PROJECTS
+========================= -->
+
+    <section class="projects-digital">
+      <div class="container">
+        <div class="projects-section-heading">
+          <span class="section-label"> DIGITAL & CREATIVE </span>
+
+          <h2>
+            Design. Branding.
+            <span>Digital experience.</span>
+          </h2>
+        </div>
+
+        <!-- ICT NETWORKS -->
+
+        <article
+          class="project-feature digital-project"
+          data-category="digital"
+        >
+          <div class="project-feature-image">
+            <img
+              src="images/projects/ict.png"
+              alt="ICT Networks Website Redesign and SEO"
+            />
+
+            <span class="project-number"> 04 </span>
+          </div>
+
+          <div class="project-feature-content">
+            <span class="project-type"> WEB DESIGN / SEO </span>
+
+            <h2>ICT Networks</h2>
+
+            <h3>Website Redesign & SEO</h3>
+
+            <p>
+              Complete redesign of the company's digital presence, combining
+              website development, visual identity, technical SEO and search
+              visibility improvements.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>ROLE</span>
+                <strong> Web Design / Digital Strategy </strong>
+              </div>
+
+              <div>
+                <span>FOCUS</span>
+                <strong> Digital Presence </strong>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>Web Design</span>
+              <span>SEO</span>
+              <span>Branding</span>
+            </div>
+
+            <a href="project-ict.html" class="project-view">
+              View Project
+              <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Future flagship: Monetti - Visual Identity -->
+        <!-- Future flagship: Strong & Empowered - Branding & Web Design -->
+      </div>
+    </section>
+
+    <!-- =========================
+     OTHER SELECTED WORK
+========================= -->
+
+    <section class="projects-other">
+      <div class="container">
+        <div class="projects-section-heading projects-section-heading-compact">
+          <span class="section-label"> OTHER SELECTED WORK </span>
+
+          <h2>
+            More projects.
+            <span>Different challenges.</span>
+          </h2>
+
+          <p class="projects-other-intro">
+            A smaller selection of infrastructure, branding and creative work
+            that complements the featured case studies above.
+          </p>
+        </div>
+
+        <div class="other-projects-grid">
+          <article class="other-project-card">
+            <span class="other-project-type">ENTERPRISE INFRASTRUCTURE</span>
+            <h3>Fazi</h3>
+            <p>Enterprise Infrastructure Modernization</p>
+            <div class="other-project-tags">
+              <span>HPE Servers</span>
+              <span>Storage</span>
+              <span>Security</span>
+            </div>
+          </article>
+
+          <article class="other-project-card creative">
+            <span class="other-project-type">GRAPHIC DESIGN</span>
+            <h3>Rock Radio</h3>
+            <p>T-shirt Design</p>
+            <div class="other-project-tags">
+              <span>Apparel</span>
+              <span>Creative Design</span>
+            </div>
+          </article>
+
+          <article class="other-project-card creative">
+            <span class="other-project-type">MERCHANDISE DESIGN</span>
+            <h3>CoffeeDream</h3>
+            <p>New Year Mug Design</p>
+            <div class="other-project-tags">
+              <span>Merchandise</span>
+              <span>Visual Design</span>
+            </div>
+          </article>
+
+          <article class="other-project-card creative">
+            <span class="other-project-type">DIGITAL / SOCIAL</span>
+            <h3>Selected SMM & Freelance Work</h3>
+            <p>Social media, branding and digital design projects.</p>
+            <div class="other-project-tags">
+              <span>SMM</span>
+              <span>Branding</span>
+              <span>Digital</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- =========================
+     CTA
+========================= -->
 
-    <footer class="footer">
+    <section class="projects-page-cta">
       <div class="container">
-        <p class="footer-quote">Every project starts with a conversation.</p>
+        <div class="projects-page-cta-inner">
+          <span class="section-label"> LET'S BUILD SOMETHING </span>
 
-        <div class="footer-divider"></div>
+          <h2>
+            Have a technology or
+            <span>digital challenge?</span>
+          </h2>
 
-        <div class="footer-main">
-          <div class="footer-brand">
-            <img
-              src="images/logo-bc.svg"
-              alt="BoleComp Logo"
-              class="footer-logo"
-            />
+          <p>
+            Let's explore how architecture, technology and business thinking can
+            turn it into a practical solution.
+          </p>
 
-            <h3>BoleComp</h3>
-          </div>
-
-          <div class="footer-links">
-            <div>
-              <h4>Explore</h4>
-
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="enterprise.html">Enterprise</a>
-              <a href="digital.html">Digital</a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
-            </div>
-
-            <div>
-              <h4>Connect</h4>
-
-              <a href="mailto:info@bolecomp.com">info@bolecomp.com</a>
-
-              <a
-                href="https://linkedin.com/in/bosko-milicevic/"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-
-              <span>Belgrade, Serbia</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <span>© 2026 BoleComp. All rights reserved.</span>
-
-          <span>Crafted with passion for Enterprise & Digital.</span>
+          <a href="contact.html" class="btn-primary"> Let's Talk </a>
         </div>
       </div>
-    </footer>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
