@@ -4188,49 +4188,6 @@ header{
 }
 
 
-/* ARCHIVE */
-
-.case-archive-section{
-    background:#0b1122;
-}
-
-.case-archive-grid{
-    display:grid;
-    grid-template-columns:1.3fr .85fr .85fr;
-    gap:20px;
-}
-
-.case-archive-grid figure{
-    margin:0;
-    overflow:hidden;
-
-    border:1px solid var(--case-line);
-    border-radius:24px;
-
-    background:#080d1b;
-}
-
-.case-archive-grid img{
-    width:100%;
-    height:420px;
-
-    display:block;
-    object-fit:cover;
-}
-
-.case-archive-large img{
-    object-position:center;
-}
-
-.case-archive-grid figcaption{
-    padding:18px 20px;
-
-    color:#8390aa;
-
-    font-size:.8rem;
-    line-height:1.55;
-}
-
 
 /* RECOGNITION */
 
@@ -4278,26 +4235,52 @@ header{
     font-size:.9rem !important;
 }
 
-.case-press-images{
+/* ==================================================
+   PC PRESS — REFINED LAYOUT
+================================================== */
+
+.huawei-case .case-press-images{
     display:grid;
-    grid-template-columns:.75fr 1.25fr;
-    gap:18px;
+    grid-template-columns:1.05fr .78fr;
+    gap:22px;
     align-items:center;
+
+    max-width:760px;
+    margin-left:auto;
 }
 
-.case-press-images figure{
+.huawei-case .case-press-images figure{
     margin:0;
     overflow:hidden;
 
-    border:1px solid var(--case-line);
+    border:1px solid rgba(255,255,255,.08);
     border-radius:22px;
 
     background:#fff;
 }
 
-.case-press-images img{
+/* naslovna */
+.huawei-case .case-press-images figure:first-child{
+    transform:translateY(-10px);
+}
+
+.huawei-case .case-press-images figure:first-child img{
     width:100%;
     display:block;
+
+    aspect-ratio:3 / 4;
+    object-fit:contain;
+    object-position:center;
+}
+
+/* sadržaj */
+.huawei-case .case-press-images figure:last-child img{
+    width:100%;
+    display:block;
+
+    aspect-ratio:4 / 5;
+    object-fit:cover;
+    object-position:center;
 }
 
 
@@ -4543,4 +4526,163 @@ header{
     font-weight:700;
     line-height:1.1;
     letter-spacing:-0.025em;
+}
+
+/* ==================================================
+   HUAWEI CASE — PROJECT ARCHIVE
+================================================== */
+
+.huawei-case .case-archive-section{
+    background:#0b1122;
+}
+
+
+/* Glavni grid */
+
+.huawei-case .case-archive-grid{
+    display:grid !important;
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+
+    gap:24px !important;
+
+    max-width:940px !important;
+    width:100% !important;
+
+    margin:0 auto !important;
+}
+
+
+/* Sve kartice */
+
+.huawei-case .case-archive-grid figure{
+    margin:0 !important;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+
+    background:#080d1b;
+}
+
+
+/* ==================================================
+   GLAVNA SLIKA — BROCHURE COVER
+================================================== */
+
+.huawei-case .case-archive-large{
+    grid-column:1 / -1 !important;
+
+    width:780px !important;
+    max-width:100% !important;
+
+    justify-self:center !important;
+}
+
+
+/* landscape, ali viša nego sada */
+
+.huawei-case .case-archive-large img{
+    display:block;
+
+    width:100% !important;
+    height:auto !important;
+
+    aspect-ratio:16 / 9 !important;
+
+    object-fit:cover !important;
+    object-position:center !important;
+}
+
+
+/* ==================================================
+   DONJE DVE SLIKE
+================================================== */
+
+.huawei-case .case-archive-wide{
+    width:100% !important;
+}
+
+
+/* malo viši landscape format */
+
+.huawei-case .case-archive-wide img{
+    display:block;
+
+    width:100% !important;
+    height:auto !important;
+
+    aspect-ratio:3 / 2 !important;
+
+    object-fit:cover !important;
+    object-position:center !important;
+}
+
+
+/* Private Cloud diagram nemoj cropovati */
+
+.huawei-case .case-archive-wide:last-child img{
+    object-fit:contain !important;
+
+    background:#171717;
+}
+
+
+/* Caption */
+
+.huawei-case .case-archive-grid figcaption{
+    padding:16px 18px !important;
+
+    color:#8390aa;
+
+    font-size:.8rem;
+    line-height:1.55;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media(max-width:1000px){
+
+    .huawei-case .case-archive-grid{
+        max-width:760px !important;
+    }
+
+    .huawei-case .case-archive-large{
+        width:100% !important;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:700px){
+
+    .huawei-case .case-archive-grid{
+        grid-template-columns:1fr !important;
+
+        max-width:100% !important;
+
+        gap:20px !important;
+    }
+
+    .huawei-case .case-archive-large{
+        grid-column:auto !important;
+
+        width:100% !important;
+    }
+
+    .huawei-case .case-archive-large img{
+        aspect-ratio:4 / 3 !important;
+    }
+
+    .huawei-case .case-archive-wide img{
+        aspect-ratio:4 / 3 !important;
+    }
+
 }
