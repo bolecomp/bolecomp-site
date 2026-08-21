@@ -5505,3 +5505,133 @@ header{
     }
 
 }
+
+/* ==================================================
+   DDOR CASE STUDY
+   Uses shared .case-* project-detail styles.
+   Append to the END of css/style.css
+================================================== */
+
+.ddor-case{
+    --ddor-blue:#3f8cff;
+    --ddor-blue-soft:#6fa8ff;
+    background:#080d1b;
+}
+
+.ddor-case .case-eyebrow{
+    color:var(--ddor-blue-soft);
+}
+
+.ddor-case .case-hero{
+    background:
+        radial-gradient(
+            circle at 82% 28%,
+            rgba(63,140,255,.13),
+            transparent 30%
+        ),
+        #080d1b;
+}
+
+.ddor-case .case-hero-image{
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.42),
+        0 0 70px rgba(63,140,255,.09);
+}
+
+.ddor-case .case-info-card > span{
+    color:var(--ddor-blue-soft);
+}
+
+
+/* =========================
+   KEY NUMBERS
+========================= */
+
+.ddor-numbers-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid rgba(255,255,255,.08);
+    border-left:1px solid rgba(255,255,255,.08);
+}
+
+.ddor-number{
+    min-height:190px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:32px;
+    border-right:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.012);
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.ddor-number:hover{
+    background:rgba(63,140,255,.045);
+    transform:translateY(-3px);
+}
+
+.ddor-number strong{
+    display:block;
+    margin-bottom:10px;
+    color:#fff;
+    font-size:clamp(2.8rem,4vw,4.4rem);
+    font-weight:700;
+    line-height:1;
+    letter-spacing:-.04em;
+}
+
+.ddor-number span{
+    color:#8f9db8;
+    font-size:.82rem;
+    line-height:1.5;
+}
+
+
+/* =========================
+   CARD HOVERS
+========================= */
+
+.ddor-case .case-info-card,
+.ddor-case .case-tech-grid article,
+.ddor-case .case-contribution-grid div{
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.ddor-case .case-info-card:hover,
+.ddor-case .case-tech-grid article:hover{
+    transform:translateY(-4px);
+    border-color:rgba(63,140,255,.18);
+    background:rgba(63,140,255,.025);
+}
+
+.ddor-case .case-contribution-grid div:hover{
+    background:rgba(63,140,255,.025);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+    .ddor-numbers-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .ddor-numbers-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ddor-number{
+        min-height:145px;
+    }
+}
