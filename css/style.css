@@ -4686,3 +4686,605 @@ header{
     }
 
 }
+
+/* ==================================================
+   HOME HERO — SCATTERED ICONS ABOVE H1
+================================================== */
+
+/* vrati hero tekst na staru poziciju */
+.hero-text{
+    position:relative;
+    z-index:5;
+    transform:translateY(75px) !important;
+}
+
+/* zona za ikonice */
+.hero-icons{
+    position:absolute !important;
+    inset:0 !important;
+
+    display:block !important;
+
+    pointer-events:none;
+    z-index:4;
+}
+
+/* osnovni stil */
+.hero-icon{
+    position:absolute !important;
+
+    width:42px !important;
+    opacity:.48;
+
+    animation:floatIcon 6s ease-in-out infinite;
+}
+
+
+/* ==================================================
+   ENTERPRISE — LEVO / PLAVO
+================================================== */
+
+.architecture{
+    top:40px !important;
+    left:31% !important;
+}
+
+.cloud{
+    top:95px !important;
+    left:25% !important;
+}
+
+.servers{
+    top:125px !important;
+    left:35% !important;
+}
+
+.storage{
+    top:180px !important;
+    left:29% !important;
+}
+
+.business-icon{
+    top:70px !important;
+    left:40% !important;
+}
+
+
+/* ==================================================
+   DIGITAL — DESNO / LJUBIČASTO
+================================================== */
+
+.design{
+    top:55px !important;
+    right:39% !important;
+}
+
+.code{
+    top:160px !important;
+    right:50% !important;
+}
+
+.seo{
+    top:90px !important;
+    right:45% !important;
+}
+
+.ai{
+    top:10px !important;
+    right:50% !important;
+}
+
+.analytics{
+    top:135px !important;
+    right:37% !important;
+}
+
+.hero-icons{
+    transform:translateY(-130px);
+}
+
+/* ==================================================
+   ABOUT PAGE
+   Append to the end of css/style.css
+================================================== */
+
+.about-page{background:#070b18;}
+
+.about-page-container{
+    width:min(1320px, calc(100% - 40px));
+    margin:0 auto;
+}
+
+.about-kicker{
+    display:block;
+    color:#6fa8ff;
+    font-size:.72rem;
+    font-weight:800;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+}
+
+/* HERO */
+
+.about-hero{
+    padding:180px 0 120px;
+    background:
+        radial-gradient(circle at 78% 32%, rgba(155,92,255,.11), transparent 28%),
+        radial-gradient(circle at 22% 38%, rgba(63,140,255,.10), transparent 30%),
+        #070b18;
+}
+
+.about-hero-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(350px,.72fr);
+    gap:110px;
+    align-items:center;
+}
+
+.about-hero-copy h1{
+    max-width:850px;
+    margin:24px 0 28px;
+    color:#fff;
+    font-size:clamp(3rem,4.8vw,5.2rem);
+    font-weight:800;
+    line-height:1.01;
+    letter-spacing:-.045em;
+}
+
+.about-hero-copy h1 span{
+    display:block;
+    color:#3f8cff;
+}
+
+.about-hero-lead{
+    max-width:730px;
+    margin:0;
+    color:#aeb7cc;
+    font-size:1.12rem;
+    line-height:1.9;
+}
+
+.about-hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:38px;
+}
+
+.about-hero-tags span,
+.world-tags span{
+    padding:8px 14px;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:999px;
+    color:#bac5da;
+    background:rgba(255,255,255,.02);
+    font-size:.77rem;
+}
+
+.about-portrait{
+    position:relative;
+    overflow:hidden;
+    max-width:420px;
+    margin-left:auto;
+    border-radius:34px;
+    background:
+    linear-gradient(
+        145deg,
+        #f1efe9,
+        #e7e5df
+    );
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 35px 80px rgba(0,0,0,.36);
+}
+
+.about-portrait img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.about-portrait-caption{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:18px 0 0 auto;
+    max-width:420px;
+    color:#68758f;
+    font-size:.65rem;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+
+.about-portrait-caption i{
+    display:block;
+    width:70px;
+    height:1px;
+    background:linear-gradient(90deg,#3f8cff,#9b5cff);
+}
+
+/* STORY */
+
+.about-story{
+    padding:145px 0;
+    border-top:1px solid rgba(255,255,255,.05);
+    background:#0b1020;
+}
+
+.about-story-grid{
+    display:grid;
+    grid-template-columns:minmax(0,.88fr) minmax(0,1fr);
+    gap:120px;
+}
+
+.about-story-title h2,
+.about-section-heading h2,
+.selected-copy h2{
+    margin:22px 0 0;
+    color:#fff;
+    font-size:clamp(2.7rem,4vw,4.3rem);
+    font-weight:700;
+    line-height:1.1;
+    letter-spacing:-.03em;
+}
+
+.about-story-title h2 span{color:#3f8cff;}
+
+.about-story-copy p{
+    margin:0 0 28px;
+    color:#aeb7cc;
+    font-size:1.08rem;
+    line-height:1.95;
+}
+
+/* TWO WORLDS */
+
+.about-worlds{
+    padding:145px 0;
+    background:linear-gradient(180deg,#0b1020 0%,#0d1327 100%);
+    border-top:1px solid rgba(255,255,255,.05);
+}
+
+.about-section-heading{
+    max-width:900px;
+    margin-bottom:75px;
+}
+
+.about-worlds-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.about-world-card{
+    min-height:510px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:42px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+}
+
+.enterprise-world{
+    background:
+        radial-gradient(circle at 10% 0%, rgba(63,140,255,.14), transparent 34%),
+        #091120;
+}
+
+.digital-world{
+    background:
+        radial-gradient(circle at 100% 0%, rgba(155,92,255,.16), transparent 36%),
+        #111025;
+}
+
+.world-index{
+    color:#596781;
+    font-size:.68rem;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+
+.world-label{
+    display:block;
+    margin-bottom:18px;
+    color:#6fa8ff;
+    font-size:.72rem;
+    font-weight:800;
+    letter-spacing:.18em;
+}
+
+.digital-world .world-label{color:#bb8dff;}
+
+.about-world-card h3{
+    max-width:560px;
+    margin:0 0 22px;
+    color:#fff;
+    font-size:clamp(2rem,3vw,3.2rem);
+    line-height:1.12;
+}
+
+.about-world-card p{
+    max-width:590px;
+    color:#a4aec2;
+    line-height:1.85;
+}
+
+.world-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-top:28px;
+}
+
+.about-world-card > a{
+    margin-top:40px;
+    text-decoration:none;
+    font-size:.92rem;
+    font-weight:600;
+}
+
+.enterprise-world > a{color:#77adff;}
+.digital-world > a{color:#bf92ff;}
+
+/* JOURNEY */
+
+.about-journey{
+    padding:145px 0;
+    background:#070b18;
+    border-top:1px solid rgba(255,255,255,.05);
+}
+
+.journey-list{
+    max-width:1100px;
+    margin-left:auto;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.journey-item{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    gap:25px;
+    padding:42px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.journey-number{
+    color:#53617a;
+    font-size:.7rem;
+    font-weight:800;
+    letter-spacing:.15em;
+}
+
+.journey-copy > span{
+    display:block;
+    margin-bottom:10px;
+    color:#6fa8ff;
+    font-size:.67rem;
+    font-weight:800;
+    letter-spacing:.17em;
+}
+
+.journey-copy h3{
+    margin:0 0 12px;
+    color:#fff;
+    font-size:1.65rem;
+}
+
+.journey-copy p{
+    max-width:760px;
+    margin:0;
+    color:#9da9bf;
+    line-height:1.8;
+}
+
+/* SELECTED */
+
+.about-selected{
+    padding:145px 0;
+    background:#0b1020;
+    border-top:1px solid rgba(255,255,255,.05);
+}
+
+.selected-grid{
+    display:grid;
+    grid-template-columns:minmax(0,.85fr) minmax(0,1fr);
+    gap:110px;
+    align-items:center;
+}
+
+.selected-copy h2{margin-bottom:26px;}
+
+.selected-copy p{
+    max-width:600px;
+    color:#a5b0c4;
+    line-height:1.9;
+}
+
+.about-text-link{
+    display:inline-block;
+    margin-top:28px;
+    color:#77adff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.selected-points{border-top:1px solid rgba(255,255,255,.08);}
+
+.selected-points div{
+    display:grid;
+    grid-template-columns:55px 1fr;
+    gap:20px;
+    padding:25px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.selected-points span{
+    color:#5e6b84;
+    font-size:.67rem;
+    font-weight:800;
+}
+
+.selected-points p{
+    margin:0;
+    color:#d4dbea;
+    line-height:1.6;
+}
+
+/* PHILOSOPHY */
+
+.about-philosophy{
+    padding:160px 20px;
+    text-align:center;
+    background:
+        radial-gradient(circle at 50% 50%, rgba(63,140,255,.08), transparent 35%),
+        #0d1327;
+}
+
+.about-philosophy .about-page-container{max-width:1050px;}
+
+.about-philosophy blockquote{
+    margin:26px auto 32px;
+    color:#fff;
+    font-size:clamp(3rem,5vw,5rem);
+    font-weight:800;
+    line-height:1.06;
+    letter-spacing:-.04em;
+}
+
+.about-philosophy blockquote span{
+    display:block;
+    color:#9b5cff;
+}
+
+.about-philosophy p{
+    max-width:700px;
+    margin:0 auto;
+    color:#a7b1c5;
+    font-size:1.08rem;
+    line-height:1.9;
+}
+
+/* CTA */
+
+.about-cta{
+    padding:55px 0 120px;
+    background:#0d1327;
+}
+
+.about-cta-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:70px 75px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:32px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(155,92,255,.10), transparent 30%),
+        radial-gradient(circle at 0% 100%, rgba(63,140,255,.08), transparent 30%),
+        #080d1b;
+}
+
+.about-cta-card h2{
+    margin:18px 0 12px;
+    color:#fff;
+    font-size:clamp(2.2rem,3.5vw,3.5rem);
+}
+
+.about-cta-card p{
+    max-width:670px;
+    margin:0;
+    color:#9da9bd;
+    line-height:1.75;
+}
+
+.about-cta-card .btn-primary{flex-shrink:0;}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+    .about-hero-grid,
+    .about-story-grid,
+    .selected-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .about-portrait{
+        max-width:380px;
+        margin:0;
+    }
+
+    .about-portrait-caption{
+        max-width:380px;
+        margin-left:0;
+    }
+
+    .about-worlds-grid{grid-template-columns:1fr;}
+
+    .about-cta-card{
+        align-items:flex-start;
+        flex-direction:column;
+    }
+}
+
+@media(max-width:700px){
+    .about-page-container{width:min(100% - 40px,1320px);}
+    .about-hero{padding:135px 0 85px;}
+    .about-hero-copy h1{font-size:clamp(3rem,14vw,4.3rem);}
+
+    .about-story,
+    .about-worlds,
+    .about-journey,
+    .about-selected{padding:95px 0;}
+
+    .about-world-card{
+        min-height:440px;
+        padding:32px 28px;
+    }
+
+    .journey-item{
+        grid-template-columns:45px 1fr;
+        gap:15px;
+        padding:32px 0;
+    }
+
+    .about-philosophy{padding:105px 20px;}
+    .about-cta{padding:30px 0 80px;}
+
+    .about-cta-card{
+        padding:55px 30px;
+        border-radius:28px;
+    }
+}
+
+/* ==================================================
+   ABOUT — DESKTOP SECTION SPACING FINAL
+================================================== */
+
+@media (min-width:701px){
+
+    .about-story,
+    .about-worlds,
+    .about-journey,
+    .about-selected{
+        padding-top:85px !important;
+        padding-bottom:85px !important;
+    }
+
+    .about-philosophy{
+        padding-top:95px !important;
+        padding-bottom:95px !important;
+    }
+
+    .about-cta{
+        padding-top:35px !important;
+        padding-bottom:80px !important;
+    }
+
+    .about-section-heading{
+        margin-bottom:45px !important;
+    }
+
+    .journey
