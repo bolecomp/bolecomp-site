@@ -5887,3 +5887,199 @@ header{
     }
 
 }
+
+/* ==================================================
+   ICT NETWORKS CASE STUDY
+   Uses shared .case-* project-detail styles.
+   Append to the END of css/style.css
+================================================== */
+
+.ict-case{
+    --ict-orange:#ff7a00;
+    --ict-orange-soft:#ff9d45;
+    background:#080d1b;
+}
+
+.ict-case .case-hero{
+    background:
+        radial-gradient(circle at 82% 28%, rgba(255,122,0,.11), transparent 29%),
+        radial-gradient(circle at 20% 40%, rgba(63,140,255,.055), transparent 30%),
+        #080d1b;
+}
+
+.ict-case .case-eyebrow{
+    color:var(--ict-orange-soft);
+}
+
+.ict-case .case-hero-image{
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.42),
+        0 0 65px rgba(255,122,0,.08);
+}
+
+.ict-case .case-info-card > span{
+    color:var(--ict-orange-soft);
+}
+
+/* STRATEGY CARDS */
+
+.ict-strategy-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.ict-strategy-card{
+    min-height:285px;
+    padding:34px 30px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(255,122,0,.045), transparent 42%),
+        rgba(255,255,255,.012);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.ict-strategy-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(255,122,0,.22);
+    background:rgba(255,122,0,.025);
+}
+
+.ict-strategy-card > span{
+    display:block;
+    margin-bottom:52px;
+    color:#68748d;
+    font-size:.67rem;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+
+.ict-strategy-card h3{
+    margin:0 0 14px;
+    color:#fff;
+    font-size:1.35rem;
+}
+
+.ict-strategy-card p{
+    margin:0;
+    color:#99a6be;
+    font-size:.94rem;
+    line-height:1.78;
+}
+
+/* LEGACY SEO */
+
+.ict-legacy-section{
+    background:
+        radial-gradient(circle at 80% 50%, rgba(255,122,0,.055), transparent 32%),
+        #0b1020;
+}
+
+.ict-live-link{
+    display:inline-block;
+    margin-top:24px;
+    color:var(--ict-orange-soft);
+    text-decoration:none;
+    font-weight:650;
+    transition:
+        transform .25s ease,
+        color .25s ease;
+}
+
+.ict-live-link:hover{
+    transform:translateX(5px);
+    color:#fff;
+}
+
+/* TOOL GRID */
+
+.ict-tool-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid rgba(255,255,255,.08);
+    border-left:1px solid rgba(255,255,255,.08);
+}
+
+.ict-tool-grid div{
+    min-height:155px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:28px;
+    border-right:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.012);
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.ict-tool-grid div:hover{
+    background:rgba(255,122,0,.025);
+    transform:translateY(-3px);
+}
+
+.ict-tool-grid span{
+    margin-bottom:10px;
+    color:#68748d;
+    font-size:.65rem;
+    font-weight:800;
+    letter-spacing:.15em;
+}
+
+.ict-tool-grid strong{
+    color:#e8edf7;
+    font-size:1rem;
+    font-weight:550;
+}
+
+/* HOVERS */
+
+.ict-case .case-tech-grid article,
+.ict-case .case-contribution-grid div{
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.ict-case .case-tech-grid article:hover{
+    transform:translateY(-4px);
+    border-color:rgba(255,122,0,.18);
+    background:rgba(255,122,0,.02);
+}
+
+.ict-case .case-contribution-grid div:hover{
+    background:rgba(255,122,0,.02);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .ict-strategy-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .ict-tool-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px){
+
+    .ict-strategy-grid,
+    .ict-tool-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ict-strategy-card{
+        min-height:0;
+    }
+
+}
