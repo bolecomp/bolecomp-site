@@ -5288,3 +5288,220 @@ header{
     }
 
     .journey
+
+    /* ==================================================
+   ABOUT PAGE — INTERACTIONS / HOVER EFFECTS
+   Final overrides
+================================================== */
+
+
+/* =========================
+   TAGS / PILLS
+========================= */
+
+.about-hero-tags span,
+.world-tags span{
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background .25s ease,
+        box-shadow .25s ease,
+        color .25s ease;
+}
+
+
+/* Enterprise / default hover */
+
+.about-hero-tags span:hover,
+.enterprise-world .world-tags span:hover{
+    transform:translateY(-3px);
+
+    border-color:rgba(111,168,255,.45);
+
+    background:rgba(63,140,255,.08);
+
+    color:#fff;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.18),
+        0 0 18px rgba(63,140,255,.10);
+}
+
+
+/* Digital hover */
+
+.digital-world .world-tags span:hover{
+    transform:translateY(-3px);
+
+    border-color:rgba(187,141,255,.45);
+
+    background:rgba(155,92,255,.09);
+
+    color:#fff;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.18),
+        0 0 18px rgba(155,92,255,.12);
+}
+
+
+/* =========================
+   TEXT LINKS
+========================= */
+
+.about-world-card > a,
+.about-text-link{
+    display:inline-block;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease,
+        letter-spacing .25s ease;
+}
+
+.about-world-card > a:hover,
+.about-text-link:hover{
+    transform:translateX(5px);
+
+    letter-spacing:.01em;
+
+    opacity:.95;
+}
+
+
+/* =========================
+   MAIN BUTTONS
+========================= */
+
+.about-page .btn-primary,
+.about-page .btn-outline{
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+
+/* Primary */
+
+.about-page .btn-primary:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(63,140,255,.18),
+        0 8px 25px rgba(155,92,255,.12);
+}
+
+
+/* Outline */
+
+.about-page .btn-outline:hover{
+    transform:translateY(-3px);
+
+    border-color:rgba(255,255,255,.35);
+
+    background:rgba(255,255,255,.03);
+}
+
+
+/* =========================
+   TWO WORLDS CARDS
+========================= */
+
+.about-world-card{
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* Enterprise card */
+
+.enterprise-world:hover{
+    transform:translateY(-5px);
+
+    border-color:rgba(63,140,255,.22);
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.20),
+        0 0 35px rgba(63,140,255,.06);
+}
+
+
+/* Digital card */
+
+.digital-world:hover{
+    transform:translateY(-5px);
+
+    border-color:rgba(155,92,255,.25);
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.20),
+        0 0 35px rgba(155,92,255,.07);
+}
+
+
+/* =========================
+   JOURNEY ITEMS
+========================= */
+
+.journey-item{
+    transition:
+        padding-left .30s ease,
+        background .30s ease;
+}
+
+.journey-item:hover{
+    padding-left:12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(63,140,255,.025),
+            transparent 70%
+        );
+}
+
+
+/* =========================
+   SELECTED EXPERIENCE ROWS
+========================= */
+
+.selected-points div{
+    transition:
+        padding-left .25s ease,
+        background .25s ease;
+}
+
+.selected-points div:hover{
+    padding-left:10px;
+
+    background:rgba(255,255,255,.018);
+}
+
+
+/* =========================
+   DESKTOP ONLY
+   Avoid hover movement on touch devices
+========================= */
+
+@media(max-width:700px){
+
+    .about-world-card:hover,
+    .about-page .btn-primary:hover,
+    .about-page .btn-outline:hover,
+    .about-hero-tags span:hover,
+    .world-tags span:hover,
+    .journey-item:hover,
+    .selected-points div:hover{
+        transform:none;
+    }
+
+    .journey-item:hover,
+    .selected-points div:hover{
+        padding-left:0;
+    }
+
+}
