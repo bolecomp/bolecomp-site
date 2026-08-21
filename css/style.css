@@ -5635,3 +5635,255 @@ header{
         min-height:145px;
     }
 }
+
+/* ==================================================
+   VMWARE VCF PoC CASE STUDY
+   Uses the shared .case-* project-detail styles.
+   Append to the END of css/style.css
+================================================== */
+
+.vcf-case{
+    --vcf-blue:#3f8cff;
+    --vcf-purple:#9b5cff;
+    background:#080d1b;
+}
+
+.vcf-case .case-hero{
+    background:
+        radial-gradient(circle at 82% 25%, rgba(155,92,255,.11), transparent 28%),
+        radial-gradient(circle at 22% 35%, rgba(63,140,255,.08), transparent 30%),
+        #080d1b;
+}
+
+.vcf-case .case-eyebrow{
+    color:#8aaeff;
+}
+
+.vcf-case .case-hero-image{
+    box-shadow:
+        0 35px 100px rgba(0,0,0,.42),
+        0 0 70px rgba(99,86,255,.10);
+}
+
+.vcf-case .case-info-card > span{
+    color:#9f8cff;
+}
+
+
+/* =========================
+   VCF STACK
+========================= */
+
+.vcf-stack-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.vcf-stack-card{
+    min-height:270px;
+    padding:34px 30px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(155,92,255,.055), transparent 42%),
+        rgba(255,255,255,.012);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.vcf-stack-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(122,112,255,.22);
+    background:rgba(99,86,255,.025);
+}
+
+.vcf-stack-card > span{
+    display:block;
+    margin-bottom:48px;
+    color:#67738d;
+    font-size:.67rem;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+
+.vcf-stack-card h3{
+    margin:0 0 14px;
+    color:#fff;
+    font-size:1.35rem;
+}
+
+.vcf-stack-card p{
+    margin:0;
+    color:#99a6be;
+    font-size:.94rem;
+    line-height:1.75;
+}
+
+
+/* =========================
+   CUSTOMER CASES
+========================= */
+
+.vcf-cases-section{
+    background:
+        radial-gradient(circle at 10% 20%, rgba(63,140,255,.06), transparent 28%),
+        radial-gradient(circle at 90% 75%, rgba(155,92,255,.06), transparent 28%),
+        #080d1b;
+}
+
+.vcf-customer-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.vcf-customer-card{
+    min-height:520px;
+    display:flex;
+    flex-direction:column;
+    padding:42px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    background:#0b1122;
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.vcf-customer-card:first-child{
+    background:
+        radial-gradient(circle at 0% 0%, rgba(63,140,255,.10), transparent 34%),
+        #0b1122;
+}
+
+.vcf-customer-card:last-child{
+    background:
+        radial-gradient(circle at 100% 0%, rgba(155,92,255,.12), transparent 35%),
+        #0b1122;
+}
+
+.vcf-customer-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(122,112,255,.20);
+    box-shadow:0 22px 60px rgba(0,0,0,.22);
+}
+
+.vcf-customer-index{
+    display:block;
+    margin-bottom:65px;
+    color:#66728b;
+    font-size:.68rem;
+    font-weight:800;
+    letter-spacing:.18em;
+}
+
+.vcf-customer-card h3{
+    margin:0 0 8px;
+    color:#fff;
+    font-size:clamp(2.2rem,3vw,3.4rem);
+    line-height:1;
+    letter-spacing:-.03em;
+}
+
+.vcf-customer-card h4{
+    margin:0 0 24px;
+    color:#c7d0e2;
+    font-size:1rem;
+    font-weight:500;
+}
+
+.vcf-customer-card > p{
+    margin:0;
+    color:#9ba8bf;
+    line-height:1.85;
+}
+
+.vcf-case-facts{
+    display:grid;
+    grid-template-columns:1fr;
+    margin-top:auto;
+    padding-top:34px;
+}
+
+.vcf-case-facts div{
+    display:grid;
+    grid-template-columns:95px 1fr;
+    gap:15px;
+    padding:15px 0;
+    border-top:1px solid rgba(255,255,255,.07);
+}
+
+.vcf-case-facts span{
+    color:#65718a;
+    font-size:.66rem;
+    font-weight:800;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+}
+
+.vcf-case-facts strong{
+    color:#d9e0ed;
+    font-size:.9rem;
+    font-weight:500;
+}
+
+
+/* =========================
+   HOVERS
+========================= */
+
+.vcf-case .case-tech-grid article,
+.vcf-case .case-contribution-grid div{
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        background .3s ease;
+}
+
+.vcf-case .case-tech-grid article:hover{
+    transform:translateY(-4px);
+    border-color:rgba(122,112,255,.18);
+    background:rgba(99,86,255,.02);
+}
+
+.vcf-case .case-contribution-grid div:hover{
+    background:rgba(99,86,255,.02);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .vcf-stack-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .vcf-customer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .vcf-stack-grid{
+        grid-template-columns:1fr;
+    }
+
+    .vcf-customer-card{
+        min-height:0;
+        padding:34px 28px;
+    }
+
+    .vcf-customer-index{
+        margin-bottom:40px;
+    }
+
+}
