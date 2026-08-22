@@ -9263,3 +9263,39 @@ a.contact-method:hover{padding-left:10px;background:linear-gradient(90deg,rgba(7
     color:#7568ff !important;
     -webkit-text-fill-color:#7568ff !important;
 }
+
+/* =========================================
+   MOBILE — STOP HORIZONTAL PAGE SCROLL
+========================================= */
+
+html,
+body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+@media(max-width:900px){
+
+    .nav-links{
+        position:fixed !important;
+
+        top:0;
+        right:0;
+
+        width:min(320px, 85vw) !important;
+        height:100dvh;
+
+        transform:translateX(100%);
+        transition:transform .35s ease;
+
+        overflow-y:auto;
+        overflow-x:hidden;
+
+        z-index:9999;
+    }
+
+    .nav-links.active{
+        transform:translateX(0);
+    }
+
+}
