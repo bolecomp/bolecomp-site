@@ -8311,20 +8311,19 @@ header{
    INTRO
 ========================= */
 
-.digital-intro{
+.digital-page .digital-intro{
     padding:120px 0;
-
     background:#0b1020;
 }
 
-.digital-intro-grid{
+.digital-page .digital-intro-grid{
     display:grid;
     grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
     gap:95px;
     align-items:start;
 }
 
-.digital-intro h2{
+.digital-page .digital-intro h2{
     max-width:760px;
 
     margin:22px 0 0;
@@ -8337,17 +8336,17 @@ header{
     letter-spacing:-.035em;
 }
 
-.digital-intro h2 span{
+.digital-page .digital-intro h2 span{
     display:inline;
 
     color:#9b5cff;
 }
 
-.digital-intro-copy{
+.digital-page .digital-intro-copy{
     max-width:590px;
 }
 
-.digital-intro-copy p{
+.digital-page .digital-intro-copy p{
     margin:0 0 28px;
 
     color:#a6b1c6;
