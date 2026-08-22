@@ -9249,3 +9249,17 @@ a.contact-method:hover{padding-left:10px;background:linear-gradient(90deg,rgba(7
 @media(max-width:1050px){.contact-hero-grid{grid-template-columns:1fr;gap:65px;}.contact-visual{margin:0 auto;}.contact-direct-grid{grid-template-columns:1fr;gap:55px;}}
 @media(max-width:760px){.contact-hero{min-height:0;padding:135px 0 90px;}.contact-hero-copy h1{font-size:clamp(3rem,12vw,4.2rem);}.contact-hero-actions{flex-direction:column;align-items:flex-start;}.contact-quick-info{grid-template-columns:1fr;}.contact-topics,.contact-direct{padding:90px 0;}.contact-topic-grid{grid-template-columns:1fr;}.contact-topic-card{min-height:0;}.contact-final-card{padding:65px 28px;}.contact-footer-inner,.contact-footer-copy{flex-direction:column;align-items:flex-start;}}
 @media(max-width:560px){.contact-visual{transform:scale(.9);transform-origin:center;}.contact-node{min-width:140px;padding:14px 15px;}.contact-center-node{width:160px;height:160px;}}
+
+.contact-final-card h2 .contact-final-line-white{
+    display:block !important;
+    background:none !important;
+    color:#fff !important;
+    -webkit-text-fill-color:#fff !important;
+}
+
+.contact-final-card h2 .contact-final-line-gradient{
+    display:block !important;
+    background:none !important;
+    color:#7568ff !important;
+    -webkit-text-fill-color:#7568ff !important;
+}
