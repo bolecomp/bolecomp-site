@@ -2,43 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Digital | BoleComp</title>
+    <title>Digital Design, Branding & SEO | BoleComp</title>
 
     <meta
       name="description"
-      content="BoleComp - Connecting Technology & Business."
+      content="Digital design, branding, web experience and SEO — connecting visual identity, user experience, content and search visibility."
     />
 
     <link rel="stylesheet" href="css/style.css" />
-
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body>
-    <!-- HEADER -->
-
+  <body class="digital-page">
     <header>
       <nav class="navbar">
-        <a href="index.html" class="logo">
-          <img src="images/logo-bc.svg" alt="BoleComp Logo" />
-        </a>
+        <div class="logo">
+          <a href="index.html" class="logo">
+            <img src="images/logo-bc.svg" alt="BoleComp Logo" />
+          </a>
+        </div>
 
         <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
           ☰
@@ -53,87 +44,562 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
 
+        <a href="/sr/digital.html" class="lang-switch">SR</a>
         <a href="contact.html" class="btn-outline">Let's Talk</a>
       </nav>
     </header>
 
-    <!-- PAGE HERO -->
+    <main>
+      <!-- =========================
+     HERO
+========================= -->
 
-    <section class="page-hero">
-      <div class="container">
-        <span class="section-label">DIGITAL</span>
+      <section class="digital-hero">
+        <div class="digital-container digital-hero-grid">
+          <div class="digital-hero-copy">
+            <span class="digital-kicker">DIGITAL</span>
 
-        <h1>Currently in Development</h1>
+            <h1>
+              <span class="digital-hero-line-white">Creative thinking.</span>
+              <span class="digital-hero-line-gradient">Digital execution.</span>
+              <span class="digital-hero-spacer" aria-hidden="true"></span>
+            </h1>
 
-        <p>
-          I'm currently preparing detailed content for this section. Here you'll
-          find a deeper overview of my experience, projects and approach to
-          connecting technology with business.
-        </p>
+            <p class="digital-hero-lead">
+              I combine brand identity, web design, SEO and digital strategy to
+              build experiences that look clear, feel intentional and support a
+              real business goal.
+            </p>
 
-        <div class="page-buttons">
-          <a href="index.html" class="btn-secondary">← Back to Home</a>
-
-          <a href="contact.html" class="btn-primary">Let's Talk</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-      <div class="container">
-        <p class="footer-quote">Every project starts with a conversation.</p>
-
-        <div class="footer-divider"></div>
-
-        <div class="footer-main">
-          <div class="footer-brand">
-            <img
-              src="images/logo-bc.svg"
-              alt="BoleComp Logo"
-              class="footer-logo"
-            />
-
-            <h3>BoleComp</h3>
-          </div>
-
-          <div class="footer-links">
-            <div>
-              <h4>Explore</h4>
-
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="enterprise.html">Enterprise</a>
-              <a href="digital.html">Digital</a>
-              <a href="projects.html">Projects</a>
-              <a href="contact.html">Contact</a>
-            </div>
-
-            <div>
-              <h4>Connect</h4>
-
-              <a href="mailto:info@bolecomp.com">info@bolecomp.com</a>
-
-              <a
-                href="https://linkedin.com/in/bosko-milicevic/"
-                target="_blank"
+            <div class="digital-hero-actions">
+              <a href="projects.html" class="btn-primary"
+                >View Digital Projects</a
               >
-                LinkedIn
-              </a>
+              <a href="#digital-capabilities" class="digital-text-link"
+                >Explore capabilities ↓</a
+              >
+            </div>
 
-              <span>Belgrade, Serbia</span>
+            <div class="digital-hero-tags">
+              <span>Branding</span>
+              <span>Web Design</span>
+              <span>SEO</span>
+              <span>Digital Strategy</span>
+            </div>
+          </div>
+
+          <div class="digital-hero-visual">
+            <div class="digital-visual-glow"></div>
+
+            <a
+              href="project-strong-empowered.html"
+              class="digital-preview-card digital-preview-main"
+            >
+              <div class="digital-preview-image">
+                <img
+                  src="images/projects/strong-empowered/strong-empowered-mockup.png"
+                  alt="Strong and Empowered branding and web project"
+                />
+              </div>
+
+              <div class="digital-preview-copy">
+                <span>BRANDING / WEB</span>
+                <strong>Strong & Empowered</strong>
+              </div>
+            </a>
+
+            <a
+              href="project-ict.html"
+              class="digital-preview-card digital-preview-secondary"
+            >
+              <div class="digital-preview-image">
+                <img
+                  src="images/projects/ict.png"
+                  alt="ICT Networks web design and SEO project"
+                />
+              </div>
+
+              <div class="digital-preview-copy">
+                <span>WEB / SEO</span>
+                <strong>ICT Networks</strong>
+              </div>
+            </a>
+
+            <div class="digital-orbit-label label-brand">
+              <span>01</span>
+              <strong>Brand</strong>
+            </div>
+
+            <div class="digital-orbit-label label-web">
+              <span>02</span>
+              <strong>Web</strong>
+            </div>
+
+            <div class="digital-orbit-label label-search">
+              <span>03</span>
+              <strong>Search</strong>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="footer-bottom">
-          <span>© 2026 BoleComp. All rights reserved.</span>
+      <!-- =========================
+     INTRO
+========================= -->
 
-          <span>Crafted with passion for Enterprise & Digital.</span>
+      <section class="digital-intro">
+        <div class="digital-container digital-intro-grid">
+          <div>
+            <span class="digital-kicker">MY APPROACH</span>
+
+            <h2>
+              Start with the idea.
+              <span>Build the system around it.</span>
+            </h2>
+          </div>
+
+          <div class="digital-intro-copy">
+            <p>
+              A digital project works best when the visual identity, website,
+              content and search presence are not treated as separate tasks.
+            </p>
+
+            <p>
+              I prefer to connect them from the beginning: understand what the
+              brand needs to communicate, define the visual language, design the
+              experience and then make sure the result can actually be found,
+              measured and improved.
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </section>
+
+      <!-- =========================
+     CORE AREAS
+========================= -->
+
+      <section class="digital-pillars">
+        <div class="digital-container">
+          <div class="digital-section-heading">
+            <span class="digital-kicker">CORE AREAS</span>
+            <h2>Four parts of the same digital experience.</h2>
+          </div>
+
+          <div class="digital-pillars-grid">
+            <article class="digital-pillar-card">
+              <span class="digital-pillar-index">01</span>
+              <div>
+                <span class="digital-pillar-label">IDENTITY</span>
+                <h3>Brand Identity</h3>
+                <p>
+                  Creating a visual language that gives the brand a
+                  recognizable, consistent and usable identity.
+                </p>
+                <ul>
+                  <li>Logo Systems</li>
+                  <li>Color & Typography</li>
+                  <li>Brand Guidelines</li>
+                  <li>Visual Direction</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="digital-pillar-card">
+              <span class="digital-pillar-index">02</span>
+              <div>
+                <span class="digital-pillar-label">EXPERIENCE</span>
+                <h3>Web Design</h3>
+                <p>
+                  Designing modern, responsive experiences that make the offer
+                  clear and give users an obvious path forward.
+                </p>
+                <ul>
+                  <li>UX / UI Direction</li>
+                  <li>Responsive Design</li>
+                  <li>Front-end Implementation</li>
+                  <li>Conversion Paths</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="digital-pillar-card">
+              <span class="digital-pillar-index">03</span>
+              <div>
+                <span class="digital-pillar-label">VISIBILITY</span>
+                <h3>SEO & Search</h3>
+                <p>
+                  Building the technical and content foundation that helps a
+                  website become visible, measurable and easier to improve.
+                </p>
+                <ul>
+                  <li>Technical SEO</li>
+                  <li>Metadata & Schema</li>
+                  <li>Search Console</li>
+                  <li>Local SEO</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="digital-pillar-card">
+              <span class="digital-pillar-index">04</span>
+              <div>
+                <span class="digital-pillar-label">GROWTH</span>
+                <h3>Digital Strategy</h3>
+                <p>
+                  Connecting design, content, search and analytics around a
+                  clear business objective instead of treating them as isolated
+                  activities.
+                </p>
+                <ul>
+                  <li>Content Direction</li>
+                  <li>Analytics</li>
+                  <li>Digital Presence</li>
+                  <li>AI-assisted Workflow</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     CAPABILITIES
+========================= -->
+
+      <section class="digital-capabilities" id="digital-capabilities">
+        <div class="digital-container">
+          <div class="digital-section-heading digital-section-heading-wide">
+            <span class="digital-kicker">CAPABILITIES</span>
+            <h2>From the first visual idea to a measurable online presence.</h2>
+            <p>
+              Different projects need different combinations of design,
+              technology and search.
+            </p>
+          </div>
+
+          <div class="digital-capability-grid">
+            <article>
+              <span>01</span>
+              <h3>Visual Identity</h3>
+              <p>
+                Logo direction, color systems, typography and supporting visual
+                language.
+              </p>
+            </article>
+
+            <article>
+              <span>02</span>
+              <h3>Web Experience</h3>
+              <p>
+                Layout, interaction, responsive behavior and visual hierarchy.
+              </p>
+            </article>
+
+            <article>
+              <span>03</span>
+              <h3>Front-end</h3>
+              <p>
+                Practical HTML/CSS implementation and refinement of real website
+                experiences.
+              </p>
+            </article>
+
+            <article>
+              <span>04</span>
+              <h3>Technical SEO</h3>
+              <p>
+                Metadata, canonical logic, schema, sitemap and indexing
+                foundations.
+              </p>
+            </article>
+
+            <article>
+              <span>05</span>
+              <h3>Search Visibility</h3>
+              <p>
+                Search Console, Bing, keyword structure and preservation of
+                useful SEO equity.
+              </p>
+            </article>
+
+            <article>
+              <span>06</span>
+              <h3>Local Presence</h3>
+              <p>
+                Google Business Profile, business information and local search
+                consistency.
+              </p>
+            </article>
+
+            <article>
+              <span>07</span>
+              <h3>Analytics</h3>
+              <p>
+                GA4 and measurement setup to understand traffic, behavior and
+                performance.
+              </p>
+            </article>
+
+            <article>
+              <span>08</span>
+              <h3>Creative Content</h3>
+              <p>
+                Social visuals, merchandise, campaign graphics and selected
+                digital content.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     PROCESS
+========================= -->
+
+      <section class="digital-process-section">
+        <div class="digital-container">
+          <div class="digital-section-heading">
+            <span class="digital-kicker">HOW I WORK</span>
+            <h2>A simple process for turning ideas into digital work.</h2>
+          </div>
+
+          <div class="digital-process">
+            <article class="digital-process-step">
+              <span>01</span>
+              <div>
+                <strong>Discover</strong>
+                <p>
+                  Understand the brand, audience, business objective and what
+                  the digital experience actually needs to achieve.
+                </p>
+              </div>
+            </article>
+
+            <article class="digital-process-step">
+              <span>02</span>
+              <div>
+                <strong>Define</strong>
+                <p>
+                  Set the visual direction, content hierarchy, key messages and
+                  structure before moving into detailed design.
+                </p>
+              </div>
+            </article>
+
+            <article class="digital-process-step">
+              <span>03</span>
+              <div>
+                <strong>Design</strong>
+                <p>
+                  Build the visual identity and interface around clarity,
+                  consistency and the intended user action.
+                </p>
+              </div>
+            </article>
+
+            <article class="digital-process-step">
+              <span>04</span>
+              <div>
+                <strong>Build</strong>
+                <p>
+                  Translate the design into a responsive digital experience and
+                  refine how it behaves across real devices.
+                </p>
+              </div>
+            </article>
+
+            <article class="digital-process-step">
+              <span>05</span>
+              <div>
+                <strong>Grow</strong>
+                <p>
+                  Add SEO, analytics and content improvements so the digital
+                  presence can continue to evolve after launch.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     FEATURED WORK
+========================= -->
+
+      <section class="digital-featured">
+        <div class="digital-container">
+          <div class="digital-section-heading digital-featured-heading">
+            <span class="digital-kicker">FEATURED DIGITAL WORK</span>
+
+            <h2>
+              Identity, experience
+              <span>and visibility in practice.</span>
+            </h2>
+
+            <p>
+              Two end-to-end projects that show different sides of the digital
+              work: one built around brand identity, the other around web
+              presence and SEO.
+            </p>
+          </div>
+
+          <div class="digital-featured-grid">
+            <a
+              href="project-strong-empowered.html"
+              class="digital-feature-card"
+            >
+              <div class="digital-feature-image">
+                <img
+                  src="images/projects/strong-empowered/strong-empowered-mockup.png"
+                  alt="Strong and Empowered Brand Identity and Web Experience"
+                />
+              </div>
+
+              <div class="digital-feature-content">
+                <span>BRANDING / WEB DESIGN</span>
+                <h3>Strong & Empowered</h3>
+                <p>Brand Identity & Web Experience</p>
+
+                <div class="digital-feature-tags">
+                  <span>Branding</span>
+                  <span>Web Design</span>
+                  <span>Visual Identity</span>
+                </div>
+
+                <strong>View Project ↗</strong>
+              </div>
+            </a>
+
+            <a href="project-ict.html" class="digital-feature-card">
+              <div class="digital-feature-image">
+                <img
+                  src="images/projects/ict.png"
+                  alt="ICT Networks Website Redesign and SEO"
+                />
+              </div>
+
+              <div class="digital-feature-content">
+                <span>WEB DESIGN / SEO</span>
+                <h3>ICT Networks</h3>
+                <p>Website Redesign & SEO</p>
+
+                <div class="digital-feature-tags">
+                  <span>Web Design</span>
+                  <span>SEO</span>
+                  <span>Digital Strategy</span>
+                </div>
+
+                <strong>View Project ↗</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     OTHER CREATIVE WORK
+========================= -->
+
+      <section class="digital-other">
+        <div class="digital-container digital-other-grid">
+          <div class="digital-other-title">
+            <span class="digital-kicker">OTHER CREATIVE WORK</span>
+
+            <h2>
+              Smaller projects.
+              <span>Different formats.</span>
+            </h2>
+
+            <p>
+              Branding, graphic design, merchandise and social content that
+              complement the larger digital case studies.
+            </p>
+          </div>
+
+          <div class="digital-other-list">
+            <div>
+              <span>01</span>
+              <div>
+                <strong>Monetti</strong>
+                <p>Visual Identity</p>
+              </div>
+              <em>BRANDING</em>
+            </div>
+
+            <div>
+              <span>02</span>
+              <div>
+                <strong>Rock Radio</strong>
+                <p>T-shirt Design</p>
+              </div>
+              <em>GRAPHIC DESIGN</em>
+            </div>
+
+            <div>
+              <span>03</span>
+              <div>
+                <strong>CoffeeDream</strong>
+                <p>Holiday Mug Design</p>
+              </div>
+              <em>MERCHANDISE</em>
+            </div>
+
+            <div>
+              <span>04</span>
+              <div>
+                <strong>Selected SMM & Freelance Work</strong>
+                <p>Social media, branding and digital content</p>
+              </div>
+              <em>DIGITAL / SOCIAL</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     PRINCIPLE
+========================= -->
+
+      <section class="digital-principle">
+        <div class="digital-container">
+          <span class="digital-kicker">DESIGN PRINCIPLE</span>
+
+          <blockquote>
+            Good design gets attention.
+            <span>Good digital work creates direction.</span>
+          </blockquote>
+
+          <p>
+            The goal is not to add decoration. It is to make the message
+            clearer, the experience easier and the next action more obvious.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================
+     CTA
+========================= -->
+
+      <section class="digital-cta">
+        <div class="digital-container">
+          <div class="digital-cta-card">
+            <div>
+              <span class="digital-kicker">LET'S CREATE</span>
+
+              <h2>Have a brand, website or digital idea?</h2>
+
+              <p>
+                The best starting point is usually a clear conversation about
+                what the project needs to communicate and what result it should
+                create.
+              </p>
+            </div>
+
+            <a href="contact.html" class="btn-primary">Start a Conversation</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="js/main.js"></script>
   </body>
