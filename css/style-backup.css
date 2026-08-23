@@ -2931,7 +2931,7 @@ header{
         transform:translateY(30px) !important;
     }
 
-}
+}.
 
 /* ===========================
    FINAL MOBILE LANGUAGE SWITCH
@@ -5244,9 +5244,9 @@ header{
         margin-bottom:45px !important;
     }
 
-}
+    .journey
 
-/* ==================================================
+    /* ==================================================
    ABOUT PAGE — INTERACTIONS / HOVER EFFECTS
    Final overrides
 ================================================== */
@@ -9222,130 +9222,230 @@ a.contact-method:hover{padding-left:10px;background:linear-gradient(90deg,rgba(7
 }
 
 /* ==================================================
-   MOBILE NAVIGATION — FINAL SINGLE VERSION
+   MOBILE NAVIGATION — CLEAN VERSION
 ================================================== */
 
 @media (max-width:900px){
 
     html,
     body{
-        width:100% !important;
-        max-width:100% !important;
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    .navbar{
+        position:relative;
+        width:100%;
+        max-width:100%;
+        padding:26px 34px;
+        min-height:86px;
+    }
+
+    /* HAMBURGER */
+
+    .menu-toggle{
+        display:flex !important;
+
+        position:absolute !important;
+        top:50% !important;
+        right:34px !important;
+
+        width:42px !important;
+        height:42px !important;
+
+        padding:0 !important;
+
+        align-items:center !important;
+        justify-content:center !important;
+
+        transform:translateY(-50%) !important;
+
+        color:#fff;
+        background:none;
+        border:0;
+
+        font-size:2.2rem;
+        line-height:1;
+
+        cursor:pointer;
+
+        z-index:2001;
+    }
+
+
+    /* LANGUAGE */
+
+    .navbar .lang-switch{
+        display:flex !important;
+
+        position:absolute !important;
+        top:50% !important;
+        right:92px !important;
+
+        width:42px !important;
+        height:42px !important;
+
+        align-items:center !important;
+        justify-content:center !important;
+
+        transform:translateY(-50%) !important;
+
+        border:1px solid rgba(255,255,255,.28);
+        border-radius:50%;
+
+        background:rgba(255,255,255,.04);
+
+        color:#fff !important;
+        text-decoration:none !important;
+
+        font-size:.78rem;
+        font-weight:800;
+
+        z-index:2001;
+    }
+
+
+    /* MENU CLOSED — DOES NOT EXIST */
+
+    .nav-links{
+        display:none !important;
+
+        position:fixed !important;
+
+        top:0 !important;
+        right:0 !important;
+        bottom:0 !important;
+        left:auto !important;
+
+        width:min(300px, 82vw) !important;
+        height:100dvh !important;
+
+        margin:0 !important;
+        padding:80px 30px !important;
+
+        flex-direction:column !important;
+        justify-content:center !important;
+        align-items:center !important;
+
+        gap:34px !important;
+
+        list-style:none !important;
+
+        background:#0b1020 !important;
+
+        z-index:2000 !important;
+    }
+
+
+    /* MENU OPEN */
+
+    .nav-links.active{
+        display:flex !important;
+    }
+
+
+    .nav-links a{
+        font-size:1.1rem !important;
+        white-space:nowrap;
+    }
+
+
+    .btn-outline{
+        display:none !important;
+    }
+
+}
+
+/* ==================================================
+   MOBILE MENU — STABLE VERSION
+================================================== */
+
+@media (max-width:900px){
+
+    html,
+    body{
+        max-width:100%;
         overflow-x:hidden !important;
     }
 
     header{
         transform:none !important;
         animation:none !important;
-        opacity:1 !important;
-        width:100% !important;
-        max-width:100% !important;
     }
 
-    .navbar{
-        position:relative !important;
-        width:100% !important;
-        max-width:100% !important;
-        min-height:86px !important;
-        padding:26px 34px !important;
-        box-sizing:border-box !important;
-    }
-
-    .menu-toggle{
+    /* MENU PANEL — always inside viewport */
+    .navbar > ul.nav-links{
         display:flex !important;
-        position:absolute !important;
-        top:50% !important;
-        right:34px !important;
-        transform:translateY(-50%) !important;
-        width:42px !important;
-        height:42px !important;
-        padding:0 !important;
-        align-items:center !important;
-        justify-content:center !important;
-        background:none !important;
-        border:0 !important;
-        color:#fff !important;
-        font-size:2.2rem !important;
-        line-height:1 !important;
-        cursor:pointer !important;
-        z-index:3001 !important;
-    }
 
-    .navbar .lang-switch{
-        display:flex !important;
-        position:absolute !important;
-        top:50% !important;
-        right:92px !important;
-        transform:translateY(-50%) !important;
-        width:42px !important;
-        height:42px !important;
-        padding:0 !important;
-        align-items:center !important;
-        justify-content:center !important;
-        border:1px solid rgba(255,255,255,.28) !important;
-        border-radius:50% !important;
-        background:rgba(255,255,255,.04) !important;
-        color:#fff !important;
-        text-decoration:none !important;
-        font-size:.78rem !important;
-        font-weight:800 !important;
-        letter-spacing:.08em !important;
-        line-height:1 !important;
-        z-index:3001 !important;
-    }
-
-    .btn-outline{
-        display:none !important;
-    }
-
-    /* Closed menu is removed from rendering, so it cannot widen the page. */
-    .nav-links{
-        display:none !important;
-    }
-
-    /* Open mobile drawer. */
-    .nav-links.active{
-        display:flex !important;
         position:fixed !important;
         top:0 !important;
         right:0 !important;
         bottom:0 !important;
         left:auto !important;
+
         width:min(320px,82vw) !important;
-        max-width:82vw !important;
         height:100dvh !important;
+
         margin:0 !important;
-        padding:100px 28px 50px !important;
-        box-sizing:border-box !important;
+        padding:110px 28px 50px !important;
+
         flex-direction:column !important;
         flex-wrap:nowrap !important;
         justify-content:center !important;
         align-items:center !important;
         gap:30px !important;
+
         list-style:none !important;
+
         background:#0b1020 !important;
-        overflow-y:auto !important;
+
+        box-sizing:border-box !important;
         overflow-x:hidden !important;
-        z-index:3000 !important;
+        overflow-y:auto !important;
+
+        /* CLOSED */
+        opacity:0 !important;
+        visibility:hidden !important;
+        pointer-events:none !important;
+
+        z-index:1999 !important;
     }
 
-    .nav-links.active > li{
+    /* OPEN */
+    .navbar > ul.nav-links.active{
+        opacity:1 !important;
+        visibility:visible !important;
+        pointer-events:auto !important;
+    }
+
+    .navbar > ul.nav-links > li{
         display:block !important;
-        flex:0 0 auto !important;
+
         width:100% !important;
         margin:0 !important;
         padding:0 !important;
+
         text-align:center !important;
     }
 
-    .nav-links.active > li > a{
+    .navbar > ul.nav-links > li > a{
         display:block !important;
+
         width:100% !important;
-        padding:4px 0 !important;
+
         color:#fff !important;
         font-size:1.15rem !important;
-        line-height:1.45 !important;
-        text-decoration:none !important;
+        line-height:1.4 !important;
+
         white-space:nowrap !important;
+    }
+
+    .menu-toggle{
+        z-index:2001 !important;
+    }
+
+    .navbar .lang-switch{
+        z-index:2001 !important;
     }
 }
