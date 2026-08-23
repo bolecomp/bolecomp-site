@@ -9349,3 +9349,63 @@ a.contact-method:hover{padding-left:10px;background:linear-gradient(90deg,rgba(7
         white-space:nowrap !important;
     }
 }
+
+/* ==================================================
+   HOME HERO — MOBILE CLEAN VERSION
+================================================== */
+
+@media (max-width:900px){
+
+    /* Floating icons completely off on mobile */
+    .hero-icons{
+        display:none !important;
+    }
+
+    .hero{
+        min-height:100svh !important;
+
+        padding:125px 24px 55px !important;
+
+        background:
+            linear-gradient(
+                rgba(5,8,20,.64),
+                rgba(5,8,20,.82)
+            ),
+            url("../images/hero-mobile.jpg") !important;
+
+        background-size:cover !important;
+        background-repeat:no-repeat !important;
+        background-position:center center !important;
+
+        align-items:center !important;
+    }
+
+    .hero-content{
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+    .hero-text{
+        transform:none !important;
+        margin:0 !important;
+    }
+
+    .hero h1{
+        font-size:clamp(2.65rem,11vw,3.25rem) !important;
+        line-height:1.04 !important;
+        max-width:390px !important;
+        margin:0 auto 26px !important;
+    }
+
+    .hero p{
+        max-width:360px !important;
+        margin:0 auto 38px !important;
+
+        font-size:1.05rem !important;
+        line-height:1.6 !important;
+    }
+
+    .buttons{
+        gap:16px !important;
+    }
+}
