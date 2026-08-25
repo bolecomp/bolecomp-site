@@ -9840,3 +9840,22 @@ a.contact-method:hover{padding-left:10px;background:linear-gradient(90deg,rgba(7
     }
 
 }
+
+/* HOME — ENTERPRISE INTRO CLASS CONFLICT FIX */
+
+#enterprise p.enterprise-intro{
+    max-width:760px !important;
+
+    margin:0 auto 80px !important;
+    padding:0 !important;
+
+    background:transparent !important;
+
+    text-align:center !important;
+
+    color:var(--text2) !important;
+
+    font-size:1.15rem !important;
+    line-height:1.9 !important;
+}
+
