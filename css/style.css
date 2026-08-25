@@ -9875,3 +9875,135 @@ body.enterprise-page section.enterprise-intro{
 
     text-align:left !important;
 }
+
+/* ==================================================
+   DIGITAL PAGE — INTRO CLASS CONFLICT FIX
+================================================== */
+
+body.digital-page section.digital-intro{
+    width:100% !important;
+    max-width:none !important;
+
+    margin:0 !important;
+
+    padding:120px 0 !important;
+
+    background:#0b1020 !important;
+
+    color:inherit !important;
+    font-size:inherit !important;
+    line-height:normal !important;
+    text-align:left !important;
+}
+
+/* ==================================================
+   DIGITAL PAGE — THREE FEATURED PROJECTS
+================================================== */
+
+
+/* =========================
+   HERO — THIRD PROJECT
+========================= */
+
+.digital-page .digital-preview-main{
+    width:62% !important;
+    left:0 !important;
+    top:5% !important;
+    z-index:4;
+
+    transform:rotate(-4deg);
+}
+
+.digital-page .digital-preview-secondary{
+    width:53% !important;
+    right:0 !important;
+    bottom:8% !important;
+    z-index:5;
+
+    transform:rotate(4deg);
+}
+
+.digital-page .digital-preview-tertiary{
+    width:46%;
+
+    left:7%;
+    bottom:0;
+
+    z-index:6;
+
+    transform:rotate(-2deg);
+}
+
+.digital-page .digital-preview-tertiary:hover{
+    transform:rotate(-1deg) translateY(-5px);
+}
+
+
+/* Retail image needs a slightly better crop */
+.digital-page .digital-preview-tertiary .digital-preview-image img{
+    object-position:center 25%;
+}
+
+
+/* Orbit labels — slightly repositioned */
+.digital-page .label-brand{
+    right:1%;
+    top:5%;
+}
+
+.digital-page .label-web{
+    left:-1%;
+    bottom:20%;
+}
+
+.digital-page .label-search{
+    right:2%;
+    bottom:-2%;
+}
+
+
+/* =========================
+   FEATURED WORK — 3 COLUMNS
+========================= */
+
+.digital-page .digital-featured-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:24px !important;
+}
+
+.digital-page .digital-feature-content h3{
+    font-size:1.65rem;
+}
+
+
+/* TABLET */
+@media(max-width:1100px){
+
+    .digital-page .digital-featured-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    }
+
+}
+
+
+/* MOBILE */
+@media(max-width:760px){
+
+    .digital-page .digital-featured-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    .digital-page .digital-preview-main{
+        width:66% !important;
+    }
+
+    .digital-page .digital-preview-secondary{
+        width:55% !important;
+    }
+
+    .digital-page .digital-preview-tertiary{
+        width:48%;
+        left:5%;
+    }
+
+}
