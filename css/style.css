@@ -9859,3 +9859,19 @@ a.contact-method:hover{padding-left:10px;background:linear-gradient(90deg,rgba(7
     line-height:1.9 !important;
 }
 
+/* ==================================================
+   ENTERPRISE PAGE — INTRO CLASS CONFLICT FIX
+================================================== */
+
+body.enterprise-page section.enterprise-intro{
+    width:100% !important;
+    max-width:none !important;
+
+    margin:0 !important;
+
+    padding:120px 0 !important;
+
+    background:#0b1020 !important;
+
+    text-align:left !important;
+}

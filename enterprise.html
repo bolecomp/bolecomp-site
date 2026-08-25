@@ -1,597 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Enterprise Architecture & Cloud | BoleComp</title>
+    <title>Enterprise Architecture & Cloud | BoleComp</title>
 
-  <meta
-    name="description"
-    content="Enterprise architecture, cloud infrastructure, data center modernization and business development — connecting technology, operations and business requirements."
-  >
+    <meta
+      name="description"
+      content="Enterprise architecture, cloud infrastructure, data center modernization and business development — connecting technology, operations and business requirements."
+    />
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-    rel="stylesheet"
-  >
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="enterprise-page">
+  <body class="enterprise-page">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="logo">
+            <img src="images/logo-bc.svg" alt="BoleComp Logo" />
+          </a>
+        </div>
 
-<header>
-  <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          ☰
+        </button>
 
-    <div class="logo">
-      <a href="index.html" class="logo">
-        <img src="images/logo-bc.svg" alt="BoleComp Logo">
-      </a>
-    </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="enterprise.html" class="active">Enterprise</a></li>
+          <li><a href="digital.html">Digital</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+        <a href="/sr/enterprise.html" class="lang-switch">SR</a>
+        <a href="contact.html" class="btn-outline">Let's Talk</a>
+      </nav>
+    </header>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="enterprise.html" class="active">Enterprise</a></li>
-      <li><a href="digital.html">Digital</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <a href="/sr/enterprise.html" class="lang-switch">SR</a>
-    <a href="contact.html" class="btn-outline">Let's Talk</a>
-
-  </nav>
-</header>
-
-
-<main>
-
-<!-- =========================
+    <main>
+      <!-- =========================
      HERO
 ========================= -->
 
-<section class="enterprise-hero">
+      <section class="enterprise-hero">
+        <div class="enterprise-container enterprise-hero-grid">
+          <div class="enterprise-hero-copy">
+            <span class="enterprise-kicker">ENTERPRISE</span>
 
-  <div class="enterprise-container enterprise-hero-grid">
+            <h1>
+              Architecture that connects
+              <span>technology with business.</span>
+            </h1>
 
-    <div class="enterprise-hero-copy">
+            <p class="enterprise-hero-lead">
+              I help translate complex infrastructure and cloud requirements
+              into practical enterprise solutions — combining architecture,
+              service design, technology strategy and business thinking.
+            </p>
 
-      <span class="enterprise-kicker">ENTERPRISE</span>
+            <div class="enterprise-hero-actions">
+              <a href="projects.html" class="btn-primary"
+                >View Enterprise Projects</a
+              >
+              <a href="#capabilities" class="enterprise-text-link"
+                >Explore capabilities ↓</a
+              >
+            </div>
 
-      <h1>
-        Architecture that connects
-        <span>technology with business.</span>
-      </h1>
+            <div class="enterprise-hero-tags">
+              <span>Enterprise Architecture</span>
+              <span>Cloud</span>
+              <span>Data Center</span>
+              <span>Business Development</span>
+            </div>
+          </div>
 
-      <p class="enterprise-hero-lead">
-        I help translate complex infrastructure and cloud requirements into
-        practical enterprise solutions — combining architecture, service design,
-        technology strategy and business thinking.
-      </p>
+          <div class="enterprise-architecture-visual">
+            <div class="architecture-glow"></div>
 
-      <div class="enterprise-hero-actions">
-        <a href="projects.html" class="btn-primary">View Enterprise Projects</a>
-        <a href="#capabilities" class="enterprise-text-link">Explore capabilities ↓</a>
-      </div>
+            <div class="architecture-core">
+              <span>ENTERPRISE</span>
+              <strong>Architecture</strong>
+            </div>
 
-      <div class="enterprise-hero-tags">
-        <span>Enterprise Architecture</span>
-        <span>Cloud</span>
-        <span>Data Center</span>
-        <span>Business Development</span>
-      </div>
+            <div class="architecture-node node-cloud">
+              <span>01</span>
+              <strong>Cloud</strong>
+            </div>
 
-    </div>
+            <div class="architecture-node node-dc">
+              <span>02</span>
+              <strong>Data Center</strong>
+            </div>
 
+            <div class="architecture-node node-platform">
+              <span>03</span>
+              <strong>Platforms</strong>
+            </div>
 
-    <div class="enterprise-architecture-visual">
+            <div class="architecture-node node-ops">
+              <span>04</span>
+              <strong>Operations</strong>
+            </div>
 
-      <div class="architecture-glow"></div>
+            <div class="architecture-node node-business">
+              <span>05</span>
+              <strong>Business</strong>
+            </div>
 
-      <div class="architecture-core">
-        <span>ENTERPRISE</span>
-        <strong>Architecture</strong>
-      </div>
+            <div class="architecture-line line-1"></div>
+            <div class="architecture-line line-2"></div>
+            <div class="architecture-line line-3"></div>
+            <div class="architecture-line line-4"></div>
+            <div class="architecture-line line-5"></div>
+          </div>
+        </div>
+      </section>
 
-      <div class="architecture-node node-cloud">
-        <span>01</span>
-        <strong>Cloud</strong>
-      </div>
-
-      <div class="architecture-node node-dc">
-        <span>02</span>
-        <strong>Data Center</strong>
-      </div>
-
-      <div class="architecture-node node-platform">
-        <span>03</span>
-        <strong>Platforms</strong>
-      </div>
-
-      <div class="architecture-node node-ops">
-        <span>04</span>
-        <strong>Operations</strong>
-      </div>
-
-      <div class="architecture-node node-business">
-        <span>05</span>
-        <strong>Business</strong>
-      </div>
-
-      <div class="architecture-line line-1"></div>
-      <div class="architecture-line line-2"></div>
-      <div class="architecture-line line-3"></div>
-      <div class="architecture-line line-4"></div>
-      <div class="architecture-line line-5"></div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      INTRO
 ========================= -->
 
-<section class="enterprise-intro">
+      <section class="enterprise-intro">
+        <div class="enterprise-container enterprise-intro-grid">
+          <div>
+            <span class="enterprise-kicker">WHAT I DO</span>
 
-  <div class="enterprise-container enterprise-intro-grid">
+            <h2>
+              From infrastructure decisions
+              <span>to service strategy.</span>
+            </h2>
+          </div>
 
-    <div>
-      <span class="enterprise-kicker">WHAT I DO</span>
+          <div class="enterprise-intro-copy">
+            <p>
+              Enterprise IT decisions rarely belong to a single technology
+              domain. Compute, storage, virtualization, networking, security,
+              operations, licensing and commercial constraints all influence the
+              final solution.
+            </p>
 
-      <h2>
-        From infrastructure decisions
-        <span>to service strategy.</span>
-      </h2>
-    </div>
+            <p>
+              My role is to connect those layers into an architecture that is
+              technically sound, operationally realistic and aligned with the
+              business objective behind the project.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <div class="enterprise-intro-copy">
-
-      <p>
-        Enterprise IT decisions rarely belong to a single technology domain.
-        Compute, storage, virtualization, networking, security, operations,
-        licensing and commercial constraints all influence the final solution.
-      </p>
-
-      <p>
-        My role is to connect those layers into an architecture that is
-        technically sound, operationally realistic and aligned with the business
-        objective behind the project.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      THREE PILLARS
 ========================= -->
 
-<section class="enterprise-pillars">
+      <section class="enterprise-pillars">
+        <div class="enterprise-container">
+          <div class="enterprise-section-heading">
+            <span class="enterprise-kicker">CORE AREAS</span>
+            <h2>Three perspectives. One enterprise solution.</h2>
+          </div>
 
-  <div class="enterprise-container">
+          <div class="enterprise-pillars-grid">
+            <article class="enterprise-pillar-card">
+              <span class="pillar-index">01</span>
 
-    <div class="enterprise-section-heading">
-      <span class="enterprise-kicker">CORE AREAS</span>
-      <h2>Three perspectives. One enterprise solution.</h2>
-    </div>
+              <div>
+                <span class="pillar-label">ARCHITECTURE</span>
 
+                <h3>Enterprise Architecture</h3>
 
-    <div class="enterprise-pillars-grid">
+                <p>
+                  Designing resilient infrastructure and platform architectures
+                  around business requirements, technical constraints and future
+                  growth.
+                </p>
 
-      <article class="enterprise-pillar-card">
+                <ul>
+                  <li>Data Center Architecture</li>
+                  <li>Infrastructure Modernization</li>
+                  <li>Solution Design & Review</li>
+                  <li>Technology Evaluation</li>
+                </ul>
+              </div>
+            </article>
 
-        <span class="pillar-index">01</span>
+            <article class="enterprise-pillar-card">
+              <span class="pillar-index">02</span>
 
-        <div>
-          <span class="pillar-label">ARCHITECTURE</span>
+              <div>
+                <span class="pillar-label">CLOUD</span>
 
-          <h3>Enterprise Architecture</h3>
+                <h3>Cloud & Infrastructure</h3>
 
-          <p>
-            Designing resilient infrastructure and platform architectures around
-            business requirements, technical constraints and future growth.
-          </p>
+                <p>
+                  Building private and hybrid cloud platforms and defining the
+                  infrastructure services required to operate them reliably.
+                </p>
 
-          <ul>
-            <li>Data Center Architecture</li>
-            <li>Infrastructure Modernization</li>
-            <li>Solution Design & Review</li>
-            <li>Technology Evaluation</li>
-          </ul>
+                <ul>
+                  <li>Private & Hybrid Cloud</li>
+                  <li>VMware & Virtualization</li>
+                  <li>Compute / Storage / Networking</li>
+                  <li>Backup & Disaster Recovery</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="enterprise-pillar-card">
+              <span class="pillar-index">03</span>
+
+              <div>
+                <span class="pillar-label">BUSINESS</span>
+
+                <h3>Business Development</h3>
+
+                <p>
+                  Turning technical capabilities into viable services and
+                  customer solutions through presales, consulting and service
+                  development.
+                </p>
+
+                <ul>
+                  <li>Presales & Consulting</li>
+                  <li>Service Design</li>
+                  <li>Solution Positioning</li>
+                  <li>Go-to-Market Support</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-      </article>
-
-
-      <article class="enterprise-pillar-card">
-
-        <span class="pillar-index">02</span>
-
-        <div>
-          <span class="pillar-label">CLOUD</span>
-
-          <h3>Cloud & Infrastructure</h3>
-
-          <p>
-            Building private and hybrid cloud platforms and defining the
-            infrastructure services required to operate them reliably.
-          </p>
-
-          <ul>
-            <li>Private & Hybrid Cloud</li>
-            <li>VMware & Virtualization</li>
-            <li>Compute / Storage / Networking</li>
-            <li>Backup & Disaster Recovery</li>
-          </ul>
-        </div>
-
-      </article>
-
-
-      <article class="enterprise-pillar-card">
-
-        <span class="pillar-index">03</span>
-
-        <div>
-          <span class="pillar-label">BUSINESS</span>
-
-          <h3>Business Development</h3>
-
-          <p>
-            Turning technical capabilities into viable services and customer
-            solutions through presales, consulting and service development.
-          </p>
-
-          <ul>
-            <li>Presales & Consulting</li>
-            <li>Service Design</li>
-            <li>Solution Positioning</li>
-            <li>Go-to-Market Support</li>
-          </ul>
-        </div>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      CAPABILITIES
 ========================= -->
 
-<section class="enterprise-capabilities" id="capabilities">
+      <section class="enterprise-capabilities" id="capabilities">
+        <div class="enterprise-container">
+          <div
+            class="enterprise-section-heading enterprise-section-heading-wide"
+          >
+            <span class="enterprise-kicker">CAPABILITIES</span>
+            <h2>Working across the full infrastructure stack.</h2>
+            <p>
+              The technology changes from project to project. The architectural
+              questions remain surprisingly consistent.
+            </p>
+          </div>
 
-  <div class="enterprise-container">
+          <div class="enterprise-capability-grid">
+            <article>
+              <span>01</span>
+              <h3>Data Center</h3>
+              <p>
+                Compute, storage, SAN, networking, availability and platform
+                modernization.
+              </p>
+            </article>
 
-    <div class="enterprise-section-heading enterprise-section-heading-wide">
-      <span class="enterprise-kicker">CAPABILITIES</span>
-      <h2>Working across the full infrastructure stack.</h2>
-      <p>
-        The technology changes from project to project. The architectural
-        questions remain surprisingly consistent.
-      </p>
-    </div>
+            <article>
+              <span>02</span>
+              <h3>Private Cloud</h3>
+              <p>
+                Cloud platforms, tenant models, automation, lifecycle and
+                service architecture.
+              </p>
+            </article>
 
+            <article>
+              <span>03</span>
+              <h3>Virtualization</h3>
+              <p>
+                VMware environments, VCF, vSphere, Cloud Director and platform
+                transformation.
+              </p>
+            </article>
 
-    <div class="enterprise-capability-grid">
+            <article>
+              <span>04</span>
+              <h3>Storage & Data</h3>
+              <p>
+                Enterprise storage, data services, performance, availability and
+                protection.
+              </p>
+            </article>
 
-      <article>
-        <span>01</span>
-        <h3>Data Center</h3>
-        <p>Compute, storage, SAN, networking, availability and platform modernization.</p>
-      </article>
+            <article>
+              <span>05</span>
+              <h3>Backup & DR</h3>
+              <p>
+                Backup architecture, recovery models, DR strategy and service
+                continuity.
+              </p>
+            </article>
 
-      <article>
-        <span>02</span>
-        <h3>Private Cloud</h3>
-        <p>Cloud platforms, tenant models, automation, lifecycle and service architecture.</p>
-      </article>
+            <article>
+              <span>06</span>
+              <h3>Operations</h3>
+              <p>
+                Monitoring, support models, ownership, handover, runbooks and
+                service readiness.
+              </p>
+            </article>
 
-      <article>
-        <span>03</span>
-        <h3>Virtualization</h3>
-        <p>VMware environments, VCF, vSphere, Cloud Director and platform transformation.</p>
-      </article>
+            <article>
+              <span>07</span>
+              <h3>Presales</h3>
+              <p>
+                Customer discovery, requirements analysis, technical positioning
+                and workshops.
+              </p>
+            </article>
 
-      <article>
-        <span>04</span>
-        <h3>Storage & Data</h3>
-        <p>Enterprise storage, data services, performance, availability and protection.</p>
-      </article>
+            <article>
+              <span>08</span>
+              <h3>Service Development</h3>
+              <p>
+                Connecting architecture, commercial model, operations and
+                customer experience.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <article>
-        <span>05</span>
-        <h3>Backup & DR</h3>
-        <p>Backup architecture, recovery models, DR strategy and service continuity.</p>
-      </article>
-
-      <article>
-        <span>06</span>
-        <h3>Operations</h3>
-        <p>Monitoring, support models, ownership, handover, runbooks and service readiness.</p>
-      </article>
-
-      <article>
-        <span>07</span>
-        <h3>Presales</h3>
-        <p>Customer discovery, requirements analysis, technical positioning and workshops.</p>
-      </article>
-
-      <article>
-        <span>08</span>
-        <h3>Service Development</h3>
-        <p>Connecting architecture, commercial model, operations and customer experience.</p>
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      APPROACH
 ========================= -->
 
-<section class="enterprise-approach">
+      <section class="enterprise-approach">
+        <div class="enterprise-container">
+          <div class="enterprise-section-heading">
+            <span class="enterprise-kicker">HOW I WORK</span>
+            <h2>Architecture is a process, not a diagram.</h2>
+          </div>
 
-  <div class="enterprise-container">
+          <div class="enterprise-process">
+            <article class="enterprise-process-step">
+              <span>01</span>
+              <div>
+                <strong>Understand</strong>
+                <p>
+                  Clarify the business objective, current environment,
+                  constraints, risks and the real reason behind the technology
+                  request.
+                </p>
+              </div>
+            </article>
 
-    <div class="enterprise-section-heading">
-      <span class="enterprise-kicker">HOW I WORK</span>
-      <h2>Architecture is a process, not a diagram.</h2>
-    </div>
+            <article class="enterprise-process-step">
+              <span>02</span>
+              <div>
+                <strong>Architect</strong>
+                <p>
+                  Define the target architecture, evaluate alternatives and
+                  balance technical quality with operational and commercial
+                  reality.
+                </p>
+              </div>
+            </article>
 
+            <article class="enterprise-process-step">
+              <span>03</span>
+              <div>
+                <strong>Validate</strong>
+                <p>
+                  Use workshops, PoCs, design reviews and stakeholder alignment
+                  to reduce uncertainty before major implementation decisions.
+                </p>
+              </div>
+            </article>
 
-    <div class="enterprise-process">
-
-      <article class="enterprise-process-step">
-        <span>01</span>
-        <div>
-          <strong>Understand</strong>
-          <p>
-            Clarify the business objective, current environment, constraints,
-            risks and the real reason behind the technology request.
-          </p>
+            <article class="enterprise-process-step">
+              <span>04</span>
+              <div>
+                <strong>Deliver</strong>
+                <p>
+                  Keep architecture connected to implementation, migration,
+                  operations and the final business outcome.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-      </article>
+      </section>
 
-      <article class="enterprise-process-step">
-        <span>02</span>
-        <div>
-          <strong>Architect</strong>
-          <p>
-            Define the target architecture, evaluate alternatives and balance
-            technical quality with operational and commercial reality.
-          </p>
-        </div>
-      </article>
-
-      <article class="enterprise-process-step">
-        <span>03</span>
-        <div>
-          <strong>Validate</strong>
-          <p>
-            Use workshops, PoCs, design reviews and stakeholder alignment to
-            reduce uncertainty before major implementation decisions.
-          </p>
-        </div>
-      </article>
-
-      <article class="enterprise-process-step">
-        <span>04</span>
-        <div>
-          <strong>Deliver</strong>
-          <p>
-            Keep architecture connected to implementation, migration,
-            operations and the final business outcome.
-          </p>
-        </div>
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      PRINCIPLES
 ========================= -->
 
-<section class="enterprise-principles">
+      <section class="enterprise-principles">
+        <div class="enterprise-container enterprise-principles-grid">
+          <div class="enterprise-principles-title">
+            <span class="enterprise-kicker">ARCHITECTURE PRINCIPLES</span>
+            <h2>What matters beyond the technology itself.</h2>
+          </div>
 
-  <div class="enterprise-container enterprise-principles-grid">
+          <div class="enterprise-principles-list">
+            <div>
+              <span>01</span>
+              <strong>Design for operations, not only implementation.</strong>
+            </div>
 
-    <div class="enterprise-principles-title">
-      <span class="enterprise-kicker">ARCHITECTURE PRINCIPLES</span>
-      <h2>What matters beyond the technology itself.</h2>
-    </div>
+            <div>
+              <span>02</span>
+              <strong>Prefer clarity over unnecessary complexity.</strong>
+            </div>
 
-    <div class="enterprise-principles-list">
+            <div>
+              <span>03</span>
+              <strong
+                >Make technical and commercial assumptions visible.</strong
+              >
+            </div>
 
-      <div>
-        <span>01</span>
-        <strong>Design for operations, not only implementation.</strong>
-      </div>
+            <div>
+              <span>04</span>
+              <strong>Validate important decisions before scaling them.</strong>
+            </div>
 
-      <div>
-        <span>02</span>
-        <strong>Prefer clarity over unnecessary complexity.</strong>
-      </div>
+            <div>
+              <span>05</span>
+              <strong
+                >Keep the architecture connected to business value.</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div>
-        <span>03</span>
-        <strong>Make technical and commercial assumptions visible.</strong>
-      </div>
-
-      <div>
-        <span>04</span>
-        <strong>Validate important decisions before scaling them.</strong>
-      </div>
-
-      <div>
-        <span>05</span>
-        <strong>Keep the architecture connected to business value.</strong>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      SELECTED PROJECTS
 ========================= -->
 
-<section class="enterprise-selected">
+      <section class="enterprise-selected">
+        <div class="enterprise-container">
+          <div class="enterprise-section-heading enterprise-selected-heading">
+            <span class="enterprise-kicker">SELECTED ENTERPRISE WORK</span>
 
-  <div class="enterprise-container">
+            <h2>
+              Architecture applied
+              <span>in real environments.</span>
+            </h2>
 
-    <div class="enterprise-section-heading enterprise-selected-heading">
+            <p>
+              A selection of data center, cloud and consulting projects where
+              architecture moved from concept into practical implementation or
+              validation.
+            </p>
+          </div>
 
-      <span class="enterprise-kicker">SELECTED ENTERPRISE WORK</span>
+          <div class="enterprise-project-grid">
+            <a href="project-insurance-dc.html" class="enterprise-project-card">
+              <div class="enterprise-project-image">
+                <img
+                  src="images/projects/insurance-dc.png"
+                  alt="Data Center Modernization"
+                />
+              </div>
 
-      <h2>
-        Architecture applied
-        <span>in real environments.</span>
-      </h2>
+              <div class="enterprise-project-content">
+                <span>DATA CENTER / ARCHITECTURE</span>
+                <h3>Major Insurance Company</h3>
+                <p>Data Center Modernization & Kubernetes Platform</p>
+                <strong>View Project ↗</strong>
+              </div>
+            </a>
 
-      <p>
-        A selection of data center, cloud and consulting projects where
-        architecture moved from concept into practical implementation or validation.
-      </p>
+            <a href="project-vcf.html" class="enterprise-project-card">
+              <div class="enterprise-project-image">
+                <img
+                  src="images/projects/vcf-poc2.png"
+                  alt="VMware Cloud Foundation PoC"
+                />
+              </div>
 
-    </div>
+              <div class="enterprise-project-content">
+                <span>HYBRID CLOUD / CONSULTING</span>
+                <h3>VMware VCF PoC</h3>
+                <p>Hybrid Cloud Architecture & Consulting</p>
+                <strong>View Project ↗</strong>
+              </div>
+            </a>
 
+            <a href="project-huawei-demo.html" class="enterprise-project-card">
+              <div class="enterprise-project-image">
+                <img
+                  src="images/projects/huawei-demo-dc.png"
+                  alt="Huawei Demo Data Center"
+                />
+              </div>
 
-    <div class="enterprise-project-grid">
+              <div class="enterprise-project-content">
+                <span>PRESALES / PRIVATE CLOUD</span>
+                <h3>Huawei Demo Data Center</h3>
+                <p>
+                  Enterprise Infrastructure & Private Cloud Demonstration
+                  Platform
+                </p>
+                <strong>View Project ↗</strong>
+              </div>
+            </a>
+          </div>
 
-      <a href="project-ddor.html" class="enterprise-project-card">
-
-        <div class="enterprise-project-image">
-          <img
-            src="images/projects/ddor.png"
-            alt="DDOR Novi Sad Data Center Modernization"
-          >
+          <div class="enterprise-projects-link">
+            <a href="projects.html" class="enterprise-text-link"
+              >Explore all projects →</a
+            >
+          </div>
         </div>
+      </section>
 
-        <div class="enterprise-project-content">
-          <span>DATA CENTER / ARCHITECTURE</span>
-          <h3>DDOR Novi Sad</h3>
-          <p>Data Center Modernization & Kubernetes Platform</p>
-          <strong>View Project ↗</strong>
-        </div>
-
-      </a>
-
-
-      <a href="project-vcf.html" class="enterprise-project-card">
-
-        <div class="enterprise-project-image">
-          <img
-            src="images/projects/vcf-poc2.png"
-            alt="VMware Cloud Foundation PoC"
-          >
-        </div>
-
-        <div class="enterprise-project-content">
-          <span>HYBRID CLOUD / CONSULTING</span>
-          <h3>VMware VCF PoC</h3>
-          <p>Hybrid Cloud Architecture & Consulting</p>
-          <strong>View Project ↗</strong>
-        </div>
-
-      </a>
-
-
-      <a href="project-huawei-demo.html" class="enterprise-project-card">
-
-        <div class="enterprise-project-image">
-          <img
-            src="images/projects/huawei-demo-dc.png"
-            alt="Huawei Demo Data Center"
-          >
-        </div>
-
-        <div class="enterprise-project-content">
-          <span>PRESALES / PRIVATE CLOUD</span>
-          <h3>Huawei Demo Data Center</h3>
-          <p>Enterprise Infrastructure & Private Cloud Demonstration Platform</p>
-          <strong>View Project ↗</strong>
-        </div>
-
-      </a>
-
-    </div>
-
-
-    <div class="enterprise-projects-link">
-      <a href="projects.html" class="enterprise-text-link">Explore all projects →</a>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
+      <!-- =========================
      CTA
 ========================= -->
 
-<section class="enterprise-cta">
+      <section class="enterprise-cta">
+        <div class="enterprise-container">
+          <div class="enterprise-cta-card">
+            <div>
+              <span class="enterprise-kicker">LET'S TALK</span>
 
-  <div class="enterprise-container">
+              <h2>Have an infrastructure, cloud or architecture challenge?</h2>
 
-    <div class="enterprise-cta-card">
+              <p>
+                Complex technology decisions become easier when the problem,
+                constraints and business goal are clearly connected.
+              </p>
+            </div>
 
-      <div>
-        <span class="enterprise-kicker">LET'S TALK</span>
+            <a href="contact.html" class="btn-primary">Start a Conversation</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <h2>
-          Have an infrastructure,
-          cloud or architecture challenge?
-        </h2>
-
-        <p>
-          Complex technology decisions become easier when the problem,
-          constraints and business goal are clearly connected.
-        </p>
-      </div>
-
-      <a href="contact.html" class="btn-primary">Start a Conversation</a>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-<script src="js/main.js"></script>
-
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
