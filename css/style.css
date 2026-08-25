@@ -10169,3 +10169,54 @@ body.digital-page section.digital-intro{
 .digital-page .digital-feature-card:hover::after{
     opacity:1;
 }
+
+/* ==================================================
+   DIGITAL HERO — FINAL CARD POSITION TWEAK
+================================================== */
+
+/* Strong & Empowered — malo više napred i vidljivije */
+.digital-page .digital-preview-main{
+    width:62% !important;
+    left:5% !important;   /* bilo 1% */
+    top:-1% !important;   /* bilo 3% */
+    z-index:5 !important;
+}
+
+/* ICT ostaje pozadi desno */
+.digital-page .digital-preview-secondary{
+    width:53% !important;
+    right:0 !important;
+    bottom:7% !important;
+    z-index:4 !important;
+}
+
+/* Retail — napred, ali malo niže */
+.digital-page .digital-preview-tertiary{
+    width:45% !important;
+    left:8% !important;
+    bottom:-2% !important;
+    z-index:6 !important;
+}
+
+
+/* 01 BRAND — približi ga Strong kartici */
+.digital-page .label-brand{
+    left:65% !important;  /* prati karticu */
+    right:auto !important;
+    top:6% !important;
+    z-index:8 !important;
+}
+
+
+/* ostale dve oznake */
+.digital-page .label-web{
+    left:0 !important;
+    bottom:18% !important;
+    z-index:8 !important;
+}
+
+.digital-page .label-search{
+    right:2% !important;
+    bottom:-1% !important;
+    z-index:8 !important;
+}
