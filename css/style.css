@@ -10007,3 +10007,165 @@ body.digital-page section.digital-intro{
     }
 
 }
+
+/* ==================================================
+   DIGITAL PAGE — INTERACTIONS V2
+================================================== */
+
+.digital-page .digital-feature-card{
+    transform-style:preserve-3d;
+
+    transition:
+        transform .22s ease-out,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.digital-page .digital-feature-card:hover{
+    border-color:rgba(155,92,255,.40);
+
+    box-shadow:
+        0 38px 90px rgba(0,0,0,.38),
+        0 0 42px rgba(125,80,255,.12);
+}
+
+
+/* HERO CARDS */
+
+.digital-page .digital-preview-card{
+    transition:
+        transform .18s ease-out,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+
+/* SCROLL REVEAL */
+
+.digital-page .digital-reveal{
+    opacity:0;
+
+    transform:translateY(42px) scale(.98);
+
+    transition:
+        opacity .75s ease,
+        transform .75s cubic-bezier(.2,.7,.2,1);
+}
+
+.digital-page .digital-reveal.is-visible{
+    opacity:1;
+
+    transform:translateY(0) scale(1);
+}
+
+
+/* MOBILE */
+
+@media(max-width:760px){
+
+    .digital-page .digital-feature-card{
+        transform:none !important;
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media(prefers-reduced-motion:reduce){
+
+    .digital-page .digital-reveal{
+        opacity:1 !important;
+        transform:none !important;
+    }
+
+}
+
+/* ==================================================
+   DIGITAL HERO — MOUSE INTERACTION
+================================================== */
+
+.digital-page .digital-hero-visual{
+    --mouse-x:50%;
+    --mouse-y:50%;
+}
+
+
+/* svetlosni spot prati miš */
+.digital-page .digital-hero-visual::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    z-index:3;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    background:
+        radial-gradient(
+            180px circle at var(--mouse-x) var(--mouse-y),
+            rgba(139,92,246,.22),
+            rgba(63,140,255,.10) 35%,
+            transparent 70%
+        );
+
+    transition:opacity .25s ease;
+}
+
+
+.digital-page .digital-hero-visual:hover::after{
+    opacity:1;
+}
+
+
+.digital-page .digital-preview-card{
+    will-change:transform;
+
+    transition:
+        transform .15s ease-out,
+        box-shadow .3s ease !important;
+}
+
+/* ==================================================
+   DIGITAL FEATURED CARDS — MOUSE EFFECT
+================================================== */
+
+.digital-page .digital-feature-card{
+    position:relative;
+    transform-style:preserve-3d;
+    will-change:transform;
+
+    transition:
+        transform .16s ease-out,
+        box-shadow .25s ease,
+        border-color .25s ease !important;
+}
+
+.digital-page .digital-feature-card::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    pointer-events:none;
+    z-index:5;
+
+    opacity:0;
+
+    background:
+        radial-gradient(
+            260px circle at var(--card-x, 50%) var(--card-y, 50%),
+            rgba(155,92,255,.18),
+            rgba(63,140,255,.07) 38%,
+            transparent 70%
+        );
+
+    transition:opacity .25s ease;
+}
+
+.digital-page .digital-feature-card:hover::after{
+    opacity:1;
+}
