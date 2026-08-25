@@ -650,5 +650,108 @@
     </main>
 
     <script src="js/main.js"></script>
+
+    <script>
+      (() => {
+        const hero = document.querySelector(".digital-hero-visual");
+
+        if (!hero) return;
+
+        const card1 = hero.querySelector(".digital-preview-main");
+        const card2 = hero.querySelector(".digital-preview-secondary");
+        const card3 = hero.querySelector(".digital-preview-tertiary");
+
+        hero.addEventListener("pointermove", (e) => {
+          const rect = hero.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          const px = x / rect.width;
+          const py = y / rect.height;
+
+          /* glow prati miš */
+          hero.style.setProperty("--mouse-x", `${px * 100}%`);
+          hero.style.setProperty("--mouse-y", `${py * 100}%`);
+
+          /* pomeranje slojeva */
+          const dx = px - 0.5;
+          const dy = py - 0.5;
+
+          if (card1) {
+            card1.style.transform = `translate(${dx * 18}px, ${
+              dy * 14
+            }px) rotate(-4deg)`;
+          }
+
+          if (card2) {
+            card2.style.transform = `translate(${dx * -28}px, ${
+              dy * -20
+            }px) rotate(4deg)`;
+          }
+
+          if (card3) {
+            card3.style.transform = `translate(${dx * 34}px, ${
+              dy * 24
+            }px) rotate(-2deg)`;
+          }
+        });
+
+        hero.addEventListener("pointerleave", () => {
+          if (card1) card1.style.transform = "rotate(-4deg)";
+
+          if (card2) card2.style.transform = "rotate(4deg)";
+
+          if (card3) card3.style.transform = "rotate(-2deg)";
+        });
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const cards = document.querySelectorAll(".digital-feature-card");
+
+        cards.forEach((card) => {
+          card.addEventListener("pointermove", (e) => {
+            if (window.innerWidth <= 760) return;
+
+            const rect = card.getBoundingClientRect();
+
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const px = x / rect.width;
+            const py = y / rect.height;
+
+            const rotateY = (px - 0.5) * 8;
+            const rotateX = (0.5 - py) * 8;
+
+            /* glow prati miš */
+            card.style.setProperty("--card-x", `${px * 100}%`);
+            card.style.setProperty("--card-y", `${py * 100}%`);
+
+            /* 3D tilt */
+            card.style.transform = `perspective(1100px)
+                   rotateX(${rotateX}deg)
+                   rotateY(${rotateY}deg)
+                   translateY(-8px)
+                   scale(1.015)`;
+
+            card.style.boxShadow = `0 35px 85px rgba(0,0,0,.38),
+                   0 0 35px rgba(120,80,255,.10)`;
+
+            card.style.borderColor = "rgba(155,92,255,.32)";
+          });
+
+          card.addEventListener("pointerleave", () => {
+            card.style.transform =
+              "perspective(1100px) rotateX(0deg) rotateY(0deg) translateY(0) scale(1)";
+
+            card.style.boxShadow = "";
+            card.style.borderColor = "";
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
