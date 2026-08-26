@@ -10220,3 +10220,21 @@ body.digital-page section.digital-intro{
     bottom:-1% !important;
     z-index:8 !important;
 }
+
+/* CONTACT H1 FIX */
+.contact-hero h1,
+.contact-hero-title,
+.contact-hero-copy h1 {
+  line-height: 1.15;
+  padding-bottom: 0.12em;
+  overflow: visible;
+}
+
+.contact-hero h1 span,
+.contact-hero-title span,
+.contact-hero-copy h1 span {
+  display: inline-block;
+  padding-bottom: 0.08em;
+  overflow: visible;
+}
+
