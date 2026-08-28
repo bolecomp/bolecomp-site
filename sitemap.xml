@@ -1,7 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- =========================
+       ENGLISH
+  ========================== -->
+
   <url>
     <loc>https://bolecomp.com/</loc>
-    <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://bolecomp.com/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/enterprise.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/digital.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/projects.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/contact.html</loc>
+  </url>
+
+
+  <!-- ENTERPRISE PROJECTS -->
+
+  <url>
+    <loc>https://bolecomp.com/project-insurance-dc.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/project-vcf.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/project-huawei-demo.html</loc>
+  </url>
+
+
+  <!-- DIGITAL PROJECTS -->
+
+  <url>
+    <loc>https://bolecomp.com/project-strong-empowered.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/project-ict.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/project-bathroom-retail-brand.html</loc>
+  </url>
+
+
+
+  <!-- =========================
+       SERBIAN
+  ========================== -->
+
+  <url>
+    <loc>https://bolecomp.com/sr/</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/enterprise.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/digital.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/projects.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/contact.html</loc>
+  </url>
+
+
+  <!-- ENTERPRISE PROJECTS SR -->
+
+  <url>
+    <loc>https://bolecomp.com/sr/project-insurance-dc.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/project-vcf.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/project-huawei-demo.html</loc>
+  </url>
+
+
+  <!-- DIGITAL PROJECTS SR -->
+
+  <url>
+    <loc>https://bolecomp.com/sr/project-strong-empowered.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/project-ict.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bolecomp.com/sr/project-bathroom-retail-brand.html</loc>
+  </url>
+
 </urlset>
