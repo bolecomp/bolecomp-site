@@ -1,298 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VMware Cloud Foundation PoC | BoleComp</title>
-  <meta name="description" content="VMware Cloud Foundation proof-of-concept and hybrid cloud consulting case study covering architecture, SDDC Manager, vSAN, NSX and vRealize.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TF09N9X4DV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body class="vcf-case">
-<header>
-  <nav class="navbar">
-    <div class="logo"><a href="index.html" class="logo"><img src="images/logo-bc.svg" alt="BoleComp Logo"></a></div>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="enterprise.html">Enterprise</a></li>
-      <li><a href="digital.html">Digital</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="/sr/project-vcf.html" class="lang-switch">SR</a>
-    <a href="contact.html" class="btn-outline">Let's Talk</a>
-  </nav>
-</header>
+      gtag("config", "G-TF09N9X4DV");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VMware Cloud Foundation PoC | BoleComp</title>
+    <meta
+      name="description"
+      content="VMware Cloud Foundation proof-of-concept and hybrid cloud consulting case study covering architecture, SDDC Manager, vSAN, NSX and vRealize."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<main>
-
-<section class="case-hero vcf-hero">
-  <div class="case-container case-hero-grid">
-    <div class="case-hero-content">
-      <a href="projects.html" class="case-back">← Back to Projects</a>
-      <span class="case-eyebrow">CONSULTING / HYBRID CLOUD / PROOF OF CONCEPT</span>
-      <h1>VMware VCF<br>PoC</h1>
-      <h2>Hybrid Cloud Architecture & Consulting</h2>
-      <p class="case-lead">
-        A strategic proof-of-concept program designed to validate VMware Cloud Foundation
-        as a modern private and hybrid cloud platform for enterprise customers before
-        major infrastructure transformation.
-      </p>
-      <div class="case-tags">
-        <span>VMware VCF</span><span>Hybrid Cloud</span><span>Consulting</span>
-      </div>
-      <div class="case-hero-meta">
-        <div><span>ROLE</span><strong>Presales Consultant / Solution Architect</strong></div>
-        <div><span>ENGAGEMENT</span><strong>VMware Partner PoC Program</strong></div>
-        <div><span>FORMAT</span><strong>Architecture → PoC → Validation</strong></div>
-      </div>
-    </div>
-    <div class="case-hero-image">
-      <img src="images/projects/vcf-poc2.png" alt="VMware Cloud Foundation PoC">
-    </div>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container case-two-column">
-    <div class="case-section-title">
-      <span class="case-eyebrow">01 / OVERVIEW</span>
-      <h2>Validate the cloud strategy before committing to the transformation.</h2>
-    </div>
-    <div class="case-copy">
-      <p>
-        The VMware Cloud Foundation PoC engagements were designed for enterprise customers
-        considering a move from traditional virtualized infrastructure toward a modern private
-        and hybrid cloud operating model.
-      </p>
-      <p>
-        The objective was not only to demonstrate individual VMware products, but to show how
-        the complete software-defined data center stack could be deployed, operated and managed
-        as an integrated platform — including compute virtualization, software-defined storage,
-        network virtualization, lifecycle management, operations and automation.
-      </p>
-      <p>
-        The PoC environment provided a practical basis for architecture discussions, technical
-        validation and future infrastructure planning before customers committed to production
-        VCF deployments.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="case-section case-section-alt">
-  <div class="case-container">
-    <div class="case-section-heading-centered">
-      <span class="case-eyebrow">02 / BUSINESS DRIVERS</span>
-      <h2>From traditional infrastructure to a cloud operating model.</h2>
-      <p>
-        Although the two customer environments were different, the business drivers were similar:
-        rapid growth, new applications, infrastructure modernization, greater automation and the
-        need for a more agile operating model.
-      </p>
-    </div>
-
-    <div class="case-purpose-grid">
-      <article class="case-info-card">
-        <span>01</span><h3>Modern Private Cloud</h3>
-        <p>Validate a platform capable of transforming existing data center infrastructure into a more automated, cloud-like environment.</p>
-      </article>
-      <article class="case-info-card">
-        <span>02</span><h3>Operational Agility</h3>
-        <p>Demonstrate centralized lifecycle management, faster provisioning, higher availability and simplified infrastructure operations.</p>
-      </article>
-      <article class="case-info-card">
-        <span>03</span><h3>Business Visibility</h3>
-        <p>Explore SLA reporting, showback and chargeback capabilities together with infrastructure monitoring and operational analytics.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container">
-    <div class="case-section-heading">
-      <span class="case-eyebrow">03 / VCF PLATFORM</span>
-      <h2>One software-defined stack across the data center.</h2>
-    </div>
-
-    <div class="vcf-stack-grid">
-      <article class="vcf-stack-card"><span>01</span><h3>vSphere</h3><p>Core compute virtualization and workload platform for the software-defined data center.</p></article>
-      <article class="vcf-stack-card"><span>02</span><h3>vSAN</h3><p>Software-defined, scale-out storage with policy-based management and all-flash HCI architecture.</p></article>
-      <article class="vcf-stack-card"><span>03</span><h3>NSX</h3><p>Network virtualization, segmentation and software-defined network services integrated with the VCF architecture.</p></article>
-      <article class="vcf-stack-card"><span>04</span><h3>SDDC Manager</h3><p>Central platform lifecycle, workload domain deployment and infrastructure management.</p></article>
-      <article class="vcf-stack-card"><span>05</span><h3>vRealize Operations</h3><p>Infrastructure monitoring, operational insight, SLA reporting and capacity visibility.</p></article>
-      <article class="vcf-stack-card"><span>06</span><h3>vRealize Automation</h3><p>Cloud automation and self-service capabilities for a modern private cloud operating model.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="case-section case-section-alt">
-  <div class="case-container case-two-column">
-    <div class="case-section-title">
-      <span class="case-eyebrow">04 / ENGAGEMENT MODEL</span>
-      <h2>A hands-on PoC built around architecture, demonstration and testing.</h2>
-    </div>
-    <div class="case-copy">
-      <p>
-        Each engagement was structured as an intensive five-business-day workshop delivered
-        by VMware-certified AIGO engineers using a four-node VCF proof-of-concept environment.
-      </p>
-      <p>
-        A consolidated architecture was used for the PoC, with management and tenant workloads
-        sharing a workload domain and resource pools providing workload separation. The purpose
-        was to reduce PoC complexity while still exposing the customer to the key architectural
-        and operational concepts of VMware Cloud Foundation.
-      </p>
-      <p>
-        The workshops combined platform bring-up, architecture walkthroughs, operational
-        demonstrations and customer testing, so the engagement functioned as both technical
-        validation and consulting.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="case-section vcf-cases-section">
-  <div class="case-container">
-    <div class="case-section-heading">
-      <span class="case-eyebrow">05 / TWO ENTERPRISE SCENARIOS</span>
-      <h2>Different environments. The same cloud foundation.</h2>
-      <p>Two PoC engagements demonstrated how the same VCF architecture could be adapted to very different enterprise transformation scenarios.</p>
-    </div>
-
-    <div class="vcf-customer-grid">
-
-      <article class="vcf-customer-card">
-        <span class="vcf-customer-index">CASE 01</span>
-        <h3>Bekament</h3>
-        <h4>Manufacturing growth & new private cloud platform</h4>
-        <p>
-          Bekament was expanding manufacturing processes and introducing new,
-          increasingly cloud-oriented applications. The PoC focused on validating
-          a modern data center platform capable of supporting growth, automation,
-          higher availability and future self-service capabilities.
-        </p>
-        <div class="vcf-case-facts">
-          <div><span>PoC</span><strong>4 × HPE DL380 Gen10</strong></div>
-          <div><span>Target</span><strong>7 × HPE vSAN Ready nodes</strong></div>
-          <div><span>Direction</span><strong>Management + Workload Domains</strong></div>
+  <body class="vcf-case">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="logo"
+            ><img src="images/logo-bc.svg" alt="BoleComp Logo"
+          /></a>
         </div>
-      </article>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="digital.html">Digital</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="/sr/project-vcf.html" class="lang-switch">SR</a>
+        <a href="contact.html" class="btn-outline">Let's Talk</a>
+      </nav>
+    </header>
 
-      <article class="vcf-customer-card">
-        <span class="vcf-customer-index">CASE 02</span>
-        <h3>Globos Osiguranje</h3>
-        <h4>Infrastructure modernization & hybrid cloud strategy</h4>
-        <p>
-          Globos was experiencing rapid business expansion and increasing infrastructure
-          demands. The VCF PoC evaluated a software-defined data center model for the primary
-          site together with a future virtualization and DR strategy.
-        </p>
-        <div class="vcf-case-facts">
-          <div><span>PoC</span><strong>4 × Fujitsu RX2530 M5</strong></div>
-          <div><span>Target</span><strong>5 × Fujitsu Primerflex nodes</strong></div>
-          <div><span>Direction</span><strong>SDDC + DR modernization</strong></div>
+    <main>
+      <section class="case-hero vcf-hero">
+        <div class="case-container case-hero-grid">
+          <div class="case-hero-content">
+            <a href="projects.html" class="case-back">← Back to Projects</a>
+            <span class="case-eyebrow"
+              >CONSULTING / HYBRID CLOUD / PROOF OF CONCEPT</span
+            >
+            <h1>VMware VCF<br />PoC</h1>
+            <h2>Hybrid Cloud Architecture & Consulting</h2>
+            <p class="case-lead">
+              A strategic proof-of-concept program designed to validate VMware
+              Cloud Foundation as a modern private and hybrid cloud platform for
+              enterprise customers before major infrastructure transformation.
+            </p>
+            <div class="case-tags">
+              <span>VMware VCF</span><span>Hybrid Cloud</span
+              ><span>Consulting</span>
+            </div>
+            <div class="case-hero-meta">
+              <div>
+                <span>ROLE</span
+                ><strong>Presales Consultant / Solution Architect</strong>
+              </div>
+              <div>
+                <span>ENGAGEMENT</span
+                ><strong>VMware Partner PoC Program</strong>
+              </div>
+              <div>
+                <span>FORMAT</span
+                ><strong>Architecture → PoC → Validation</strong>
+              </div>
+            </div>
+          </div>
+          <div class="case-hero-image">
+            <img
+              src="images/projects/vcf-poc2.png"
+              alt="VMware Cloud Foundation PoC"
+            />
+          </div>
         </div>
-      </article>
+      </section>
 
-    </div>
-  </div>
-</section>
+      <section class="case-section">
+        <div class="case-container case-two-column">
+          <div class="case-section-title">
+            <span class="case-eyebrow">01 / OVERVIEW</span>
+            <h2>
+              Validate the cloud strategy before committing to the
+              transformation.
+            </h2>
+          </div>
+          <div class="case-copy">
+            <p>
+              The VMware Cloud Foundation PoC engagements were designed for
+              enterprise customers considering a move from traditional
+              virtualized infrastructure toward a modern private and hybrid
+              cloud operating model.
+            </p>
+            <p>
+              The objective was not only to demonstrate individual VMware
+              products, but to show how the complete software-defined data
+              center stack could be deployed, operated and managed as an
+              integrated platform — including compute virtualization,
+              software-defined storage, network virtualization, lifecycle
+              management, operations and automation.
+            </p>
+            <p>
+              The PoC environment provided a practical basis for architecture
+              discussions, technical validation and future infrastructure
+              planning before customers committed to production VCF deployments.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section class="case-section case-section-alt">
-  <div class="case-container">
-    <div class="case-section-heading">
-      <span class="case-eyebrow">06 / WHAT WE VALIDATED</span>
-      <h2>From VCF bring-up to workload and operations testing.</h2>
-    </div>
+      <section class="case-section case-section-alt">
+        <div class="case-container">
+          <div class="case-section-heading-centered">
+            <span class="case-eyebrow">02 / BUSINESS DRIVERS</span>
+            <h2>From traditional infrastructure to a cloud operating model.</h2>
+            <p>
+              Although the two customer environments were different, the
+              business drivers were similar: rapid growth, new applications,
+              infrastructure modernization, greater automation and the need for
+              a more agile operating model.
+            </p>
+          </div>
 
-    <div class="case-tech-grid">
-      <article><span class="case-tech-number">01</span><h3>VCF Bring-up</h3><p>Initial platform deployment and walkthrough of the VMware Cloud Foundation bring-up process.</p></article>
-      <article><span class="case-tech-number">02</span><h3>Workload Domains</h3><p>SDDC Manager workflows, management and workload domain concepts and lifecycle operations.</p></article>
-      <article><span class="case-tech-number">03</span><h3>Network Design</h3><p>Hierarchical underlay, spine-leaf concepts, NSX-T deployment and different NSX Edge placement options.</p></article>
-      <article><span class="case-tech-number">04</span><h3>vSAN Policies</h3><p>Storage policy creation, demo VM deployment, health checks and performance validation.</p></article>
-      <article><span class="case-tech-number">05</span><h3>NSX Operations</h3><p>Configuration and monitoring of software-defined networking components and connectivity.</p></article>
-      <article><span class="case-tech-number">06</span><h3>Operations</h3><p>vRealize Operations integration, operational dashboards, SLA reporting and chargeback scenarios.</p></article>
-      <article><span class="case-tech-number">07</span><h3>Availability</h3><p>Workload-domain architecture, stretched-cluster concepts and high-availability design considerations.</p></article>
-      <article><span class="case-tech-number">08</span><h3>Customer Testing</h3><p>Hands-on validation of platform functionality, workload behavior and selected application scenarios.</p></article>
-    </div>
-  </div>
-</section>
+          <div class="case-purpose-grid">
+            <article class="case-info-card">
+              <span>01</span>
+              <h3>Modern Private Cloud</h3>
+              <p>
+                Validate a platform capable of transforming existing data center
+                infrastructure into a more automated, cloud-like environment.
+              </p>
+            </article>
+            <article class="case-info-card">
+              <span>02</span>
+              <h3>Operational Agility</h3>
+              <p>
+                Demonstrate centralized lifecycle management, faster
+                provisioning, higher availability and simplified infrastructure
+                operations.
+              </p>
+            </article>
+            <article class="case-info-card">
+              <span>03</span>
+              <h3>Business Visibility</h3>
+              <p>
+                Explore SLA reporting, showback and chargeback capabilities
+                together with infrastructure monitoring and operational
+                analytics.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="case-section case-role-section">
-  <div class="case-container case-two-column">
-    <div class="case-section-title">
-      <span class="case-eyebrow">07 / MY INVOLVEMENT</span>
-      <h2>Consulting at the point where architecture meets business strategy.</h2>
-    </div>
+      <section class="case-section">
+        <div class="case-container">
+          <div class="case-section-heading">
+            <span class="case-eyebrow">03 / VCF PLATFORM</span>
+            <h2>One software-defined stack across the data center.</h2>
+          </div>
 
-    <div class="case-copy">
-      <p>
-        My role covered the presales and consulting side of the VCF engagements:
-        understanding the customer’s current environment and business drivers,
-        positioning VMware Cloud Foundation, shaping the target architecture and
-        preparing the PoC around the customer’s transformation goals.
-      </p>
-      <p>
-        I worked across architecture discussions, sizing and infrastructure assumptions,
-        customer workshops and technical demonstrations, helping translate VCF capabilities
-        into practical customer use cases rather than treating the engagement as a generic
-        product demo.
-      </p>
-      <p>
-        The PoCs were particularly valuable because they connected strategic hybrid cloud
-        discussions with hands-on technical validation — allowing customers to evaluate the
-        operating model, not only the technology stack.
-      </p>
-    </div>
-  </div>
+          <div class="vcf-stack-grid">
+            <article class="vcf-stack-card">
+              <span>01</span>
+              <h3>vSphere</h3>
+              <p>
+                Core compute virtualization and workload platform for the
+                software-defined data center.
+              </p>
+            </article>
+            <article class="vcf-stack-card">
+              <span>02</span>
+              <h3>vSAN</h3>
+              <p>
+                Software-defined, scale-out storage with policy-based management
+                and all-flash HCI architecture.
+              </p>
+            </article>
+            <article class="vcf-stack-card">
+              <span>03</span>
+              <h3>NSX</h3>
+              <p>
+                Network virtualization, segmentation and software-defined
+                network services integrated with the VCF architecture.
+              </p>
+            </article>
+            <article class="vcf-stack-card">
+              <span>04</span>
+              <h3>SDDC Manager</h3>
+              <p>
+                Central platform lifecycle, workload domain deployment and
+                infrastructure management.
+              </p>
+            </article>
+            <article class="vcf-stack-card">
+              <span>05</span>
+              <h3>vRealize Operations</h3>
+              <p>
+                Infrastructure monitoring, operational insight, SLA reporting
+                and capacity visibility.
+              </p>
+            </article>
+            <article class="vcf-stack-card">
+              <span>06</span>
+              <h3>vRealize Automation</h3>
+              <p>
+                Cloud automation and self-service capabilities for a modern
+                private cloud operating model.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <div class="case-container">
-    <div class="case-contribution-grid">
-      <div><span>01</span><strong>Customer Discovery</strong></div>
-      <div><span>02</span><strong>Hybrid Cloud Strategy</strong></div>
-      <div><span>03</span><strong>Solution Architecture</strong></div>
-      <div><span>04</span><strong>PoC Design</strong></div>
-      <div><span>05</span><strong>Customer Workshops</strong></div>
-      <div><span>06</span><strong>Technical Validation</strong></div>
-    </div>
-  </div>
-</section>
+      <section class="case-section case-section-alt">
+        <div class="case-container case-two-column">
+          <div class="case-section-title">
+            <span class="case-eyebrow">04 / ENGAGEMENT MODEL</span>
+            <h2>
+              A hands-on PoC built around architecture, demonstration and
+              testing.
+            </h2>
+          </div>
+          <div class="case-copy">
+            <p>
+              Each engagement was structured as an intensive five-business-day
+              workshop delivered by VMware-certified AIGO engineers using a
+              four-node VCF proof-of-concept environment.
+            </p>
+            <p>
+              A consolidated architecture was used for the PoC, with management
+              and tenant workloads sharing a workload domain and resource pools
+              providing workload separation. The purpose was to reduce PoC
+              complexity while still exposing the customer to the key
+              architectural and operational concepts of VMware Cloud Foundation.
+            </p>
+            <p>
+              The workshops combined platform bring-up, architecture
+              walkthroughs, operational demonstrations and customer testing, so
+              the engagement functioned as both technical validation and
+              consulting.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section class="case-section case-outcome-section">
-  <div class="case-container case-outcome">
-    <span class="case-eyebrow">08 / OUTCOME</span>
-    <h2>
-      Turning hybrid cloud strategy into
-      <span>a platform customers could actually evaluate.</span>
-    </h2>
-    <p>
-      Both PoCs were completed successfully and provided the customers with a practical
-      understanding of VMware Cloud Foundation architecture, operations and lifecycle
-      management. More importantly, the engagements created a concrete foundation for
-      future private and hybrid cloud transformation decisions.
-    </p>
-  </div>
-</section>
+      <section class="case-section vcf-cases-section">
+        <div class="case-container">
+          <div class="case-section-heading">
+            <span class="case-eyebrow">05 / TWO ENTERPRISE SCENARIOS</span>
+            <h2>Different environments. The same cloud foundation.</h2>
+            <p>
+              Two PoC engagements demonstrated how the same VCF architecture
+              could be adapted to very different enterprise transformation
+              scenarios.
+            </p>
+          </div>
 
-<section class="case-next">
-  <div class="case-container">
-    <div class="case-next-card">
-      <span>SELECTED WORK</span>
-      <h2>Explore the other projects.</h2>
-      <a href="projects.html" class="btn-primary">Back to Projects</a>
-    </div>
-  </div>
-</section>
+          <div class="vcf-customer-grid">
+            <article class="vcf-customer-card">
+              <span class="vcf-customer-index">CASE 01</span>
+              <h3>Bekament</h3>
+              <h4>Manufacturing growth & new private cloud platform</h4>
+              <p>
+                Bekament was expanding manufacturing processes and introducing
+                new, increasingly cloud-oriented applications. The PoC focused
+                on validating a modern data center platform capable of
+                supporting growth, automation, higher availability and future
+                self-service capabilities.
+              </p>
+              <div class="vcf-case-facts">
+                <div><span>PoC</span><strong>4 × HPE DL380 Gen10</strong></div>
+                <div>
+                  <span>Target</span><strong>7 × HPE vSAN Ready nodes</strong>
+                </div>
+                <div>
+                  <span>Direction</span
+                  ><strong>Management + Workload Domains</strong>
+                </div>
+              </div>
+            </article>
 
-</main>
-<script src="js/main.js"></script>
-</body>
+            <article class="vcf-customer-card">
+              <span class="vcf-customer-index">CASE 02</span>
+              <h3>Globos Osiguranje</h3>
+              <h4>Infrastructure modernization & hybrid cloud strategy</h4>
+              <p>
+                Globos was experiencing rapid business expansion and increasing
+                infrastructure demands. The VCF PoC evaluated a software-defined
+                data center model for the primary site together with a future
+                virtualization and DR strategy.
+              </p>
+              <div class="vcf-case-facts">
+                <div>
+                  <span>PoC</span><strong>4 × Fujitsu RX2530 M5</strong>
+                </div>
+                <div>
+                  <span>Target</span
+                  ><strong>5 × Fujitsu Primerflex nodes</strong>
+                </div>
+                <div>
+                  <span>Direction</span><strong>SDDC + DR modernization</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-section-alt">
+        <div class="case-container">
+          <div class="case-section-heading">
+            <span class="case-eyebrow">06 / WHAT WE VALIDATED</span>
+            <h2>From VCF bring-up to workload and operations testing.</h2>
+          </div>
+
+          <div class="case-tech-grid">
+            <article>
+              <span class="case-tech-number">01</span>
+              <h3>VCF Bring-up</h3>
+              <p>
+                Initial platform deployment and walkthrough of the VMware Cloud
+                Foundation bring-up process.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">02</span>
+              <h3>Workload Domains</h3>
+              <p>
+                SDDC Manager workflows, management and workload domain concepts
+                and lifecycle operations.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">03</span>
+              <h3>Network Design</h3>
+              <p>
+                Hierarchical underlay, spine-leaf concepts, NSX-T deployment and
+                different NSX Edge placement options.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">04</span>
+              <h3>vSAN Policies</h3>
+              <p>
+                Storage policy creation, demo VM deployment, health checks and
+                performance validation.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">05</span>
+              <h3>NSX Operations</h3>
+              <p>
+                Configuration and monitoring of software-defined networking
+                components and connectivity.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">06</span>
+              <h3>Operations</h3>
+              <p>
+                vRealize Operations integration, operational dashboards, SLA
+                reporting and chargeback scenarios.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">07</span>
+              <h3>Availability</h3>
+              <p>
+                Workload-domain architecture, stretched-cluster concepts and
+                high-availability design considerations.
+              </p>
+            </article>
+            <article>
+              <span class="case-tech-number">08</span>
+              <h3>Customer Testing</h3>
+              <p>
+                Hands-on validation of platform functionality, workload behavior
+                and selected application scenarios.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-role-section">
+        <div class="case-container case-two-column">
+          <div class="case-section-title">
+            <span class="case-eyebrow">07 / MY INVOLVEMENT</span>
+            <h2>
+              Consulting at the point where architecture meets business
+              strategy.
+            </h2>
+          </div>
+
+          <div class="case-copy">
+            <p>
+              My role covered the presales and consulting side of the VCF
+              engagements: understanding the customer’s current environment and
+              business drivers, positioning VMware Cloud Foundation, shaping the
+              target architecture and preparing the PoC around the customer’s
+              transformation goals.
+            </p>
+            <p>
+              I worked across architecture discussions, sizing and
+              infrastructure assumptions, customer workshops and technical
+              demonstrations, helping translate VCF capabilities into practical
+              customer use cases rather than treating the engagement as a
+              generic product demo.
+            </p>
+            <p>
+              The PoCs were particularly valuable because they connected
+              strategic hybrid cloud discussions with hands-on technical
+              validation — allowing customers to evaluate the operating model,
+              not only the technology stack.
+            </p>
+          </div>
+        </div>
+
+        <div class="case-container">
+          <div class="case-contribution-grid">
+            <div><span>01</span><strong>Customer Discovery</strong></div>
+            <div><span>02</span><strong>Hybrid Cloud Strategy</strong></div>
+            <div><span>03</span><strong>Solution Architecture</strong></div>
+            <div><span>04</span><strong>PoC Design</strong></div>
+            <div><span>05</span><strong>Customer Workshops</strong></div>
+            <div><span>06</span><strong>Technical Validation</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-outcome-section">
+        <div class="case-container case-outcome">
+          <span class="case-eyebrow">08 / OUTCOME</span>
+          <h2>
+            Turning hybrid cloud strategy into
+            <span>a platform customers could actually evaluate.</span>
+          </h2>
+          <p>
+            Both PoCs were completed successfully and provided the customers
+            with a practical understanding of VMware Cloud Foundation
+            architecture, operations and lifecycle management. More importantly,
+            the engagements created a concrete foundation for future private and
+            hybrid cloud transformation decisions.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-next">
+        <div class="case-container">
+          <div class="case-next-card">
+            <span>SELECTED WORK</span>
+            <h2>Explore the other projects.</h2>
+            <a href="projects.html" class="btn-primary">Back to Projects</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
 </html>
