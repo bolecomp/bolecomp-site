@@ -10265,3 +10265,83 @@ body.digital-page section.digital-intro{
     background:rgba(109,40,217,0.10);
     transform:translateY(-1px);
   }
+
+  /* =========================================================
+   MOBILE FINAL FIXES — Enterprise / Digital / Projects
+========================================================= */
+
+@media (max-width: 760px) {
+
+    /* =========================
+       ENTERPRISE HERO BUTTONS
+    ========================= */
+  
+    body.enterprise-page .enterprise-hero-actions{
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:flex-start !important;
+      gap:20px !important;
+    }
+  
+    body.enterprise-page .enterprise-hero-actions .btn-primary{
+      display:inline-flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      width:auto !important;
+      min-width:220px !important;
+      padding:15px 24px !important;
+      white-space:nowrap !important;
+      text-align:center !important;
+    }
+  
+  
+    /* =========================
+       DIGITAL — MY APPROACH
+    ========================= */
+  
+    body.digital-page .digital-intro-grid{
+      display:grid !important;
+      grid-template-columns:1fr !important;
+      gap:36px !important;
+    }
+  
+    body.digital-page .digital-intro-grid > div{
+      width:100% !important;
+      max-width:none !important;
+    }
+  
+    body.digital-page .digital-intro h2{
+      max-width:100% !important;
+      font-size:clamp(2.8rem, 13vw, 4rem) !important;
+      line-height:0.98 !important;
+    }
+  
+    body.digital-page .digital-intro-copy{
+      width:100% !important;
+      max-width:none !important;
+    }
+  
+    body.digital-page .digital-intro-copy p{
+      width:100% !important;
+      max-width:none !important;
+      font-size:1.05rem !important;
+      line-height:1.8 !important;
+    }
+  
+  
+    /* =========================
+       PROJECTS FINAL CTA BUTTON
+    ========================= */
+  
+    .projects-page-cta-inner .btn-primary{
+      display:inline-flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      width:auto !important;
+      min-width:145px !important;
+      padding:15px 28px !important;
+      white-space:nowrap !important;
+      text-align:center !important;
+    }
+  
+  }
